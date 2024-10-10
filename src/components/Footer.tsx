@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Page() {
+export default function Footer() {
 	return (
 		<div className="flex flex-col px-32 mt-16 mb-24 text-gray-700">
 			<div className="font-bold text-3xl">QUICK LINKS</div>
