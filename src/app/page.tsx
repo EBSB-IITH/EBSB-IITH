@@ -1,11 +1,22 @@
+import { GrayButton } from "@/components/Button";
 import GalleryHome from "@/components/Gallery-Home";
 import ObjectiveCard, { ObjectiveCardType } from "@/components/Objective-Card";
+import UpcomingEventHome, { EventDetails } from "@/components/Upcoming-Event-Home";
 import Image from "next/image";
+
+
+let dussheraEvent: EventDetails = {
+  title: "DUSSHERA'24",
+  description: "The celebration of victory of good over evil",
+  date: "2nd Oct to 3rd Oct 2024",
+  time: "6:30 - 10:00 PM",
+  venue: "Near old mess lawns"
+}
 
 export default function Page() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col *:mx-auto bg-stone-300 rounded-b-[100px] h-[42rem]">
+      <div className="flex flex-col *:mx-auto bg-customGray rounded-b-[100px] h-[42rem]">
         <div className="flex flex-col *:mx-auto  mt-52">
           <div className="text-[3.4rem] font-extrabold w-[40rem] text-center leading-[3.5rem] ">EK BHARAT SHRESTHA BHARAT</div>
           <div className="text-center w-[36rem] pt-8">" Sardar Patel gave us Ek Bharat, it is now the solemn duty of 125 crore Indians to collectively make Shrestha Bharat. "</div>
@@ -16,9 +27,9 @@ export default function Page() {
         Ek Bharat Shreshtha Bharat (EBSB) is a cultural extravaganza that brings together the rich tapestry of India's diverse cultures and traditions. At IIT Hyderabad, we take immense pride in celebrating our unity in diversity through various events and festivals that showcase the beauty and depth of Indian culture.
       </div>
 
-      <div className="flex flex-col *:mx-auto mt-20">
+      <div className="flex flex-col *:mx-auto mt-20 ">
         <div className="text-center font-bold text-3xl">OUR OBJECTIVES</div>
-        <div className="flex flex-row pt-16 *:self-end *:mx-4">
+        <div className="flex flex-row pt-16 *:self-end *:mx-4 mb-24">
           <ObjectiveCard
             heading="CREATE"
             description="An Environment which promotes sharing best practices and experiences"
@@ -54,9 +65,14 @@ export default function Page() {
 
         </div>
 
-        <div className="bg-stone-300 px-6 py-2 rounded-lg mt-24">
-          KNOW MORE ABOUT US
-        </div>
+        <GrayButton text="KNOW MORE ABOUT US" />
+
+      </div>
+
+      <div className="flex flex-col mt-28 *:mx-auto">
+        <div className="font-bold text-3xl">UPCOMING EVENTS</div>
+        <UpcomingEventHome {...dussheraEvent} />
+
       </div>
 
       <div className="flex flex-col mt-24">
