@@ -1,3 +1,4 @@
+import GalleryHome from "@/components/Gallery-Home";
 import ObjectiveCard, { ObjectiveCardType } from "@/components/Objective-Card";
 import Image from "next/image";
 
@@ -57,6 +58,12 @@ export default function Page() {
           KNOW MORE ABOUT US
         </div>
       </div>
+
+      <div className="flex flex-col mt-24">
+        <div className="mx-auto font-bold text-3xl">OUR GALLERY OF HAPPY MOMENTS</div>
+        <GalleryHome />
+      </div>
+
     </div>
   )
 }
