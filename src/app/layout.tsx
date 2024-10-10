@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="bg-stone-300">
+        <div className="bg-customGray">
           <div className={'flex flex-row mr-36 py-4 align-middle justify-center'}>
             <Image
               src="/ebsb-logo.png"
