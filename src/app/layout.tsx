@@ -31,8 +31,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="bg-customGray">
-          <div className={'flex flex-row mr-36 py-4 align-middle justify-center'}>
+        <div className="bg-foreground">
+          <div className={'flex flex-row py-6 align-middle justify-center'}>
             <Image
               src="/ebsb-logo.png"
               alt="EBSB Logo"
@@ -41,6 +41,13 @@ export default function RootLayout({
               className={'mx-8'}
             />
             <NavBar />
+            <Image
+              src="/iith-logo.png"
+              alt="EBSB Logo"
+              width={45}
+              height={45}
+              className={'mx-8'}
+            />
           </div>
         </div>
 

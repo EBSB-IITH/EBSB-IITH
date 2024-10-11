@@ -9,7 +9,7 @@ export interface EventDetails {
 }
 export default function UpcomingEventHome({ title, description, date, time, venue }: EventDetails) {
 	return (
-		<div className="flex flex-row bg-customGray mx-24 mt-16 rounded-3xl px-16 py-12 w-4/6">
+		<div className="flex flex-row bg-foreground text-background mx-24 mt-16 rounded-3xl px-16 py-12 w-4/6">
 			<div className="flex flex-col pr-12">
 				<div className="mb-40">
 					<div className="text-[3rem] font-bold">{title}</div>

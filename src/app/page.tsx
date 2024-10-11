@@ -1,6 +1,7 @@
 import { GrayButton } from "@/components/Button";
 import GalleryHome from "@/components/Gallery-Home";
 import ObjectiveCard, { ObjectiveCardType } from "@/components/Objective-Card";
+import { PastEventCard, PastEventCardDetails } from "@/components/Past-Event";
 import UpcomingEventHome, { EventDetails } from "@/components/Upcoming-Event-Home";
 import Image from "next/image";
 
@@ -12,16 +13,30 @@ let dussheraEvent: EventDetails = {
   time: "6:30 - 10:00 PM",
   venue: "Near old mess lawns"
 }
+let OnamPastEventCard: PastEventCardDetails = {
+  title: "ONAM",
+  type: "Celebrations",
+  year: "2024",
+
+}
 
 export default function Page() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col *:mx-auto bg-customGray rounded-b-[100px] h-[42rem]">
+      <div className="flex flex-col *:mx-auto text-background rounded-b-[100px] h-[42rem]" style={{ background: "radial-gradient(#7F355D 0%,  #611D42 80%)" }}>
         <div className="flex flex-col *:mx-auto  mt-52">
-          <div className="text-[3.4rem] font-extrabold w-[40rem] text-center leading-[3.5rem] ">EK BHARAT SHRESTHA BHARAT</div>
-          <div className="text-center w-[36rem] pt-8">" Sardar Patel gave us Ek Bharat, it is now the solemn duty of 125 crore Indians to collectively make Shrestha Bharat. "</div>
+          <div className="text-[3.4rem] font-extrabold w-[36rem] text-center leading-[3.5rem] ">EK BHARAT SHRESTHA BHARAT</div>
+          <div className="text-center w-[44rem] pt-8">" Sardar Patel gave us Ek Bharat, it is now the solemn duty of 125 crore Indians to collectively make Shrestha Bharat. "</div>
         </div>
         <div className="mt-48">Checkout EBSB Govt Website</div>
+        <div className="">
+          <img
+            src="/flowers-hp.svg"
+            className="bottom-12 left-0 absolute" />
+          <img
+            src="/flowers-hp.svg"
+            className="bottom-12 right-0 absolute scale-x-[-1]" />
+        </div>
       </div>
       <div className="text-center px-80 mt-20">
         Ek Bharat Shreshtha Bharat (EBSB) is a cultural extravaganza that brings together the rich tapestry of India's diverse cultures and traditions. At IIT Hyderabad, we take immense pride in celebrating our unity in diversity through various events and festivals that showcase the beauty and depth of Indian culture.
@@ -29,37 +44,37 @@ export default function Page() {
 
       <div className="flex flex-col *:mx-auto mt-20 ">
         <div className="text-center font-bold text-3xl">OUR OBJECTIVES</div>
-        <div className="flex flex-row pt-16 *:self-end *:mx-4 mb-24">
+        <div className="flex flex-row pt-16 *:self-end *:mx-2 mb-24">
           <ObjectiveCard
             heading="CREATE"
             description="An Environment which promotes sharing best practices and experiences"
-            imgSrc="/x-logo.svg"
+            imgSrc="/ObjectiveSvg/create.svg"
             type={ObjectiveCardType.Small}
           />
 
           <ObjectiveCard
             heading="SHOWCASE"
             description="The Rich Heritage and Culture"
-            imgSrc="/x-logo.svg"
+            imgSrc="/ObjectiveSvg/showcase.svg"
             type={ObjectiveCardType.Medium}
           />
 
           <ObjectiveCard
             heading="CELEBRATE"
             description="The Unity in Diversity of our Nation"
-            imgSrc="/x-logo.svg"
+            imgSrc="/ObjectiveSvg/celebrate.svg"
             type={ObjectiveCardType.Large}
           />
           <ObjectiveCard
             heading="ESTABLISH"
             description="Long-Term Engagements"
-            imgSrc="/x-logo.svg"
+            imgSrc="/ObjectiveSvg/establish.svg"
             type={ObjectiveCardType.Medium}
           />
           <ObjectiveCard
             heading="PROMOTE"
             description="The Spirit of National integration"
-            imgSrc="/x-logo.svg"
+            imgSrc="/ObjectiveSvg/promote.svg"
             type={ObjectiveCardType.Small}
           />
 
@@ -78,6 +93,11 @@ export default function Page() {
       <div className="flex flex-col mt-24">
         <div className="mx-auto font-bold text-3xl">OUR GALLERY OF HAPPY MOMENTS</div>
         <GalleryHome />
+      </div>
+
+      <div className="flex flex-col mt-12">
+        <div className="mx-auto font-bold text-3xl">PAST EVENTS</div>
+        <PastEventCard />
       </div>
 
     </div>
