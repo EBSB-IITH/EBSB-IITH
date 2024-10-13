@@ -1,24 +1,13 @@
 import { GrayButton } from "@/components/Button";
+import Carousel from "@/components/Carousel";
 import GalleryHome from "@/components/Gallery-Home";
 import ObjectiveCard, { ObjectiveCardType } from "@/components/Objective-Card";
-import { PastEventCard, PastEventCardDetails } from "@/components/Past-Event";
+import { Onam24 } from "@/components/pastEvents/Onam";
 import UpcomingEventHome, { EventDetails } from "@/components/Upcoming-Event-Home";
 import Image from "next/image";
 
 
-let dussheraEvent: EventDetails = {
-  title: "DUSSHERA'24",
-  description: "The celebration of victory of good over evil",
-  date: "2nd Oct to 3rd Oct 2024",
-  time: "6:30 - 10:00 PM",
-  venue: "Near old mess lawns"
-}
-let OnamPastEventCard: PastEventCardDetails = {
-  title: "ONAM",
-  type: "Celebrations",
-  year: "2024",
 
-}
 
 export default function Page() {
   return (
@@ -86,7 +75,7 @@ export default function Page() {
 
       <div className="flex flex-col mt-28 *:mx-auto">
         <div className="font-bold text-3xl">UPCOMING EVENTS</div>
-        <UpcomingEventHome {...dussheraEvent} />
+        <UpcomingEventHome />
 
       </div>
 
@@ -97,7 +86,7 @@ export default function Page() {
 
       <div className="flex flex-col mt-12">
         <div className="mx-auto font-bold text-3xl">PAST EVENTS</div>
-        <PastEventCard />
+        <Carousel />
       </div>
 
     </div>
