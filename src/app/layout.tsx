@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Image from "next/image";
@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   title: "EBSB IITH",
   description: "EBSB Club Website of IITH",
 };
+
+export const viewport: Viewport = {
+  initialScale: 1,
+  width: 'device-width'
+}
 
 export default function RootLayout({
   children,

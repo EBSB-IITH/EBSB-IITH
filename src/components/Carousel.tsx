@@ -19,22 +19,14 @@ export default function Carousel() {
 	const [currentIdx, setCurrentIdx] = useState(0)
 	const buttonDivRef: Ref<HTMLDivElement> = useRef(null)
 	const evRef: Ref<HTMLDivElement> = useRef(null)
-	const translateRef = useRef(0)
 	const isScroll = useRef(1)
 
 
 	useEffect(() => {
-		let evTabWidth = evRef.current!.children[0].clientWidth
-		let evTabPadWidth = evRef.current!.children[0].scrollWidth
-		let width = document.getElementById("html")!.clientWidth;
+		let padding = (document.getElementById("html")!.clientWidth - evRef.current!.children[0].clientWidth) / 2
 
-		evRef.current!.style.paddingLeft = ((width - evTabWidth) / 2).toString() + "px";
-		evRef.current!.style.paddingRight = ((width - evTabWidth) / 2).toString() + "px";
-
-		translateRef.current = (evTabWidth + (evTabPadWidth - evTabWidth) / 2)
-		for (let i = 0; i < totalElements; i++) {
-			(evRef.current!.children[i] as HTMLDivElement).style.transform = "translate(-" + translateRef.current + "px,0px)"
-		}
+		evRef.current!.style.paddingLeft = padding.toString() + "px";
+		evRef.current!.style.paddingRight = padding.toString() + "px";
 
 		for (let i = 0; i < totalElements; i++) {
 			(buttonDivRef.current!.children[i] as HTMLDivElement).onclick = () => {
@@ -45,7 +37,10 @@ export default function Carousel() {
 
 	useEffect(() => {
 		for (let i = 0; i < totalElements; i++) {
-			(evRef.current!.children[i] as HTMLDivElement).style.transform = "translate(-" + (translateRef.current * currentIdx) + "px,0px)"
+
+			let boxSize = 56 + 1.5; // width of Box + Margin on either side
+
+			(evRef.current!.children[i] as HTMLDivElement).style.transform = "translate(-" + (boxSize * currentIdx) + "rem,0px)"
 		}
 		(buttonDivRef.current!.children[currentIdx] as HTMLDivElement).style.width = "2rem";
 
@@ -77,14 +72,14 @@ export default function Carousel() {
 
 	return (
 		<div className="relative flex flex-col">
-			<div ref={evRef} className="flex flex-row pt-12 *:mr-6 overflow-clip transition">
+			<div ref={evRef} className="flex flex-row pt-12 *:mr-6 overflow-clip transition ">
 				<Onam24 />
 				<Dusshera23 />
 				<EthnicNight23 />
 				<Holi23 />
 			</div>
 
-			<div ref={buttonDivRef} className={"*:mx-1 flex mx-auto mt-6 flex-row justify-between"}>
+			<div ref={buttonDivRef} className={"*:mx-1 flex mx-auto mt-6 flex-row"}>
 				{buttons}
 			</div>
 
