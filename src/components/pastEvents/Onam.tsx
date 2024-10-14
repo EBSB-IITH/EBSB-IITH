@@ -1,17 +1,20 @@
 import { WhiteButton } from "../Button";
+import { descriptionStyle, headingStyle, outerDivStyle, subheadingStyle, yearStyle } from "./style-data";
 
-export function Onam24({ style }: { style: string }) {
+export function Onam24() {
 	return (
-		<div className={"relative bg-foreground text-background w-[64rem] rounded-3xl *:mx-auto overflow-clip *:w-fit *:text-center px-32 pt-20 pb-16 " + style} >
-			<div className={"text-[3rem] font-bold "}>ONAM'24</div>
-			<div className="pt-4 text-lg">Celebrations</div>
-			<div className="text-lg">2024</div>
-			<div className="pt-10 pb-8 px-16 text-nowrap">Onam, the splendid harvest festival of Kerala, is a vibrant celebration<br />that unites the state with an aura of enthusiasm and joy. This cherished<br />tradition symbolizes the rich cultural heritage and communal harmony<br />of Kerala.</div>
+		<div className={outerDivStyle} >
+			<div className={headingStyle}>ONAM'24</div>
+			<div className={subheadingStyle}>Celebrations</div>
+			<div className={yearStyle}>2024</div>
+			<div className={descriptionStyle}>Onam, the splendid harvest festival of Kerala, is a vibrant celebration<br />that unites the state with an aura of enthusiasm and joy. This cherished<br />tradition symbolizes the rich cultural heritage and communal harmony<br />of Kerala.</div>
 			<WhiteButton text="Explore More" />
 
-			<img src="/onam/24/tree.svg" className="absolute left-6 scale-[3.2] bottom-[9rem]" />
-			<img src="/onam/24/tree.svg" className="absolute right-6 scale-[3.2] scale-x-[-3.2] bottom-[9rem]" />
-			<img src="/onam/24/bowl.svg" className="absolute left-10 scale-[1.6] bottom-6" />
+			<img src="/onam/24/tree.svg" className="absolute z-10 left-6 scale-[3.2] bottom-[9rem]" />
+			<img src="/onam/24/tree.svg" className="absolute z-10 right-6 scale-[3.2] scale-x-[-3.2] bottom-[9rem]" />
+			<img src="/onam/24/bowl.svg" className="absolute left-10 scale-[1.6] bottom-6 z-10" />
+			<img src="/watermark.svg" className="absolute left-8 scale-[5] top-[-3rem] z-0" />
+			<img src="/watermark.svg" className="absolute right-40 scale-[4] bottom-[-2rem] z-0" />
 		</div >
 	)
 }

@@ -2,9 +2,7 @@ import { GrayButton } from "@/components/Button";
 import Carousel from "@/components/Carousel";
 import GalleryHome from "@/components/Gallery-Home";
 import ObjectiveCard, { ObjectiveCardType } from "@/components/Objective-Card";
-import { Onam24 } from "@/components/pastEvents/Onam";
-import UpcomingEventHome, { EventDetails } from "@/components/Upcoming-Event-Home";
-import Image from "next/image";
+import UpcomingEventHome from "@/components/Upcoming-Event-Home";
 
 
 
@@ -12,20 +10,18 @@ import Image from "next/image";
 export default function Page() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col *:mx-auto text-background rounded-b-[100px] h-[42rem]" style={{ background: "radial-gradient(#7F355D 0%,  #611D42 80%)" }}>
+      <div className="flex flex-col *:mx-auto text-background rounded-b-[8rem] h-[42rem] relative" style={{ background: "radial-gradient(#7F355D 0%,  #611D42 80%)" }}>
         <div className="flex flex-col *:mx-auto  mt-52">
           <div className="text-[3.4rem] font-extrabold w-[36rem] text-center leading-[3.5rem] ">EK BHARAT SHRESTHA BHARAT</div>
           <div className="text-center w-[44rem] pt-8">" Sardar Patel gave us Ek Bharat, it is now the solemn duty of 125 crore Indians to collectively make Shrestha Bharat. "</div>
         </div>
         <div className="mt-48">Checkout EBSB Govt Website</div>
-        <div className="">
-          <img
-            src="/flowers-hp.svg"
-            className="bottom-12 left-0 absolute" />
-          <img
-            src="/flowers-hp.svg"
-            className="bottom-12 right-0 absolute scale-x-[-1]" />
-        </div>
+        <img
+          src="/flowers-hp.svg"
+          className="bottom-[-6rem] left-0 absolute" />
+        <img
+          src="/flowers-hp.svg"
+          className="bottom-[-6rem] right-0 absolute scale-x-[-1]" />
       </div>
       <div className="text-center px-80 mt-20">
         Ek Bharat Shreshtha Bharat (EBSB) is a cultural extravaganza that brings together the rich tapestry of India's diverse cultures and traditions. At IIT Hyderabad, we take immense pride in celebrating our unity in diversity through various events and festivals that showcase the beauty and depth of Indian culture.
@@ -37,33 +33,33 @@ export default function Page() {
           <ObjectiveCard
             heading="CREATE"
             description="An Environment which promotes sharing best practices and experiences"
-            imgSrc="/ObjectiveSvg/create.svg"
+            imgSrc="/objectiveSvg/create.svg"
             type={ObjectiveCardType.Small}
           />
 
           <ObjectiveCard
             heading="SHOWCASE"
             description="The Rich Heritage and Culture"
-            imgSrc="/ObjectiveSvg/showcase.svg"
+            imgSrc="/objectiveSvg/showcase.svg"
             type={ObjectiveCardType.Medium}
           />
 
           <ObjectiveCard
             heading="CELEBRATE"
             description="The Unity in Diversity of our Nation"
-            imgSrc="/ObjectiveSvg/celebrate.svg"
+            imgSrc="/objectiveSvg/celebrate.svg"
             type={ObjectiveCardType.Large}
           />
           <ObjectiveCard
             heading="ESTABLISH"
             description="Long-Term Engagements"
-            imgSrc="/ObjectiveSvg/establish.svg"
+            imgSrc="/objectiveSvg/establish.svg"
             type={ObjectiveCardType.Medium}
           />
           <ObjectiveCard
             heading="PROMOTE"
             description="The Spirit of National integration"
-            imgSrc="/ObjectiveSvg/promote.svg"
+            imgSrc="/objectiveSvg/promote.svg"
             type={ObjectiveCardType.Small}
           />
 
