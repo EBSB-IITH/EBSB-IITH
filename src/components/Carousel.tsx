@@ -21,6 +21,7 @@ export default function Carousel() {
 	const evRef: Ref<HTMLDivElement> = useRef(null)
 	const isScroll = useRef(1)
 
+	const touchLastPos = useRef(0)
 
 	useEffect(() => {
 		let padding = (document.getElementById("html")!.clientWidth - evRef.current!.children[0].clientWidth) / 2
@@ -33,17 +34,42 @@ export default function Carousel() {
 				setCurrentIdx(i)
 			}
 		}
+
+
 	}, [])
 
 	useEffect(() => {
 		for (let i = 0; i < totalElements; i++) {
+			let elem = evRef.current!.children[3] as HTMLDivElement
 
-			let boxSize = 56 + 1.5; // width of Box + Margin on either side
 
-			(evRef.current!.children[i] as HTMLDivElement).style.transform = "translate(-" + (boxSize * currentIdx) + "rem,0px)"
+			let boxsize = elem.offsetWidth + elem.computedStyleMap().get("margin-right")!.value;
+
+			console.log(boxsize);
+			(evRef.current!.children[i] as HTMLDivElement).style.transform = "translate(-" + (boxsize * currentIdx) + "px,0px)"
 		}
 		(buttonDivRef.current!.children[currentIdx] as HTMLDivElement).style.width = "2rem";
+		evRef.current!.ontouchstart = (ev) => {
+			touchLastPos.current = ev.touches.item(0)!.clientX
+		}
 
+		evRef.current!.ontouchend = (ev) => {
+			if ((ev.changedTouches.item(0)!.clientX - touchLastPos.current) / window.innerWidth > 0.3) {
+
+				setCurrentIdx(currentIdx == 0 ? totalElements - 1 : currentIdx - 1)
+			}
+			else if ((ev.changedTouches.item(0)!.clientX - touchLastPos.current) / window.innerWidth < 0.3) {
+
+				setCurrentIdx(currentIdx == totalElements - 1 ? 0 : currentIdx + 1)
+			}
+			if (isScroll.current == 1) {
+				isScroll.current = 0
+				setTimeout(() => {
+					isScroll.current = 1
+				}, 400)
+			}
+			touchLastPos.current = 0
+		}
 		evRef.current!.onwheel = (ev) => {
 			ev.stopImmediatePropagation()
 			if (ev.deltaX > 10 && isScroll.current) {
@@ -83,10 +109,10 @@ export default function Carousel() {
 				{buttons}
 			</div>
 
-			<div className="absolute left-0 h-full flex flex-col *:my-auto overflow-clip px-4 rounded-r-lg hover:bg-[rgba(0,0,0,0.1)]" onClick={() => setCurrentIdx(currentIdx == 0 ? totalElements - 1 : currentIdx - 1)}>
+			<div className="absolute left-0 h-full hidden lg:flex flex-col *:my-auto overflow-clip px-4 rounded-r-lg hover:bg-[rgba(0,0,0,0.1)]" onClick={() => setCurrentIdx(currentIdx == 0 ? totalElements - 1 : currentIdx - 1)}>
 				<img src="/arrow-left.svg" className="scale-[4] " />
 			</div>
-			<div className="absolute right-0 h-full flex flex-col *:my-auto overflow-clip px-4 rounded-l-lg hover:bg-[rgba(0,0,0,0.1)]" onClick={() => setCurrentIdx(currentIdx == totalElements - 1 ? 0 : currentIdx + 1)}>
+			<div className="absolute right-0 h-full hidden lg:flex flex-col *:my-auto overflow-clip px-4 rounded-l-lg hover:bg-[rgba(0,0,0,0.1)]" onClick={() => setCurrentIdx(currentIdx == totalElements - 1 ? 0 : currentIdx + 1)}>
 				<img src="/arrow-right.svg" className="scale-[4]" />
 			</div>
 
