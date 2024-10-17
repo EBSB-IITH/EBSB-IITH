@@ -60,7 +60,7 @@ export default function ObjectiveCard({ heading, description, imgSrc, type, styl
 				<div className="relative">
 					<img
 						src="/watermark.svg"
-						className="absolute bottom-12 right-0 z-[0] scale-[1.5]"
+						className="absolute bottom-12 right-0 z-0 scale-[1.5]"
 					/>
 					<img
 						src={imgSrc}
@@ -76,7 +76,7 @@ export default function ObjectiveCard({ heading, description, imgSrc, type, styl
 
 export function ObjectivesSection() {
 	return (
-		<div className="flex flex-col *:mx-auto mt-20 ">
+		<div className="flex flex-col *:mx-auto ">
 			<div className="text-center font-bold text-3xl">OUR OBJECTIVES</div>
 			<div className="flex flex-row justify-center flex-wrap pt-12 lg:pt-16 *:self-end *:mx-1 lg:*:mx-2 mb-6 lg:mb-24">
 				<ObjectiveCard
@@ -117,7 +117,7 @@ export function ObjectivesSection() {
 					style="hidden lg:flex"
 				/>
 			</div>
-			<div className="flex flex-row lg:hidden justify-center mb-12">
+			<div className="flex flex-row lg:hidden justify-center mb-8">
 				<ObjectiveCard
 					heading="CREATE"
 					description="An Environment which promotes sharing best practices and experiences"

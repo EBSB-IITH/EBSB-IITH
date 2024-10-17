@@ -10,7 +10,7 @@ let upcomingEvent = {
 }
 export default function UpcomingEventHome() {
 	return (
-		<div className="relative flex flex-col lg:flex-row bg-foreground text-background overflow-clip lg:mx-24 mt-16 rounded-xl lg:rounded-3xl px-8 lg:px-16 pt-12 pb-12 max-w-5/6 min-w-5/6 lg:w-4/6 *:text-center lg:*:text-start self-center">
+		<div className="relative flex flex-col lg:flex-row bg-foreground text-background overflow-clip lg:mx-24 mt-16 rounded-xl lg:rounded-3xl px-2 lg:px-16 pt-12 pb-12 max-w-5/6 min-w-5/6 lg:w-4/6 *:text-center lg:*:text-start self-center">
 			<div className="flex flex-col lg:pr-12">
 				<div className="mb-24 lg:mb-40">
 					<div className="relative text-[2rem] lg:text-[3rem] font-bold z-10">{upcomingEvent.title}</div>
@@ -19,9 +19,9 @@ export default function UpcomingEventHome() {
 					<div className="relative text-sm z-10">Time - {upcomingEvent.time}</div>
 					<div className="relative text-sm z-10">Venue - {upcomingEvent.venue}</div>
 				</div>
-				<div className="flex flex-row justify-between lg:pr-8 ">
-					<WhiteButton text="Know More" />
-					<WhiteButton text="Register Now" />
+				<div className="flex flex-row justify-between *:mx-4 lg:*:mr-4 lg:pr-8 ">
+					<WhiteButton text="KNOW MORE" />
+					<WhiteButton text="REGISTER NOW" />
 				</div>
 			</div>
 			<div className="flex flex-row lg:block mt-6 lg:mt-0 justify-center *:self-end lg:*:self-start">
