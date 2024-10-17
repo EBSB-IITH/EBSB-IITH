@@ -1,4 +1,8 @@
+'use client';
+
+import Link from "next/link";
 import { GrayButton } from "./Button";
+import { usePathname } from "next/navigation";
 
 export const enum ObjectiveCardType { Small, Medium, Large }
 export default function ObjectiveCard({ heading, description, imgSrc, type, style }: { heading: string, description: string, imgSrc: string, type: ObjectiveCardType, style: string }) {
@@ -134,7 +138,7 @@ export function ObjectivesSection() {
 				/>
 			</div>
 
-			<GrayButton text="KNOW MORE ABOUT US" />
+			<Link href="/about"><div data-tonotshow={(usePathname() == "/about").valueOf()} className="data-[tonotshow=true]:hidden"><GrayButton text="KNOW MORE ABOUT US" /></div></Link>
 
 		</div>
 	)
