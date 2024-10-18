@@ -25,7 +25,7 @@ export default function Page() {
 				</div>
 				<div className="flex text-center flex-col bg-foreground text-background self-end">
 					<div className="text-2xl font-bold mb-8">VISION</div>
-					<div className="leading-tight">To celebrate and strengthen India's cultural diversity, fostering unity and interdependence among its people.</div>
+					<div className="leading-tight">To celebrate and strengthen India{"\'"}s cultural diversity, fostering unity and interdependence among its people.</div>
 				</div>
 				<div className="flex text-center flex-col bg-foreground text-background self-center">
 					<div className="text-2xl font-bold mb-8">PURPOSE</div>

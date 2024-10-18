@@ -1,7 +1,7 @@
 import { WhiteButton } from "./Button"
 
 
-let upcomingEvent = {
+const upcomingEvent = {
 	title: "DUSSHERA'24",
 	description: "The celebration of victory of good over evil",
 	date: "2nd Oct to 3rd Oct 2024",

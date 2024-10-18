@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import localFont from "next/font/local";
 import { League_Spartan } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";

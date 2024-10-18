@@ -1,3 +1,4 @@
+/* eslint @typescript-eslint/no-explicit-any: "off" */
 'use client';
 
 import { ReactNode, Ref, useEffect, useRef, useState } from "react";
@@ -24,7 +25,7 @@ export default function Carousel() {
 	const touchLastPos = useRef(0)
 
 	useEffect(() => {
-		let padding = (document.getElementById("html")!.clientWidth - evRef.current!.children[0].clientWidth) / 2
+		const padding = (document.getElementById("html")!.clientWidth - evRef.current!.children[0].clientWidth) / 2
 
 		evRef.current!.style.paddingLeft = padding.toString() + "px";
 		evRef.current!.style.paddingRight = padding.toString() + "px";
@@ -40,10 +41,9 @@ export default function Carousel() {
 
 	useEffect(() => {
 		for (let i = 0; i < totalElements; i++) {
-			let elem = evRef.current!.children[3] as HTMLDivElement
+			const elem = evRef.current!.children[3] as HTMLDivElement
 
-
-			let boxsize = elem.offsetWidth + elem.computedStyleMap().get("margin-right")!.value;
+			const boxsize = elem.offsetWidth + (elem.computedStyleMap().get("margin-right")! as any).value;
 
 			console.log(boxsize);
 			(evRef.current!.children[i] as HTMLDivElement).style.transform = "translate(-" + (boxsize * currentIdx) + "px,0px)"
