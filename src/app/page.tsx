@@ -1,105 +1,49 @@
-import { GrayButton } from "@/components/Button";
+'use client'
+import Carousel from "@/components/Carousel";
 import GalleryHome from "@/components/Gallery-Home";
-import ObjectiveCard, { ObjectiveCardType } from "@/components/Objective-Card";
-import { PastEventCard, PastEventCardDetails } from "@/components/Past-Event";
-import UpcomingEventHome, { EventDetails } from "@/components/Upcoming-Event-Home";
-import Image from "next/image";
+import { ObjectivesSection } from "@/components/Objective";
+import UpcomingEventHome from "@/components/Upcoming-Event-Home";
 
-
-let dussheraEvent: EventDetails = {
-  title: "DUSSHERA'24",
-  description: "The celebration of victory of good over evil",
-  date: "2nd Oct to 3rd Oct 2024",
-  time: "6:30 - 10:00 PM",
-  venue: "Near old mess lawns"
-}
-let OnamPastEventCard: PastEventCardDetails = {
-  title: "ONAM",
-  type: "Celebrations",
-  year: "2024",
-
-}
 
 export default function Page() {
+
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col *:mx-auto text-background rounded-b-[100px] h-[42rem]" style={{ background: "radial-gradient(#7F355D 0%,  #611D42 80%)" }}>
-        <div className="flex flex-col *:mx-auto  mt-52">
-          <div className="text-[3.4rem] font-extrabold w-[36rem] text-center leading-[3.5rem] ">EK BHARAT SHRESTHA BHARAT</div>
-          <div className="text-center w-[44rem] pt-8">" Sardar Patel gave us Ek Bharat, it is now the solemn duty of 125 crore Indians to collectively make Shrestha Bharat. "</div>
+      <div className="flex flex-col *:mx-auto bg-foreground text-background rounded-b-[4rem] lg:rounded-b-[8rem] h-[26rem] lg:h-[44rem] pt-[2rem] relative">
+        <div className="flex flex-col *:mx-auto mt-24 lg:mt-52">
+          <div className="text-[2rem] lg:text-[3.4rem] font-extrabold w-[20rem] lg:w-[32rem] text-center leading-[2rem] lg:leading-[3.5rem] ">EK BHARAT SHRESTHA BHARAT</div>
+          <div className="text-center w-[20rem] lg:w-[40rem] pt-8">" Sardar Patel gave us Ek Bharat, it is now the solemn duty of 125 crore Indians to collectively make Shrestha Bharat. "</div>
         </div>
-        <div className="mt-48">Checkout EBSB Govt Website</div>
-        <div className="">
-          <img
-            src="/flowers-hp.svg"
-            className="bottom-12 left-0 absolute" />
-          <img
-            src="/flowers-hp.svg"
-            className="bottom-12 right-0 absolute scale-x-[-1]" />
-        </div>
-      </div>
-      <div className="text-center px-80 mt-20">
-        Ek Bharat Shreshtha Bharat (EBSB) is a cultural extravaganza that brings together the rich tapestry of India's diverse cultures and traditions. At IIT Hyderabad, we take immense pride in celebrating our unity in diversity through various events and festivals that showcase the beauty and depth of Indian culture.
+        <div className="mt-16 lg:mt-48">Checkout EBSB Govt Website</div>
+        <img
+          src="/flowers-hp.svg"
+          className="w-[8rem] lg:w-fit bottom-[-3rem] lg:bottom-[-6rem] left-0 absolute" />
+        <img
+          src="/flowers-hp.svg"
+          className="w-[8rem] lg:w-fit bottom-[-3rem] lg:bottom-[-6rem] right-0 absolute scale-x-[-1]" />
       </div>
 
-      <div className="flex flex-col *:mx-auto mt-20 ">
-        <div className="text-center font-bold text-3xl">OUR OBJECTIVES</div>
-        <div className="flex flex-row pt-16 *:self-end *:mx-2 mb-24">
-          <ObjectiveCard
-            heading="CREATE"
-            description="An Environment which promotes sharing best practices and experiences"
-            imgSrc="/ObjectiveSvg/create.svg"
-            type={ObjectiveCardType.Small}
-          />
-
-          <ObjectiveCard
-            heading="SHOWCASE"
-            description="The Rich Heritage and Culture"
-            imgSrc="/ObjectiveSvg/showcase.svg"
-            type={ObjectiveCardType.Medium}
-          />
-
-          <ObjectiveCard
-            heading="CELEBRATE"
-            description="The Unity in Diversity of our Nation"
-            imgSrc="/ObjectiveSvg/celebrate.svg"
-            type={ObjectiveCardType.Large}
-          />
-          <ObjectiveCard
-            heading="ESTABLISH"
-            description="Long-Term Engagements"
-            imgSrc="/ObjectiveSvg/establish.svg"
-            type={ObjectiveCardType.Medium}
-          />
-          <ObjectiveCard
-            heading="PROMOTE"
-            description="The Spirit of National integration"
-            imgSrc="/ObjectiveSvg/promote.svg"
-            type={ObjectiveCardType.Small}
-          />
-
-        </div>
-
-        <GrayButton text="KNOW MORE ABOUT US" />
-
+      <div className="text-lg lg:text-[1rem] text-center leading-snug lg:leading-normal px-16 lg:px-80 mt-20 mb-12 lg:mb-20">
+        Ek Bharat Shreshtha Bharat (EBSB) is a cultural extravaganza that brings together the rich tapestry of India's diverse cultures and traditions.<br className="block lg:hidden" /><br className="block lg:hidden" />At IIT Hyderabad, we take immense pride in celebrating our unity in diversity through various events and festivals that showcase the beauty and depth of Indian culture.
       </div>
 
-      <div className="flex flex-col mt-28 *:mx-auto">
-        <div className="font-bold text-3xl">UPCOMING EVENTS</div>
-        <UpcomingEventHome {...dussheraEvent} />
+
+      <ObjectivesSection />
+
+      <div className="flex flex-col mt-14 lg:mt-28 justify-center *:mx-auto">
+        <div className="font-bold text-2xl lg:text-3xl">UPCOMING EVENTS</div>
+        <UpcomingEventHome />
 
       </div>
-
-      <div className="flex flex-col mt-24">
-        <div className="mx-auto font-bold text-3xl">OUR GALLERY OF HAPPY MOMENTS</div>
+      <div className="flex flex-col mt-20 lg:mt-24">
+        <div className="mx-auto font-bold text-2xl lg:text-3xl text-center">OUR GALLERY OF HAPPY MOMENTS</div>
         <GalleryHome />
       </div>
 
       <div className="flex flex-col mt-12">
-        <div className="mx-auto font-bold text-3xl">PAST EVENTS</div>
-        <PastEventCard />
+        <div className="mx-auto font-bold text-2xl lg:text-3xl">PAST EVENTS</div>
+        <Carousel />
       </div>
-
-    </div>
+    </div >
   )
 }

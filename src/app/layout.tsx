@@ -1,25 +1,25 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { League_Spartan } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import Footer from "@/components/Footer"
 import NavBar from "@/components/NavBar";
+import Link from "next/link";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const leagueSpartan = League_Spartan({
+  subsets: ['latin']
+})
 
 export const metadata: Metadata = {
   title: "EBSB IITH",
   description: "EBSB Club Website of IITH",
 };
+
+export const viewport: Viewport = {
+  initialScale: 1,
+  width: 'device-width'
+}
 
 export default function RootLayout({
   children,
@@ -27,26 +27,38 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" id="html">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${leagueSpartan.className} antialiased `}
       >
-        <div className="bg-foreground">
-          <div className={'flex flex-row py-6 align-middle justify-center'}>
-            <Image
-              src="/ebsb-logo.png"
-              alt="EBSB Logo"
-              width={60}
-              height={60}
-              className={'mx-8'}
-            />
+        <div className="absolute top-0 z-20 w-full">
+          <div className={'flex flex-row pt-4 px-4 lg:py-6 align-middle justify-between lg:justify-center'}>
+            <Link href="/">
+              <Image
+                src="/ebsb-logo.png"
+                alt="EBSB Logo"
+                width={60}
+                height={60}
+                className={'hidden lg:block lg:mx-8'}
+              />
+            </Link>
+
             <NavBar />
+            <Link href="/">
+              <Image
+                src="/ebsb-logo.png"
+                alt="EBSB Logo"
+                width={50}
+                height={50}
+                className={'block lg:hidden lg:mx-8'}
+              />
+            </Link>
             <Image
               src="/iith-logo.png"
               alt="EBSB Logo"
               width={45}
               height={45}
-              className={'mx-8'}
+              className={'hidden lg:block lg:mx-8'}
             />
           </div>
         </div>
