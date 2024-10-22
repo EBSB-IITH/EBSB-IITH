@@ -27,7 +27,7 @@ export default function UpcomingEventHome() {
 			<div className="flex flex-row lg:block mt-6 lg:mt-0 justify-center *:self-end lg:*:self-start">
 				<img src="/dusshera/24/diya.svg" className="relative lg:absolute w-[4rem] lg:w-fit lg:bottom-12 translate-x-[1rem] lg:translate-x-0 lg:right-0 lg:scale-125 z-10" />
 				<img src="/dusshera/24/diya.svg" className="relative lg:absolute order-3 lg:order-2 w-[4rem] lg:w-fit block lg:hidden translate-x-[-1rem] lg:translate-x-0 lg:bottom-12 lg:right-0 lg:scale-125 z-10" />
-				<img src="/dusshera/24/diya.svg" className="relative lg:absolute order-2 lg:order-3 w-[6rem] lg:w-fit lg:bottom-0 lg:right-[16rem] lg:scale-75 z-20" />
+				<img src="/dusshera/24/diya.svg" className="relative lg:absolute order-2 lg:order-3 w-[6rem] lg:w-fit lg:bottom-0 lg:right-[16rem] lg:scale-75 z-[12]" />
 				<img src="/watermark.svg" className="absolute top-0 right-32 lg:scale-[4.5] rotate-12 z-1" />
 			</div>
 		</div>
