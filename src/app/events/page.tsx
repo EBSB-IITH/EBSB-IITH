@@ -5,6 +5,7 @@ import Image from "next/image";
 import UpcomingEventHome, { EventDetails } from "./upcoming-event";
 import { PastEventCard, PastEventCardDetails } from "@/components/Past-Event";
 import { PastEvent,eventDetails, PastEvent_details } from "./each-past-event";
+import Carousel from "@/components/Carousel";
 
 export const upcomingEvent:EventDetails = {
 	title: "DUSSHERA'24",
@@ -38,11 +39,11 @@ const eventsData: { [year: string]: PastEvent[] } = {
 // Main events page component
 export default function EventsPage() {
   const [selectedYear, setSelectedYear] = useState("2024");
-  const [selectedEvent, setSelectedEvent] = useState(eventDetails["2024"].onam.title);
+  const [selectedEvent, setSelectedEvent] = useState("onam");
 
   const handleYearChange = (year: string) => {
     setSelectedYear(year);
-    setSelectedEvent(eventDetails[year]?.onam?.title || ""); // Set first event as selected on year change
+    setSelectedEvent("onam"); // Set first event as selected on year change
   };
 
   const handleEventChange = (event: string) => {
@@ -52,12 +53,20 @@ export default function EventsPage() {
   const renderPastEvents = () => {
     const eventData = eventDetails[selectedYear]?.[selectedEvent.toLowerCase()];
     if (!eventData) return <div>No details available</div>;
-
+  
     return (
       <div className="event-details">
-        <h2 className="text-center text-2xl font-bold">{eventData.title}</h2>
-        <p className="text-center">{eventData.description}</p>
-
+        <h2 className="text-center text-4xl p-40 font-bold">{eventData.title}<div className="text-2xl"> {eventData.date}</div>
+        <button className="text-xl relative bg-foreground text-background px-2 py-1 lg:py-0.5 rounded-lg w-fit z-30">
+          VIEW ALL PHOTOS
+          </button>
+          </h2>
+        <p className="text-center text-xl">{eventData.description}</p>
+        
+        <h1 className="text-3xl text-center my-10">
+          EVENTS
+        </h1>
+  
         {/* Photos Section */}
         <div className="photos-container grid grid-cols-3 gap-4 mt-4">
           {eventData.photos.map((photo, index) => (
@@ -65,6 +74,11 @@ export default function EventsPage() {
           ))}
         </div>
 
+        {/* Matter Section */}
+        <div className="matter px-10 text-xl mt-6">
+          <p>{eventData.matter}</p>
+        </div>
+  
         {/* Videos Section */}
         <div className="videos-container flex justify-around mt-6">
           {eventData.videos.map((video, index) => (
@@ -74,14 +88,11 @@ export default function EventsPage() {
             </video>
           ))}
         </div>
-
-        {/* Matter Section */}
-        <div className="matter mt-6">
-          <p>{eventData.matter}</p>
-        </div>
+  
       </div>
     );
   };
+  
 
   const yearButtons = Object.keys(eventDetails).map((year) => (
     <button
@@ -112,7 +123,7 @@ export default function EventsPage() {
       <div className="w-full">
         {/* Upcoming Events Section */}
         <div className="flex flex-col bg-customGray rounded-b-[100px] min-h-[42rem] pb-20">
-          <div className="flex flex-col ml-5 mt-20">
+          <div className="flex flex-col ml-5 mt-40">
             <div className="font-bold text-center text-3xl">UPCOMING EVENTS</div>
             <UpcomingEventHome {...upcomingEvent} />
           </div>
@@ -132,9 +143,14 @@ export default function EventsPage() {
 
           {/* Event Details Section */}
           <div className="mt-10 flex flex-col items-center">
-            <div className="mt-4">{renderPastEvents()}</div>
+            <div className="mt-4 border-2 border-black rounded-3xl pb-10 mx-10 shadow-lg">{renderPastEvents()}</div>
           </div>
         </div>
+
+        <div className="flex flex-col mt-12">
+        <div className="mx-auto font-bold text-2xl lg:text-3xl">PAST EVENTS</div>
+        <Carousel />
+      </div>
       </div>
     </main>
   );
