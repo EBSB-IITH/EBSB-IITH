@@ -16,7 +16,7 @@ export const eventDetails: {
 			title: "Onam 2024",
 			description: "Onam, the splendid harvest festival of Kerala, is a vibrant celebration that unites the state with an aura of enthusiasm and joy. This cherished tradition symbolizes the rich cultural heritage and communal harmony of Kerala. It is a time when the people of Kerala come together to welcome the mythical King Mahabali, adorning their homes with colorful floral arrangements and preparing a sumptuous feast.",
 			photos: ["/onam24/onam24-1.png", "/onam24/onam24-2.png","/onam24/onam24-3.png","/onam24/onam24-4.png"],
-			videos: ["/videos/onam2024_1.mp4"],
+			videos: [""],
 			matter1: "During our grand Onam celebration in August 2023, the EBSB Team of 2023-24 infused the spirit of this festive season with a diverse range of enjoyable activities. Participants gathered near the Old Mess Lawns to partake in the merriment.",
 			matter2:"From the exhilarating Tug of War, where teams competed to test their rope-whispering skills, to the playful Sundarikku Pottuthodal game that combined precision and creativity, the event was a delightful blend of tradition and fun. Musical Chairs added a rhythm to the festivities, with contestants dancing their way to a seat. The Lemon and Spoon challenge turned a simple fruit into a high-stakes companion on an exciting journey to victory. Finally, the Athapookalam, a flower rangoli, transformed the venue into a colorful art gallery curated by creative hands. It was a delightful celebration that left everyone with cherished memories and a deeper appreciation of Onam and Kerala's vibrant culture.",
 			date: "12 th October "
@@ -99,3 +99,23 @@ export function PastEvent_details({ title, type, year, description, matter }: Pa
 export function PastEventCarousel() {
 
 }
+// Data for past events
+const eventsData: { [year: string]: PastEvent[] } = {
+	"2024": [
+	  { title: "ONAM 2024", type: "Celebrations", year: "2024", description: "", matter: "" },
+	],
+	"2023": [
+	  { title: "ONAM 2023", type: "Celebrations", year: "2023", description: "", matter: "" },
+	  { title: "Dusshera 2023", type: "Celebrations", year: "2023", description: "", matter: "" },
+	  { title: "Diwali 2023", type: "Celebrations", year: "2023", description: "", matter: "" },
+	  { title: "Ethnic Night 2023", type: "Celebrations", year: "2023", description: "", matter: "" },
+	  { title: "Holi 2023", type: "Celebrations", year: "2023", description: "", matter: "" }
+	],
+	"2022": [
+	  { title: "ONAM 2022", type: "Celebrations", year: "2022", description: "", matter: "" },
+	  { title: "Dusshera 2022", type: "Celebrations", year: "2022", description: "", matter: "" },
+	  { title: "Diwali 2022", type: "Celebrations", year: "2022", description: "", matter: "" },
+	  { title: "Ethnic Night 2022", type: "Celebrations", year: "2022", description: "", matter: "" },
+	  { title: "Holi 2022", type: "Celebrations", year: "2022", description: "", matter: "" }
+	]
+  };
