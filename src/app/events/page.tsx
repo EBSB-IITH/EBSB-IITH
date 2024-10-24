@@ -55,51 +55,68 @@ export default function EventsPage() {
     if (!eventData) return <div>No details available</div>;
   
     return (
-      <div className="event-details">
-        <h2 className="text-center text-4xl p-40 font-bold">{eventData.title}<div className="text-2xl"> {eventData.date}</div>
-        <button className="text-xl relative bg-foreground text-background px-2 py-1 lg:py-0.5 rounded-lg w-fit z-30">
-          VIEW ALL PHOTOS
+      <div className="event-details border-2 border-black rounded-3xl shadow-lg bg-white mx-auto max-w-7xl">
+        <h2 className="text-center border-2 border-black bg-foreground text-white rounded-3xl text-6xl pt-40 pb-28 font-bold">
+          {eventData.title}
+          <div className="text-2xl">{eventData.date}</div>
+          <button className="text-xl relative bg-background text-foreground border-2 border-white px-2 py-1 mt-28 lg:py-0.5 rounded-lg w-fit z-30">
+            VIEW ALL PHOTOS
           </button>
-          </h2>
-        <p className="text-center text-xl">{eventData.description}</p>
-        
-        <h1 className="text-3xl text-center my-10">
-          EVENTS
-        </h1>
+        </h2>
+  
+        <p className="text-center text-xl px-20 py-20">{eventData.description}</p>
+  
+        <h1 className="text-3xl font-bold text-center my-10">EVENTS</h1>
+  
+        {/* Matter Section */}
+        <div className="matter p-20 text-xl">
+          <p>{eventData.matter1}</p>
+        </div>
   
         {/* Photos Section */}
-        <div className="photos-container grid grid-cols-3 gap-4 mt-4">
-          {eventData.photos.map((photo, index) => (
-            <img key={index} src={photo} alt={`Event photo ${index}`} className="rounded-lg shadow-md" />
-          ))}
+        <div className="photos-container overflow-hidden mt-4">
+          <div className="flex space-x-4 overflow-x-auto scrollbar-hidden">
+            {eventData.photos.map((photo, index) => (
+              <img
+                key={index}
+                src={photo}
+                alt={`Event photo ${index}`}
+                className="rounded-lg shadow-md h-80 w-auto flex-shrink-0" // Set height and allow width to auto adjust
+              />
+            ))}
+          </div>
         </div>
 
+  
         {/* Matter Section */}
-        <div className="matter px-10 text-xl mt-6">
-          <p>{eventData.matter}</p>
+        <div className="matter p-20 text-xl ">
+          <p>{eventData.matter2}</p>
         </div>
   
         {/* Videos Section */}
-        <div className="videos-container flex justify-around mt-6">
+        <div className="videos-container flex flex-wrap w-full justify-around mt-6">
           {eventData.videos.map((video, index) => (
-            <video key={index} controls className="rounded-lg shadow-md w-1/3">
-              <source src={video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <div key={index} className="video-wrapper w-full box-border rounded-3xl">
+              <video controls className="rounded-3xl shadow-md w-full ">
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           ))}
         </div>
-  
       </div>
     );
   };
+  
+  
   
 
   const yearButtons = Object.keys(eventDetails).map((year) => (
     <button
       key={year}
       onClick={() => handleYearChange(year)}
-      className={`bg-foreground text-white rounded-full py-3 px-7 hover:bg-blue-600 transition duration-200 ${
-        selectedYear === year ? "bg-blue-600" : "bg-foreground"
+      className={`relative  border-foreground text-xl  px-8 py-3 lg:py-2 rounded-3xl w-fit z-30 hover:bg-foreground hover:text-white transition duration-200 ${
+        selectedYear === year ? "bg-white font-bold text-foreground" : "bg-white border-2 text-foreground"
       }`}
     >
       {year}
@@ -110,8 +127,10 @@ export default function EventsPage() {
     <button
       key={event}
       onClick={() => handleEventChange(event)}
-      className={`bg-foreground text-white rounded-full py-3 px-7 hover:bg-blue-600 transition duration-200 ${
-        selectedEvent === event ? "bg-blue-600" : "bg-foreground"
+      className={`relative px-8 py-3 lg:py-2 rounded-3xl w-fit z-30 hover:bg-foreground hover:text-white transition duration-200 ${
+        selectedEvent === event 
+          ? "bg-white text-foreground font-bold text-2xl"  // Selected button styles
+          : "bg-white text-foreground text-xl"  // Unselected button styles
       }`}
     >
       {event.charAt(0).toUpperCase() + event.slice(1)}
@@ -122,9 +141,18 @@ export default function EventsPage() {
     <main className="min-h-screen flex flex-col items-center justify-center">
       <div className="w-full">
         {/* Upcoming Events Section */}
+
+        <div className="flex flex-col *:mx-auto bg-foreground text-background rounded-b-[4rem] lg:rounded-b-[8rem] h-[26rem] lg:h-[44rem] pt-[2rem] relative">
+        <div className="flex flex-col *:mx-auto mt-24 lg:mt-52">
+          <div className="text-[2rem] lg:text-[3.4rem] font-extrabold w-[20rem] lg:w-[32rem] text-center leading-[2rem] lg:leading-[3.5rem] ">UPCOMING EVENTS</div>
+          {/* <div className="text-center w-[20rem] lg:w-[40rem] pt-8">" Sardar Patel gave us Ek Bharat, it is now the solemn duty of 125 crore Indians to collectively make Shrestha Bharat. "</div> */}
+        </div>
+        
+      </div>
+
+
         <div className="flex flex-col bg-customGray rounded-b-[100px] min-h-[42rem] pb-20">
           <div className="flex flex-col ml-5 mt-40">
-            <div className="font-bold text-center text-3xl">UPCOMING EVENTS</div>
             <UpcomingEventHome {...upcomingEvent} />
           </div>
         </div>
@@ -137,13 +165,13 @@ export default function EventsPage() {
           <div className="flex justify-center space-x-4 py-5">{yearButtons}</div>
 
           {/* Event Buttons */}
-          <div className="flex bg-foreground text-white flex-row justify-center py-5 mx-40 rounded-[40px] text-lg">
+          <div className="flex bg-white text-white flex-row justify-center py-5 mx-48 rounded-[40px] text-xlg">
             {eventButtons}
           </div>
 
           {/* Event Details Section */}
           <div className="mt-10 flex flex-col items-center">
-            <div className="mt-4 border-2 border-black rounded-3xl pb-10 mx-10 shadow-lg">{renderPastEvents()}</div>
+            <div className="mt-4 ">{renderPastEvents()}</div>
           </div>
         </div>
 
