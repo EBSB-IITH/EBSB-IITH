@@ -34,7 +34,7 @@ export default function EventsPage() {
 
     return (
       <div className="event-details border-2 border-foreground rounded-3xl shadow-lg bg-[#FAF5EA] mx-auto w-full lg:max-w-7xl px-5 lg:px-0">
-        <h2 className="text-center flex justify-around border-black bg-foreground text-white rounded-3xl text-2xl lg:text-6xl pt-10 lg:pt-32 font-bold relative">
+        <h2 className="text-center flex justify-between border-black bg-foreground text-white rounded-3xl text-2xl lg:text-6xl pt-10 lg:pt-32 font-bold relative">
           <div
             className="absolute top-0 right-0 h-full w-full bg-no-repeat z-0"
             style={{
@@ -51,18 +51,19 @@ export default function EventsPage() {
               backgroundPosition: "top right"
             }}
           ></div>
-          <div className="flex z-20 items-end">
-            <img src="/photos/tree2.png" alt="Event photo 3" className="w-24 lg:w-80 object-cover" />
-            <img src="/photos/bowl.png" alt="Bowl photo" className="w-10 lg:w-20 object-cover -ml-12 lg:-ml-36" />
-          </div>
-          <div>
-            <div>{eventData.title}</div>
-            <div className="text-lg lg:text-2xl">{eventData.date}</div>
-            <button className="text-sm lg:text-xl relative bg-background text-foreground border-2 border-white px-2 py-1 mt-10 lg:mt-28 lg:py-0.5 rounded-lg w-fit z-30">
-              VIEW ALL PHOTOS
-            </button>
-          </div>
-          <img src="/photos/tree1.png" alt="Event photo 3" className="w-24 lg:w-80 z-20 object-cover" />
+          
+              <div className="flex z-20 items-end">
+              <img src="/photos/tree2.png" alt="Event photo 3" className="w-24 lg:h-full lg:w-80 object-cover" />
+              <img src="/photos/bowl.png" alt="Bowl photo" className="w-10 lg:w-20 object-cover -ml-12 lg:-ml-28" />
+            </div>
+            <div>
+              <div>{eventData.title}</div>
+              <div className="text-lg lg:text-2xl">{eventData.date}</div>
+              <button className="text-sm lg:text-xl relative bg-background text-foreground border-2 border-white px-2 py-1 mt-10 lg:mt-28 lg:py-0.5 rounded-lg w-fit z-30">
+                VIEW ALL PHOTOS
+              </button>
+            </div>
+            <img src="/photos/tree1.png" alt="Event photo 3" className="w-24 lg:w-80  z-20 object-cover" />
         </h2>
 
         <p className="text-center text-lg lg:text-xl px-5 lg:px-20 py-10 lg:py-16">{eventData.description}</p>
@@ -221,10 +222,11 @@ export default function EventsPage() {
             ></div>
 
             {/* Upcoming event details */}
-            <div className="relative mb-10 mt-10 lg:mt-0 z-10 w-full">
-              <div className="text-[1.5rem] lg:text-[2rem] font-bold leading-[2rem] lg:leading-[3.5rem] text-center">
-                UPCOMING EVENTS
-              </div>
+            <div className="relative  mb-10 mt-10 lg:mt-0 z-10 w-full">
+            <div className="hidden lg:block text-[1.5rem] lg:text-[2rem] font-bold leading-[2rem] lg:leading-[3.5rem] text-center">
+              UPCOMING EVENT
+            </div>
+
               <div className="w-full flex justify-center lg:justify-start">
                 <UpcomingEventHome {...upcomingEvent} />
               </div>
