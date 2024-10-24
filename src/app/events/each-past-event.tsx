@@ -84,21 +84,18 @@ export const eventDetails: {
   
 export function PastEvent_details({ title, type, year, description, matter }: PastEvent) {
 	return (
-		<div className="flex flex-col">
-			<div>{title}</div>
-			<div>{type}</div>
-			<div>{year}</div>
-			<div>{description}</div>
-			<div>{matter}</div>
-
-			<WhiteButton text="Explore More" />
+		<div className="flex flex-col p-4 sm:p-6 md:p-8 bg-white rounded-xl shadow-lg">
+		  <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3">{title}</div>
+		  <div className="text-sm sm:text-base md:text-lg text-gray-600 mb-1 sm:mb-2">{type}</div>
+		  <div className="text-sm sm:text-base md:text-lg text-gray-600 mb-2 sm:mb-3">{year}</div>
+		  <div className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6">{description}</div>
+		  <div className="text-sm sm:text-base md:text-lg mb-4 sm:mb-6">{matter}</div>
+		  <WhiteButton text="Explore More"/>
 		</div>
-	)
+	  );
 }
 
-export function PastEventCarousel() {
 
-}
 // Data for past events
 const eventsData: { [year: string]: PastEvent[] } = {
 	"2024": [
