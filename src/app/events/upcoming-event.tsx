@@ -19,26 +19,26 @@ export default function UpcomingEventHome({ title, description, date, time, venu
 			</h1>
 			
 			{/* Description with better readability on mobile */}
-			<p className="text-base sm:text-lg  md:text-xl mb-4 sm:mb-6 md:mb-8 leading-relaxed">
+			<p className="normal-text text-base sm:text-lg  md:text-xl mb-4 sm:mb-6 md:mb-8 leading-relaxed">
 			  {description}
 			</p>
 			
 			{/* Event details with improved spacing */}
 			<div className="space-y-2 sm:space-y-3">
-			  <p className="text-sm sm:text-base md:text-lg">
+			  <p className="normal-text text-sm sm:text-base md:text-lg">
 				Date - {date}
 			  </p>
-			  <p className="text-sm sm:text-base md:text-lg">
+			  <p className="normal-text text-sm sm:text-base md:text-lg">
 				Time - {time}
 			  </p>
-			  <p className="text-sm  sm:text-base md:text-lg">
+			  <p className="normal-text text-sm  sm:text-base md:text-lg">
 				Venue - {venue}
 			  </p>
 			</div>
 		  </div>
   
 		  {/* Button container with improved mobile layout */}
-		  <div className=" sm:gap-4  mt-4 sm:mt-6">
+		  <div className="normal-text sm:gap-4  mt-4 sm:mt-6">
 			<WhiteButton text="REGISTER NOW" />
 		  </div>
 		</div>

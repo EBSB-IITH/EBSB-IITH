@@ -50,3 +50,17 @@ body {
 .scrollbar-hidden {
   -ms-overflow-style: none; /* IE and Edge */
 }
+
+.normal-text {
+  font-family: "Lato", sans-serif;
+  font-size: 12px; /* Default for mobile screens */
+  font-weight: 400;
+  line-height: 14.4px;
+}
+
+@media (min-width: 1024px) { /* Applies to larger screens, like laptops and desktops */
+  .normal-text {
+    font-size: 16px;
+    line-height: 19.2px; /* Adjust line-height proportionally if needed */
+  }
+}

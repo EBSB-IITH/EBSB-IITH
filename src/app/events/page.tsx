@@ -66,11 +66,11 @@ export default function EventsPage() {
             <img src="/photos/tree1.png" alt="Event photo 3" className="w-24 lg:w-80  z-20 object-cover" />
         </h2>
 
-        <p className="text-center text-lg lg:text-xl px-5 lg:px-20 py-10 lg:py-16">{eventData.description}</p>
+        <p className="normal-text text-center text-lg lg:text-xl px-5 lg:px-20 py-10 lg:py-16">{eventData.description}</p>
 
         <h1 className="text-xl lg:text-3xl font-bold text-center my-5">EVENTS</h1>
 
-        <div className="matter pt-0 p-5 lg:p-20 text-lg lg:text-xl">
+        <div className="normal-text matter pt-0 p-5 lg:p-20 text-lg lg:text-xl">
           <p>{eventData.matter1}</p>
         </div>
 
@@ -87,7 +87,7 @@ export default function EventsPage() {
           </div>
         </div>
 
-        <div className="matter p-5 lg:p-20 text-lg lg:text-xl">
+        <div className="normal-text matter p-5 lg:p-20 text-lg lg:text-xl">
           <p>{eventData.matter2}</p>
         </div>
 
