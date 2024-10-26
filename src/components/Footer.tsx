@@ -11,8 +11,8 @@ export default function Footer() {
 				<Link href="/events"><div>Upcoming Events</div></Link>
 				<Link href="/yuva-sangam"><div>Yuva Sangam</div></Link>
 				<Link href="/team"><div>Team</div></Link>
-				<Link href="/"><div>EBSB Offical</div></Link>
-				<Link href="/"><div>IITH</div></Link>
+				<Link href="https://ekbharat.gov.in"><div>EBSB Offical</div></Link>
+				<Link href="https://iith.ac.in"><div>IITH</div></Link>
 			</div>
 			<hr className="h-px w-full bg-foreground" />
 			<div className="flex flex-col lg:flex-row mt-8 lg:mt-14 ">

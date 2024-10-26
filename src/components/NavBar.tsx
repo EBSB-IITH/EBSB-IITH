@@ -60,13 +60,15 @@ export default function NavBar() {
 						className={'block absolute right-4 top-4  lg:relative lg:hidden lg:mx-8'}
 					/>
 				</Link>
-				<Image
-					src="/iith-logo.png"
-					alt="EBSB Logo"
-					width={45}
-					height={45}
-					className={'hidden lg:block lg:mx-8 '}
-				/>
+				<Link href="https://iith.ac.in">
+					<Image
+						src="/iith-logo.png"
+						alt="EBSB Logo"
+						width={45}
+						height={45}
+						className={'hidden lg:block lg:mx-8 '}
+					/>
+				</Link>
 			</div>
 		</div >
 
