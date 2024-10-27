@@ -12,10 +12,10 @@ export function EthnicNight23() {
 				<WhiteButton text="Explore More" />
 			</div>
 
-			<img src="/ethnicNight/23/man.svg" className="absolute right-0 lg:right-[2rem] scale-[1.2] lg:scale-[2.3] bottom-[2rem] lg:bottom-[8rem] z-10" />
-			<img src="/ethnicNight/23/woman.svg" className="absolute left-8 lg:left-[4rem] bottom-[2rem] lg:bottom-[8rem] scale-[1.2] lg:scale-[2.3] z-10" />
-			<img src="/watermark.svg" className="absolute left-[14rem] scale-[3] bottom-24 z-0" />
-			<img src="/watermark.svg" className="absolute right-10 scale-[5] top-8 " />
+			<img src="ethnicNight/23/man.svg" className="absolute right-0 lg:right-[2rem] scale-[1.2] lg:scale-[2.3] bottom-[2rem] lg:bottom-[8rem] z-10" />
+			<img src="ethnicNight/23/woman.svg" className="absolute left-8 lg:left-[4rem] bottom-[2rem] lg:bottom-[8rem] scale-[1.2] lg:scale-[2.3] z-10" />
+			<img src="watermark.svg" className="absolute left-[14rem] scale-[3] bottom-24 z-0" />
+			<img src="watermark.svg" className="absolute right-10 scale-[5] top-8 " />
 		</div >
 	)
 }

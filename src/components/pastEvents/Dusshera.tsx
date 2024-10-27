@@ -10,10 +10,10 @@ export function Dusshera23() {
 			<div className={buttonStyle}>
 				<WhiteButton text="Explore More" />
 			</div>
-			<img src="/dusshera/24/diya.svg" className="absolute right-[-3rem] scale-[0.5] lg:scale-[0.85] bottom-[4rem] lg:bottom-1 z-10" />
-			<img src="/dusshera/24/diya.svg" className="absolute left-[-3rem] bottom-[4rem] lg:bottom-1 scale-[0.5] lg:scale-[0.85] z-10" />
-			<img src="/watermark.svg" className="absolute left-10 scale-[5] bottom-24 z-0" />
-			<img src="/watermark.svg" className="absolute right-10 scale-[3] top-12 " />
+			<img src="dusshera/24/diya.svg" className="absolute right-[-3rem] scale-[0.5] lg:scale-[0.85] bottom-[4rem] lg:bottom-1 z-10" />
+			<img src="dusshera/24/diya.svg" className="absolute left-[-3rem] bottom-[4rem] lg:bottom-1 scale-[0.5] lg:scale-[0.85] z-10" />
+			<img src="watermark.svg" className="absolute left-10 scale-[5] bottom-24 z-0" />
+			<img src="watermark.svg" className="absolute right-10 scale-[3] top-12 " />
 		</div >
 	)
 }

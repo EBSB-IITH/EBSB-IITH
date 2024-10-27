@@ -1,17 +1,17 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
 	return (
 		<div className="flex flex-col px-6 lg:px-32 mt-20 mb-24">
 			<div className="font-bold text-3xl text-center lg:text-start">QUICK LINKS</div>
 			<div className="flex flex-col lg:flex-row mt-8 lg:mt-10 mb-10 lg:mb-16 text-lg *:mt-2 lg:*:mt-0 text-center lg:text-start justify-between">
-				<div>Home</div>
-				<div>About Us</div>
-				<div>Upcoming Events</div>
-				<div>Yuva Sangam</div>
-				<div>Team</div>
-				<div>EBSB Offical</div>
-				<div>IITH</div>
+				<Link href="/"><div>Home</div></Link>
+				<Link href="/about"><div>About Us</div></Link>
+				<Link href="/events"><div>Upcoming Events</div></Link>
+				<Link href="/yuva-sangam"><div>Yuva Sangam</div></Link>
+				<Link href="/team"><div>Team</div></Link>
+				<Link href="https://ekbharat.gov.in"><div>EBSB Offical</div></Link>
+				<Link href="https://iith.ac.in"><div>IITH</div></Link>
 			</div>
 			<hr className="h-px w-full bg-foreground" />
 			<div className="flex flex-col lg:flex-row mt-8 lg:mt-14 ">
@@ -19,8 +19,8 @@ export default function Footer() {
 
 				<div className="flex flex-col lg:mr-96">
 					<div className="flex flex-col lg:flex-row">
-						<Image
-							src="/ebsb-logo.png"
+						<img
+							src="ebsb-logo.png"
 							alt="EBSB Logo"
 							width={100}
 							height={100}
@@ -33,25 +33,25 @@ export default function Footer() {
 					</div>
 					<div className="flex flex-row mt-4 lg:mt-8 *:mr-6 mx-auto lg:mx-0">
 						<img
-							src="/ig-logo.svg"
+							src="ig-logo.svg"
 							alt="Logo"
 							width={40}
 							height={40}
 						/>
-						<Image
-							src="/youtube-logo.svg"
+						<img
+							src="youtube-logo.svg"
 							alt="Logo"
 							width={40}
 							height={40}
 						/>
-						<Image
-							src="/fb-logo.svg"
+						<img
+							src="fb-logo.svg"
 							alt="Logo"
 							width={40}
 							height={40}
 						/>
-						<Image
-							src="/x-logo.svg"
+						<img
+							src="x-logo.svg"
 							alt="Logo"
 							width={40}
 							height={40}

@@ -1,3 +1,4 @@
+/* eslint @typescript-eslint/no-explicit-any: "off" */
 'use client';
 
 import { ReactNode, Ref, useEffect, useRef, useState } from "react";
@@ -24,7 +25,7 @@ export default function Carousel() {
 	const touchLastPos = useRef(0)
 
 	useEffect(() => {
-		let padding = (document.getElementById("html")!.clientWidth - evRef.current!.children[0].clientWidth) / 2
+		const padding = (document.getElementById("html")!.clientWidth - evRef.current!.children[0].clientWidth) / 2
 
 		evRef.current!.style.paddingLeft = padding.toString() + "px";
 		evRef.current!.style.paddingRight = padding.toString() + "px";
@@ -40,10 +41,9 @@ export default function Carousel() {
 
 	useEffect(() => {
 		for (let i = 0; i < totalElements; i++) {
-			let elem = evRef.current!.children[3] as HTMLDivElement
+			const elem = evRef.current!.children[3] as HTMLDivElement
 
-
-			let boxsize = elem.offsetWidth + elem.computedStyleMap().get("margin-right")!.value;
+			const boxsize = elem.offsetWidth + (elem.computedStyleMap().get("margin-right")! as any).value;
 
 			console.log(boxsize);
 			(evRef.current!.children[i] as HTMLDivElement).style.transform = "translate(-" + (boxsize * currentIdx) + "px,0px)"
@@ -91,7 +91,7 @@ export default function Carousel() {
 				(buttonDivRef.current!.children[currentIdx] as HTMLDivElement).style.width = "0.75rem";
 			}
 			catch (e) {
-				console.error(e)
+				console.log(e)
 			}
 		}
 	}, [currentIdx])
@@ -110,10 +110,10 @@ export default function Carousel() {
 			</div>
 
 			<div className="absolute left-0 h-full hidden lg:flex flex-col *:my-auto overflow-clip px-4 rounded-r-lg hover:bg-[rgba(0,0,0,0.1)]" onClick={() => setCurrentIdx(currentIdx == 0 ? totalElements - 1 : currentIdx - 1)}>
-				<img src="/arrow-left.svg" className="scale-[4] " />
+				<img src="arrow-left.svg" className="scale-[4] " />
 			</div>
 			<div className="absolute right-0 h-full hidden lg:flex flex-col *:my-auto overflow-clip px-4 rounded-l-lg hover:bg-[rgba(0,0,0,0.1)]" onClick={() => setCurrentIdx(currentIdx == totalElements - 1 ? 0 : currentIdx + 1)}>
-				<img src="/arrow-right.svg" className="scale-[4]" />
+				<img src="arrow-right.svg" className="scale-[4]" />
 			</div>
 
 		</div >

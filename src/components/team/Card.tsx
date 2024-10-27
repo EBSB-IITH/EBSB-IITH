@@ -1,14 +1,14 @@
 export default function Card({ src, title, name }: { src: string, title: string, name: string }) {
-	let toRenderTitle = true
+	let torendertitle = true
 	if (title == "") {
-		toRenderTitle = false
+		torendertitle = false
 	}
 	return (
-		<div className="flex flex-col text-center w-fit h-fit">
+		<div className="flex flex-col text-center w-min lg:w-fit h-fit">
 
-			<img data-toRenderTitle={toRenderTitle} className="rounded-2xl mb-4 data-[toRenderTitle=true]:w-[15rem] data-[toRenderTitle=true]:h-[15rem] data-[toRenderTitle=false]:w-[13rem] data-[toRenderTitle=false]:h-[13rem]" src={src} />
-			<div data-toRenderTitle={toRenderTitle} className="data-[toRenderTitle=false]:hidden font-semibold text-lg">{title}</div>
-			<div>{name}</div>
+			<img data-torendertitle={torendertitle} className="rounded-2xl mb-4 data-[torendertitle=true]:min-w-[11rem] lg:data-[torendertitle=true]:w-[15rem] data-[torendertitle=true]:h-[11rem] lg:data-[torendertitle=true]:h-[15rem] data-[torendertitle=false]:min-w-[7rem]  lg:data-[torendertitle=false]:min-w-[13rem] data-[torendertitle=false]:h-[7rem] lg:data-[torendertitle=false]:h-[13rem]" src={src} />
+			<div data-torendertitle={torendertitle} className="data-[torendertitle=false]:hidden font-semibold text-lg">{title}</div>
+			<div className="text-wrap leading-snug">{name}</div>
 		</div>
 	)
 }

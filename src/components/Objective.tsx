@@ -1,4 +1,8 @@
+'use client';
+
+import Link from "next/link";
 import { GrayButton } from "./Button";
+import { usePathname } from "next/navigation";
 
 export const enum ObjectiveCardType { Small, Medium, Large }
 export default function ObjectiveCard({ heading, description, imgSrc, type, style }: { heading: string, description: string, imgSrc: string, type: ObjectiveCardType, style: string }) {
@@ -13,7 +17,7 @@ export default function ObjectiveCard({ heading, description, imgSrc, type, styl
 				</div>
 				<div className="relative">
 					<img
-						src="/watermark.svg"
+						src="watermark.svg"
 						className="absolute bottom-32 z-[0] scale-[3.5]"
 					/>
 					<img
@@ -34,11 +38,11 @@ export default function ObjectiveCard({ heading, description, imgSrc, type, styl
 				</div>
 				<div className="relative">
 					<img
-						src="/watermark.svg"
+						src="watermark.svg"
 						className="absolute bottom-16 right-64 z-[0] scale-[2.5]"
 					/>
 					<img
-						src="/watermark.svg"
+						src="watermark.svg"
 						className="absolute bottom-40 left-48 z-[0] scale-[2]"
 					/>
 					<img
@@ -59,7 +63,7 @@ export default function ObjectiveCard({ heading, description, imgSrc, type, styl
 				</div>
 				<div className="relative">
 					<img
-						src="/watermark.svg"
+						src="watermark.svg"
 						className="absolute bottom-12 right-0 z-0 scale-[1.5]"
 					/>
 					<img
@@ -82,7 +86,7 @@ export function ObjectivesSection() {
 				<ObjectiveCard
 					heading="CREATE"
 					description="An Environment which promotes sharing best practices and experiences"
-					imgSrc="/objectiveSvg/create.svg"
+					imgSrc="objectives/create.png"
 					type={ObjectiveCardType.Small}
 					style="hidden lg:flex"
 				/>
@@ -90,7 +94,7 @@ export function ObjectivesSection() {
 				<ObjectiveCard
 					heading="SHOWCASE"
 					description="The Rich Heritage and Culture"
-					imgSrc="/objectiveSvg/showcase.svg"
+					imgSrc="objectives/showcase.png"
 					type={ObjectiveCardType.Medium}
 					style=""
 				/>
@@ -98,21 +102,21 @@ export function ObjectivesSection() {
 				<ObjectiveCard
 					heading="CELEBRATE"
 					description="The Unity in Diversity of our Nation"
-					imgSrc="/objectiveSvg/celebrate.svg"
+					imgSrc="objectives/celebrate.png"
 					type={ObjectiveCardType.Large}
 					style=""
 				/>
 				<ObjectiveCard
 					heading="ESTABLISH"
 					description="Long-Term Engagements"
-					imgSrc="/objectiveSvg/establish.svg"
+					imgSrc="objectives/establish.png"
 					type={ObjectiveCardType.Medium}
 					style=""
 				/>
 				<ObjectiveCard
 					heading="PROMOTE"
 					description="The Spirit of National integration"
-					imgSrc="/objectiveSvg/promote.svg"
+					imgSrc="objectives/promote.png"
 					type={ObjectiveCardType.Small}
 					style="hidden lg:flex"
 				/>
@@ -121,20 +125,20 @@ export function ObjectivesSection() {
 				<ObjectiveCard
 					heading="CREATE"
 					description="An Environment which promotes sharing best practices and experiences"
-					imgSrc="/objectiveSvg/create.svg"
+					imgSrc="objectives/create.png"
 					type={ObjectiveCardType.Small}
 					style="mr-2"
 				/>
 				<ObjectiveCard
 					heading="PROMOTE"
 					description="The Spirit of National integration"
-					imgSrc="/objectiveSvg/promote.svg"
+					imgSrc="objectives/promote.png"
 					type={ObjectiveCardType.Small}
 					style=""
 				/>
 			</div>
 
-			<GrayButton text="KNOW MORE ABOUT US" />
+			<Link href="/about"><div data-tonotshow={(usePathname() == "/about").valueOf()} className="data-[tonotshow=true]:hidden"><GrayButton text="KNOW MORE ABOUT US" /></div></Link>
 
 		</div>
 	)
