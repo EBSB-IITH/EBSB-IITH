@@ -91,7 +91,7 @@ export default function Carousel() {
 				(buttonDivRef.current!.children[currentIdx] as HTMLDivElement).style.width = "0.75rem";
 			}
 			catch (e) {
-				console.error(e)
+				console.log(e)
 			}
 		}
 	}, [currentIdx])

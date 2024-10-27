@@ -32,13 +32,13 @@ export default function Page() {
 					src="/watermark.svg"
 					className="w-fit z-0 right-[3rem] lg:right-[8rem] bottom-[6rem] lg:bottom-[19rem] absolute scale-[-2.5] lg:scale-[-5]" />
 				<div className="absolute self-center hidden lg:flex flex-row bottom-[-2rem] bg-white text-foreground text-xl px-6 py-6 rounded-[3rem] drop-shadow-lg *:mx-8">
-					<div data-isFullTeam={isFullTeam} onClick={() => { setIsFullTeam(true); setIsPR(true); setIsFinance(true); setIsDesign(true); setIsWeb(true); setIsMultimedia(true); setIsEvents(true) }} className="data-[isFullTeam=true]:font-bold">Full Team</div>
-					<div data-isPr={isPR && !isFullTeam} onClick={() => { setIsFullTeam(false); setIsPR(true); setIsFinance(false); setIsDesign(false); setIsWeb(false); setIsMultimedia(false); setIsEvents(false) }} className="data-[isPr=true]:font-bold">PR & Networking</div>
-					<div data-isEvents={isEvents && !isFullTeam} onClick={() => { setIsFullTeam(false); setIsPR(false); setIsFinance(false); setIsDesign(false); setIsWeb(false); setIsMultimedia(false); setIsEvents(true) }} className="data-[isEvents=true]:font-bold">Events</div>
-					<div data-isFinance={isFinance && !isFullTeam} onClick={() => { setIsFullTeam(false); setIsPR(false); setIsFinance(true); setIsDesign(false); setIsWeb(false); setIsMultimedia(false); setIsEvents(false) }} className="data-[isFinance=true]:font-bold">Finance & Equipment</div>
-					<div data-isDesign={isDesign && !isFullTeam} onClick={() => { setIsFullTeam(false); setIsPR(false); setIsFinance(false); setIsDesign(true); setIsWeb(false); setIsMultimedia(false); setIsEvents(false) }} className="data-[isDesign=true]:font-bold">Design</div>
-					<div data-isMultimedia={isMultimedia && !isFullTeam} onClick={() => { setIsFullTeam(false); setIsPR(false); setIsFinance(false); setIsDesign(false); setIsWeb(false); setIsMultimedia(true); setIsEvents(false) }} className="data-[isMultimedia=true]:font-bold">Multimedia</div>
-					<div data-isWeb={isWeb && !isFullTeam} onClick={() => { setIsFullTeam(false); setIsPR(false); setIsFinance(false); setIsDesign(false); setIsWeb(true); setIsMultimedia(false); setIsEvents(false) }} className="data-[isWeb=true]:font-bold">Web</div>
+					<div data-isfullteam={isFullTeam} onClick={() => { setIsFullTeam(true); setIsPR(true); setIsFinance(true); setIsDesign(true); setIsWeb(true); setIsMultimedia(true); setIsEvents(true) }} className="data-[isfullteam=true]:font-bold">Full Team</div>
+					<div data-ispr={isPR && !isFullTeam} onClick={() => { setIsFullTeam(false); setIsPR(true); setIsFinance(false); setIsDesign(false); setIsWeb(false); setIsMultimedia(false); setIsEvents(false) }} className="data-[ispr=true]:font-bold">PR & Networking</div>
+					<div data-isevents={isEvents && !isFullTeam} onClick={() => { setIsFullTeam(false); setIsPR(false); setIsFinance(false); setIsDesign(false); setIsWeb(false); setIsMultimedia(false); setIsEvents(true) }} className="data-[isevents=true]:font-bold">Events</div>
+					<div data-isfinance={isFinance && !isFullTeam} onClick={() => { setIsFullTeam(false); setIsPR(false); setIsFinance(true); setIsDesign(false); setIsWeb(false); setIsMultimedia(false); setIsEvents(false) }} className="data-[isfinance=true]:font-bold">Finance & Equipment</div>
+					<div data-isdesign={isDesign && !isFullTeam} onClick={() => { setIsFullTeam(false); setIsPR(false); setIsFinance(false); setIsDesign(true); setIsWeb(false); setIsMultimedia(false); setIsEvents(false) }} className="data-[isdesign=true]:font-bold">Design</div>
+					<div data-ismultimedia={isMultimedia && !isFullTeam} onClick={() => { setIsFullTeam(false); setIsPR(false); setIsFinance(false); setIsDesign(false); setIsWeb(false); setIsMultimedia(true); setIsEvents(false) }} className="data-[ismultimedia=true]:font-bold">Multimedia</div>
+					<div data-isweb={isWeb && !isFullTeam} onClick={() => { setIsFullTeam(false); setIsPR(false); setIsFinance(false); setIsDesign(false); setIsWeb(true); setIsMultimedia(false); setIsEvents(false) }} className="data-[isweb=true]:font-bold">Web</div>
 				</div>
 			</div>
 
@@ -63,12 +63,12 @@ export default function Page() {
 				</motion.div>
 			</div>
 
-			<div data-isFullTeam={isFullTeam} className="flex data-[isFullTeam=false]:hidden flex-row w-full justify-evenly mb-16">
+			<div data-isfullteam={isFullTeam} className="flex data-[isfullteam=false]:hidden flex-row w-full justify-evenly mb-16">
 				<Card src="/team/santoshi.png" title="OVERALL HEAD" name="Santoshi Gaytri Mavuru" />
 				<Card src="/team/tanvisree.png" title="MENTOR" name="Tanvisree Nimma" />
 			</div>
 
-			<div data-isPR={isPR} className="flex flex-col data-[isPR=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
+			<div data-ispr={isPR} className="flex flex-col data-[ispr=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">PR & NETWORKING</div>
 				<div className="text-lg mb-6">The art of crafting & sparking social buzz</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
@@ -85,7 +85,7 @@ export default function Page() {
 
 
 
-			<div data-isFinance={isFinance} className="flex flex-col data-[isFinance=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
+			<div data-isfinance={isFinance} className="flex flex-col data-[isfinance=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">FINANCE & EQUIPMENT</div>
 				<div className="text-lg mb-6">The art of crafting & sparking social buzz</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
@@ -101,7 +101,7 @@ export default function Page() {
 			</div>
 
 
-			<div data-isEvents={isEvents} className="flex flex-col data-[isEvents=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
+			<div data-isevents={isEvents} className="flex flex-col data-[isevents=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">EVENTS</div>
 				<div className="text-lg mb-6">The art of crafting & sparking social buzz</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
@@ -117,7 +117,7 @@ export default function Page() {
 			</div>
 
 
-			<div data-isDesign={isDesign} className="flex flex-col data-[isDesign=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
+			<div data-isdesign={isDesign} className="flex flex-col data-[isdesign=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">DESIGN</div>
 				<div className="text-lg mb-6">The art of crafting & sparking social buzz</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
@@ -130,7 +130,7 @@ export default function Page() {
 				</div>
 			</div>
 
-			<div data-isMultimedia={isMultimedia} className="flex flex-col data-[isMultimedia=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
+			<div data-ismultimedia={isMultimedia} className="flex flex-col data-[ismultimedia=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">MULTIMEDIA</div>
 				<div className="text-lg mb-6">The art of crafting & sparking social buzz</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
@@ -143,7 +143,7 @@ export default function Page() {
 				</div>
 			</div>
 
-			<div data-isWeb={isWeb} className="flex flex-col data-[isWeb=false]:hidden justify-items-center mb-2 lg:mb-24 *:mx-auto">
+			<div data-isweb={isWeb} className="flex flex-col data-[isweb=false]:hidden justify-items-center mb-2 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">WEB</div>
 				<div className="text-lg mb-6">The art of crafting & sparking social buzz</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">

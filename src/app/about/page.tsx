@@ -8,7 +8,7 @@ export default function Page() {
 				<div className="flex flex-col *:mx-auto mt-24 z-10 lg:mt-52">
 					<div className="text-[1.8rem] lg:text-[3.4rem] font-extrabold text-center leading-tight">WHAT DO WE DO</div>
 					<div className="text-center text-[0.9rem] lg:text-[1rem] w-[20rem] lg:w-[60rem] py-8">EBSB is a programme for promoting national integration through systematic exchange between paired institutes in the cultural, literary and linguistic fields. We intend to learn the linguistic and cultural aspects of the home state of our paired institute, covering history, culture, language, cuisine, festivals, clothing etc. <br /><br />The EBSB club has been formed at IITH to carry forward activities under the programme with our paired institute, IIT BHU. We aim to celebrate a plethora of Indian festivals and customs (paying special attention to those of Uttar Pradesh) in ways which are both enjoyable and informative which would thereby educate our fellow students while having fun.</div>
-					<img src="/about/head.svg" className="z-10 px-16 mt-4" />
+					<img src="/about/head.png" className="z-10 px-16 mt-4" />
 				</div>
 				<img
 					src="/watermark.svg"
