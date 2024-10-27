@@ -12,7 +12,7 @@ export const eventDetails: {
 	[year: string]: { [event: string]: { title: string; description: string; photos: string[]; videos: string[]; matter1: string;matter2:string;date: string } };
 } = {
 	"2024": {
-		onam: {
+		onam: {	
 			title: "Onam 2024",
 			description: "Onam, the splendid harvest festival of Kerala, is a vibrant celebration that unites the state with an aura of enthusiasm and joy. This cherished tradition symbolizes the rich cultural heritage and communal harmony of Kerala. It is a time when the people of Kerala come together to welcome the mythical King Mahabali, adorning their homes with colorful floral arrangements and preparing a sumptuous feast.",
 			photos: ["/onam24/onam24-1.png", "/onam24/onam24-2.png","/onam24/onam24-3.png","/onam24/onam24-4.png"],

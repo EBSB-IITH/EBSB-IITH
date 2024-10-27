@@ -11,7 +11,7 @@ export default function NavBar() {
 
 
 	return (
-		< div className="absolute top-0 z-20 w-full" >
+		< div className="absolute top-0 z-50 w-full" >
 
 			<div className={'relative flex flex-row pt-4 px-4 lg:py-6 align-middle lg:justify-center'}>
 				<Link href="/">

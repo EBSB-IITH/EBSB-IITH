@@ -15,7 +15,7 @@ export const upcomingEvent: EventDetails = {
   venue: "Near old mess lawns"
 };
 
-export default function EventsPage() {
+export default function Page() {
   const [selectedYear, setSelectedYear] = useState("2024");
   const [selectedEvent, setSelectedEvent] = useState("onam");
 
@@ -33,7 +33,7 @@ export default function EventsPage() {
     if (!eventData) return <div>No details available</div>;
 
     return (
-      <div className="event-details border-2 border-foreground rounded-3xl shadow-lg bg-[#FAF5EA] mx-auto w-full lg:max-w-7xl px-5 lg:px-0">
+      <div className="event-details border border-foreground rounded-3xl shadow-lg bg-[#FAF5EA] mx-3 w-full max-w-[90vw] lg:max-w-7xl lg:px-0 overflow-hidden">
         <h2 className="text-center flex justify-between border-black bg-foreground text-white rounded-3xl text-2xl lg:text-6xl pt-10 lg:pt-32 font-bold relative">
           <div
             className="absolute top-0 right-0 h-full w-full bg-no-repeat z-0"
@@ -59,7 +59,7 @@ export default function EventsPage() {
             <div>
               <div>{eventData.title}</div>
               <div className="text-lg lg:text-2xl">{eventData.date}</div>
-              <button className="text-sm lg:text-xl relative bg-background text-foreground border-2 border-white px-2 py-1 mt-10 lg:mt-28 lg:py-0.5 rounded-lg w-fit z-30">
+              <button className="text-sm lg:text-xl relative bg-background text-foreground border-2 border-white px-2 py-1 mb-4 mt-10 lg:mt-28 lg:py-1 rounded-lg w-fit z-30">
                 VIEW ALL PHOTOS
               </button>
             </div>
@@ -109,7 +109,7 @@ export default function EventsPage() {
     <button
       key={year}
       onClick={() => handleYearChange(year)}
-      className={`relative border-foreground text-lg lg:text-xl px-6 lg:px-8 py-2 lg:py-3 rounded-3xl w-fit z-30 hover:bg-foreground hover:text-white transition duration-200 ${selectedYear === year ? "bg-white font-bold text-foreground" : "bg-white border-2 text-foreground"
+      className={`relative text-lg lg:text-xl px-6 lg:px-8 py-2 lg:py-3 rounded-3xl w-fit z-30 hover:bg-foreground hover:text-white transition duration-200 ${selectedYear === year ? "bg-white border-2 border-foreground text-foreground" : "bg-white  text-foreground"
         }`}
     >
       {year}
@@ -201,7 +201,7 @@ export default function EventsPage() {
           </div>
 
           {/* Upcoming Events Section */}
-          <div className="relative h-[40vh] lg:h-[86vh] w-full flex flex-col items-center lg:items-start bg-[#611D42] text-background p-8 lg:pt-32  opacity-96 z-10">
+          <div className="relative  lg:h-[88vh] w-full flex flex-col items-center lg:items-start bg-[#611D42] text-background  lg:pt-32  opacity-96 z-10">
             {/* Background images for decorations */}
             <div
               className="absolute top-0 right-0 h-full w-full bg-no-repeat"
@@ -223,7 +223,7 @@ export default function EventsPage() {
 
             {/* Upcoming event details */}
             <div className="relative  mb-10 mt-10 lg:mt-0 z-10 w-full">
-            <div className="hidden lg:block text-[1.5rem] lg:text-[2rem] font-bold leading-[2rem] lg:leading-[3.5rem] text-center">
+            <div className="hidden lg:block heading-wireframe-h1 ">
               UPCOMING EVENT
             </div>
 
@@ -234,14 +234,14 @@ export default function EventsPage() {
           </div>
 
           {/* Bottom Section */}
-          <div className="relative h-[6vh] lg:h-[14vh] w-full">
+          <div className="relative h-[6vh] lg:h-[12vh] w-full">
             <div className="h-full rounded-b-full w-full bg-[#540630] z-10"></div>
           </div>
         </div>
 
 
         <div className="mt-5 lg:mt-10">
-          <div className="font-bold text-center text-3xl lg:text-4xl">PAST EVENTS</div>
+          <div className="heading-wireframe-h1 text-[#565656] ">PAST EVENTS</div>
 
           <div className="hidden lg:flex justify-center space-x-2 lg:space-x-4 py-5">
             {yearButtons}
