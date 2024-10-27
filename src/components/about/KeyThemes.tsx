@@ -6,44 +6,44 @@ export function KeyThemesSection() {
 			<div className="mb-8 lg:mb-4 grid grid-cols-6 *:*:self-center *:*:p-3 lg:grid-cols-5 lg:grid-rows-2 w-full gap-4 *:flex *:flex-col *:*:mb-2">
 
 				<div className="mb-6 col-span-2 lg:col-span-1">
-					<img src="/about/cuisine.png" className="h-20 lg:h-40" />
+					<img src="about/cuisine.png" className="h-20 lg:h-40" />
 					<div>DIVERSE CUISINE</div>
 				</div>
 				<div className="col-span-2 lg:col-span-1">
-					<img src="/about/music.png " className="h-20 lg:h-40" />
+					<img src="about/music.png " className="h-20 lg:h-40" />
 					<div>MUSIC</div>
 				</div>
 				<div className="col-span-2 lg:col-span-1">
-					<img src="/about/dance.png " className="h-20 lg:h-40 " />
+					<img src="about/dance.png " className="h-20 lg:h-40 " />
 					<div>DANCE</div>
 				</div>
 				<div className="col-span-2 lg:col-span-1">
-					<img src="/about/theatre.png" className="h-20 lg:h-40" />
+					<img src="about/theatre.png" className="h-20 lg:h-40" />
 					<div>THEATRE</div>
 				</div>
 				<div className="col-span-2 lg:col-span-1">
-					<img src="/about/movies.png" className="h-20 lg:h-40 scale-90" />
+					<img src="about/movies.png" className="h-20 lg:h-40 scale-90" />
 					<div>MOVIES & FILMS</div>
 				</div>
 
 				<div className="col-span-2 lg:col-span-1">
-					<img src="/about/art.png" className="h-20 lg:h-40  " />
+					<img src="about/art.png" className="h-20 lg:h-40  " />
 					<div>ART</div>
 				</div>
 				<div className="col-span-3 lg:col-span-1">
-					<img src="/about/festivals.png" className="h-20 lg:h-40 px-12" />
+					<img src="about/festivals.png" className="h-20 lg:h-40 px-12" />
 					<div>FESTIVALS</div>
 				</div>
 				<div className="col-span-3 lg:col-span-1">
-					<img src="/about/literature.png" className="h-20 lg:h-40" />
+					<img src="about/literature.png" className="h-20 lg:h-40" />
 					<div>LITERATURE</div>
 				</div>
 				<div className="col-span-3 lg:col-span-1">
-					<img src="/about/sports.png" className="h-20 lg:h-40 px-4 " />
+					<img src="about/sports.png" className="h-20 lg:h-40 px-4 " />
 					<div>SPORTS</div>
 				</div>
 				<div className="col-span-3 lg:col-span-1">
-					<img src="/about/handicrafts.png" className="h-20 scale-90 lg:h-40 px-6" />
+					<img src="about/handicrafts.png" className="h-20 scale-90 lg:h-40 px-6" />
 					<div>HANDICRAFTS</div>
 				</div>
 			</div>

@@ -12,10 +12,10 @@ export default function Page() {
 					</div>
 				</div>
 				<img
-					src="/watermark.svg"
+					src="watermark.svg"
 					className="w-fit left-[3rem] lg:left-[10rem] top-[3rem] lg:top-[10rem] absolute scale-[4] lg:scale-[5]" />
 				<img
-					src="/watermark.svg"
+					src="watermark.svg"
 					className="w-fit z-0 right-[3rem] lg:right-[10rem] bottom-[3rem] lg:bottom-[10rem] absolute scale-[-4] lg:scale-[-5]" />
 			</div>
 
@@ -26,7 +26,7 @@ export default function Page() {
 			<div className="text-center mb-28">
 				<div className="font-bold text-[2rem]">ABOUT IIT HYDERABAD</div>
 				<div className="mx-40 mt-8 mb-16">The Indian Institute of Technology Hyderabad (IITH) is a distinguished institution known for its excellence in science and technology education. Established in 2008, IITH consistently ranks among India's top 10 engineering institutes. It offers a diverse range of undergraduate programs, encouraging students to explore various disciplines and engage in cutting-edge research.</div>
-				<img src="/yuva-sangam/about-iith.png" className="mx-auto px-24" />
+				<img src="yuva-sangam/about-iith.png" className="mx-auto px-24" />
 			</div>
 
 
@@ -37,13 +37,13 @@ export default function Page() {
 						<div className="mr-24 self-end mb-4">Prof. B.S. Murty is the Director of Indian Institute of Technology Hyderabad. His academic journey commenced with a Diploma in Metallurgy in 1983 from Govt. Polytechnic, Vijayawada, followed by a BE from VRCE Nagpur in 1986 and an ME from IISc Bangalore in 1988. He earned his PhD in 1992, also from IISc, Bangalore. Prof. Murty's illustrious career includes 12 years of service at IIT Kharagpur, followed by his role as a Professor at IIT Madras since 2004. Currently, he holds the esteemed position of Institute Professor at IIT Madras and serves as an Adjunct Professor at Toronto Metropolitan University and the University of British Columbia, Canada.</div>
 					</div>
 				</div>
-				<img src="/yuva-sangam/director.png" className="w-1/3" />
+				<img src="yuva-sangam/director.png" className="w-1/3" />
 			</div>
 
 			<div className="text-center mb-28">
 				<div className="font-bold text-[2rem]">ABOUT HYDERABAD</div>
 				<div className="mx-40 mt-8 mb-16">Hyderabad, a city steeped in history and rich in cultural diversity, stands as a testament to the confluence of the past and the present. The Charminar, a magnificent monument, dating back to the 16th century, stands as an architectural marvel, encapsulating the city's historical grandeur. The world-renowned Golconda Fort, with its magical acoustic structure, showcases the technological brilliance of yesteryears.</div>
-				<img src="/yuva-sangam/about-hyderabad.png" className="mx-auto px-24" />
+				<img src="yuva-sangam/about-hyderabad.png" className="mx-auto px-24" />
 			</div>
 
 			<div className="flex flex-col mx-24 py-12 border-black border-2 rounded-[1.4rem] ">

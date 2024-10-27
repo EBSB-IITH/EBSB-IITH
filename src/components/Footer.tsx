@@ -21,7 +21,7 @@ export default function Footer() {
 				<div className="flex flex-col lg:mr-96">
 					<div className="flex flex-col lg:flex-row">
 						<Image
-							src="/ebsb-logo.png"
+							src="ebsb-logo.png"
 							alt="EBSB Logo"
 							width={100}
 							height={100}
@@ -34,25 +34,25 @@ export default function Footer() {
 					</div>
 					<div className="flex flex-row mt-4 lg:mt-8 *:mr-6 mx-auto lg:mx-0">
 						<img
-							src="/ig-logo.svg"
+							src="ig-logo.svg"
 							alt="Logo"
 							width={40}
 							height={40}
 						/>
 						<Image
-							src="/youtube-logo.svg"
+							src="youtube-logo.svg"
 							alt="Logo"
 							width={40}
 							height={40}
 						/>
 						<Image
-							src="/fb-logo.svg"
+							src="fb-logo.svg"
 							alt="Logo"
 							width={40}
 							height={40}
 						/>
 						<Image
-							src="/x-logo.svg"
+							src="x-logo.svg"
 							alt="Logo"
 							width={40}
 							height={40}

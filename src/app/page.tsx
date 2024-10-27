@@ -18,17 +18,17 @@ export default function Page() {
         </div>
         <div className="mt-16 lg:mt-48 z-10 hover:brightness-90"><Link href="https://ekbharat.gov.in/">Checkout EBSB Govt Website</Link></div>
         <img
-          src="/flowers-hp.svg"
+          src="flowers-hp.svg"
           className="w-[8rem] lg:w-fit z-10 bottom-[-3rem] lg:bottom-[-6rem] left-0 absolute" />
         <img
-          src="/flowers-hp.svg"
+          src="flowers-hp.svg"
           className="w-[8rem] lg:w-fit z-10 bottom-[-3rem] lg:bottom-[-6rem] right-0 absolute scale-x-[-1]" />
 
         <img
-          src="/watermark.svg"
+          src="watermark.svg"
           className="w-fit left-[2rem] lg:left-[10rem] top-[2rem] lg:top-[10rem] absolute scale-[2] lg:scale-[5]" />
         <img
-          src="/watermark.svg"
+          src="watermark.svg"
           className="w-fit z-0 right-[2rem] lg:right-[6rem] bottom-[2rem] lg:bottom-[14rem] absolute scale-[-2] lg:scale-[-5]" />
       </div>
 

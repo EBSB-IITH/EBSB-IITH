@@ -17,7 +17,7 @@ export default function ObjectiveCard({ heading, description, imgSrc, type, styl
 				</div>
 				<div className="relative">
 					<img
-						src="/watermark.svg"
+						src="watermark.svg"
 						className="absolute bottom-32 z-[0] scale-[3.5]"
 					/>
 					<img
@@ -38,11 +38,11 @@ export default function ObjectiveCard({ heading, description, imgSrc, type, styl
 				</div>
 				<div className="relative">
 					<img
-						src="/watermark.svg"
+						src="watermark.svg"
 						className="absolute bottom-16 right-64 z-[0] scale-[2.5]"
 					/>
 					<img
-						src="/watermark.svg"
+						src="watermark.svg"
 						className="absolute bottom-40 left-48 z-[0] scale-[2]"
 					/>
 					<img
@@ -63,7 +63,7 @@ export default function ObjectiveCard({ heading, description, imgSrc, type, styl
 				</div>
 				<div className="relative">
 					<img
-						src="/watermark.svg"
+						src="watermark.svg"
 						className="absolute bottom-12 right-0 z-0 scale-[1.5]"
 					/>
 					<img
@@ -86,7 +86,7 @@ export function ObjectivesSection() {
 				<ObjectiveCard
 					heading="CREATE"
 					description="An Environment which promotes sharing best practices and experiences"
-					imgSrc="/objectives/create.png"
+					imgSrc="objectives/create.png"
 					type={ObjectiveCardType.Small}
 					style="hidden lg:flex"
 				/>
@@ -94,7 +94,7 @@ export function ObjectivesSection() {
 				<ObjectiveCard
 					heading="SHOWCASE"
 					description="The Rich Heritage and Culture"
-					imgSrc="/objectives/showcase.png"
+					imgSrc="objectives/showcase.png"
 					type={ObjectiveCardType.Medium}
 					style=""
 				/>
@@ -102,21 +102,21 @@ export function ObjectivesSection() {
 				<ObjectiveCard
 					heading="CELEBRATE"
 					description="The Unity in Diversity of our Nation"
-					imgSrc="/objectives/celebrate.png"
+					imgSrc="objectives/celebrate.png"
 					type={ObjectiveCardType.Large}
 					style=""
 				/>
 				<ObjectiveCard
 					heading="ESTABLISH"
 					description="Long-Term Engagements"
-					imgSrc="/objectives/establish.png"
+					imgSrc="objectives/establish.png"
 					type={ObjectiveCardType.Medium}
 					style=""
 				/>
 				<ObjectiveCard
 					heading="PROMOTE"
 					description="The Spirit of National integration"
-					imgSrc="/objectives/promote.png"
+					imgSrc="objectives/promote.png"
 					type={ObjectiveCardType.Small}
 					style="hidden lg:flex"
 				/>
@@ -125,14 +125,14 @@ export function ObjectivesSection() {
 				<ObjectiveCard
 					heading="CREATE"
 					description="An Environment which promotes sharing best practices and experiences"
-					imgSrc="/objectives/create.png"
+					imgSrc="objectives/create.png"
 					type={ObjectiveCardType.Small}
 					style="mr-2"
 				/>
 				<ObjectiveCard
 					heading="PROMOTE"
 					description="The Spirit of National integration"
-					imgSrc="/objectives/promote.png"
+					imgSrc="objectives/promote.png"
 					type={ObjectiveCardType.Small}
 					style=""
 				/>

@@ -7,12 +7,12 @@ export function Sidebar({ toShow, setDrawerOpen }: { toShow: boolean, setDrawerO
 	return (
 		<div data-toshow={toShow} className={'data-[toshow=false]:hidden data-[toshow=true]:absolute flex flex-col z-40 bg-foreground text-background h-[100vh] w-[100vw] left-0 top-0 py-20 px-12'} >
 			<div className="text-3xl font-semibold mb-24">Explore EBSB</div>
-			<Link href="/"><SideBarElement title="Home" imgSrc="/home-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
-			<Link href="/about">		<SideBarElement title="About Us" imgSrc="/about-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
-			<Link href="/events">	<SideBarElement title="Events" imgSrc="/events-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
-			<Link href="/yuva-sangam"><SideBarElement title="Yuva Sangam" imgSrc="/yuva-sangam-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
-			<Link href="/team"><SideBarElement title="Team" imgSrc="/team-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
-			<Link href="/gallery"><SideBarElement title="Gallery" imgSrc="/gallery-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
+			<Link href="/"><SideBarElement title="Home" imgSrc="home-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
+			<Link href="/about">		<SideBarElement title="About Us" imgSrc="about-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
+			<Link href="/events">	<SideBarElement title="Events" imgSrc="events-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
+			<Link href="/yuva-sangam"><SideBarElement title="Yuva Sangam" imgSrc="yuva-sangam-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
+			<Link href="/team"><SideBarElement title="Team" imgSrc="team-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
+			<Link href="/gallery"><SideBarElement title="Gallery" imgSrc="gallery-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
 		</div>
 	)
 }

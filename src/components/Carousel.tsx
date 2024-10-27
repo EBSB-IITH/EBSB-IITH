@@ -110,10 +110,10 @@ export default function Carousel() {
 			</div>
 
 			<div className="absolute left-0 h-full hidden lg:flex flex-col *:my-auto overflow-clip px-4 rounded-r-lg hover:bg-[rgba(0,0,0,0.1)]" onClick={() => setCurrentIdx(currentIdx == 0 ? totalElements - 1 : currentIdx - 1)}>
-				<img src="/arrow-left.svg" className="scale-[4] " />
+				<img src="arrow-left.svg" className="scale-[4] " />
 			</div>
 			<div className="absolute right-0 h-full hidden lg:flex flex-col *:my-auto overflow-clip px-4 rounded-l-lg hover:bg-[rgba(0,0,0,0.1)]" onClick={() => setCurrentIdx(currentIdx == totalElements - 1 ? 0 : currentIdx + 1)}>
-				<img src="/arrow-right.svg" className="scale-[4]" />
+				<img src="arrow-right.svg" className="scale-[4]" />
 			</div>
 
 		</div >

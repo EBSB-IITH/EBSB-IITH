@@ -16,7 +16,7 @@ export default function NavBar() {
 			<div className={'relative flex flex-row pt-4 px-4 lg:py-6 align-middle lg:justify-center'}>
 				<Link href="/">
 					<img
-						src="/ebsb-logo.png"
+						src="ebsb-logo.png"
 						alt="EBSB Logo"
 						width={60}
 						height={60}
@@ -26,7 +26,7 @@ export default function NavBar() {
 
 				<div className={'flex lg:bg-white flex-row lg:py-5 lg:px-12 lg:rounded-[40px] lg:*:px-12 lg:text-lg'}>
 					<Sidebar toShow={drawerOpen} setDrawerOpen={setDrawerOpen} />
-					<img src="/menu.svg" className="block lg:hidden" onClick={() => { setDrawerOpen(true); document.getElementById("html")!.style.setProperty("overflow", "clip") }} />
+					<img src="menu.svg" className="block lg:hidden" onClick={() => { setDrawerOpen(true); document.getElementById("html")!.style.setProperty("overflow", "clip") }} />
 
 					<Link href="/about">
 						<div className="hidden lg:block">About Us</div>
@@ -52,7 +52,7 @@ export default function NavBar() {
 
 				<Link href="/" >
 					<img
-						src="/ebsb-logo.png"
+						src="ebsb-logo.png"
 						alt="EBSB Logo"
 						width={50}
 						height={50}
@@ -61,7 +61,7 @@ export default function NavBar() {
 				</Link>
 				<Link href="https://iith.ac.in">
 					<img
-						src="/iith-logo.png"
+						src="iith-logo.png"
 						alt="EBSB Logo"
 						width={45}
 						height={45}
