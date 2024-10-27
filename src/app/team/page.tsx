@@ -27,10 +27,10 @@ export default function Page() {
 				</div>
 				<img
 					src="watermark.svg"
-					className="w-fit z-0 left-[3rem] lg:left-[10rem] top-[3rem] lg:top-[10rem] absolute scale-[2.5] lg:scale-[5]" />
+					className="w-fit pointer-events-none z-0 left-[3rem] lg:left-[10rem] top-[3rem] lg:top-[10rem] absolute scale-[2.5] lg:scale-[5]" />
 				<img
 					src="watermark.svg"
-					className="w-fit z-0 right-[3rem] lg:right-[8rem] bottom-[6rem] lg:bottom-[19rem] absolute scale-[-2.5] lg:scale-[-5]" />
+					className="w-fit pointer-events-none z-0 right-[3rem] lg:right-[8rem] bottom-[6rem] lg:bottom-[19rem] absolute scale-[-2.5] lg:scale-[-5]" />
 				<div className="absolute self-center hidden lg:flex flex-row bottom-[-2rem] bg-white text-foreground text-xl px-6 py-6 rounded-[3rem] drop-shadow-lg *:mx-8">
 					<div data-isfullteam={isFullTeam} onClick={() => { setIsFullTeam(true); setIsPR(true); setIsFinance(true); setIsDesign(true); setIsWeb(true); setIsMultimedia(true); setIsEvents(true) }} className="data-[isfullteam=true]:font-bold">Full Team</div>
 					<div data-ispr={isPR && !isFullTeam} onClick={() => { setIsFullTeam(false); setIsPR(true); setIsFinance(false); setIsDesign(false); setIsWeb(false); setIsMultimedia(false); setIsEvents(false) }} className="data-[ispr=true]:font-bold">PR & Networking</div>

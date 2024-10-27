@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export function Sidebar({ toShow, setDrawerOpen }: { toShow: boolean, setDrawerOpen: any }) {
 	return (
-		<div data-toshow={toShow} className={'data-[toshow=false]:hidden data-[toshow=true]:absolute flex flex-col z-40 bg-foreground text-background h-[100vh] w-[100vw] left-0 top-0 py-20 px-12'} >
-			<div className="text-3xl font-semibold mb-24">Explore EBSB</div>
+		<div data-toshow={toShow} className={'data-[toshow=false]:hidden data-[toshow=true]:absolute flex flex-col z-40 bg-foreground text-background h-[110vh] w-[100vw] left-0 top-0 py-20 px-12'} >
+			<div className="text-3xl font-semibold mb-14">Explore EBSB</div>
 			<Link href="/"><SideBarElement title="Home" imgSrc="home-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
 			<Link href="/about">		<SideBarElement title="About Us" imgSrc="about-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
 			<Link href="/events">	<SideBarElement title="Events" imgSrc="events-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
@@ -20,7 +20,7 @@ export function Sidebar({ toShow, setDrawerOpen }: { toShow: boolean, setDrawerO
 
 function SideBarElement({ title, imgSrc, setDrawerOpen }: { title: string, imgSrc: string, setDrawerOpen: any }) {
 	return (
-		<div className="flex flex-row text-2xl my-5 py-2 ml-2" onClick={() => { setDrawerOpen(false); document.getElementById("html")!.style.setProperty("overflow", "auto") }}>
+		<div className="flex flex-row text-2xl my-4 py-2 ml-2" onClick={() => { setDrawerOpen(false); document.getElementById("html")!.style.setProperty("overflow", "auto") }}>
 			<div className="w-[4rem] flex justify-center px-2 mr-4">
 				<img className="h-[2rem] self-center" src={imgSrc} />
 			</div>

@@ -12,10 +12,10 @@ export default function Page() {
 				</div>
 				<img
 					src="watermark.svg"
-					className="w-fit left-[3rem] lg:left-[10rem] top-[3rem] lg:top-[10rem] absolute scale-[4] lg:scale-[5]" />
+					className="w-fit pointer-events-none left-[3rem] lg:left-[10rem] top-[3rem] lg:top-[10rem] absolute scale-[4] lg:scale-[5]" />
 				<img
 					src="watermark.svg"
-					className="w-fit z-0 right-[3rem] lg:right-[10rem] bottom-[3rem] lg:bottom-[10rem] absolute scale-[-4] lg:scale-[-5]" />
+					className="w-fit pointer-events-none z-0 right-[3rem] lg:right-[10rem] bottom-[3rem] lg:bottom-[10rem] absolute scale-[-4] lg:scale-[-5]" />
 			</div>
 			<KeyThemesSection />
 			<div className="flex flex-col lg:flex-row px-8 *:my-4 mt-8 mb-20 lg:mb-24 *:px-6 *:py-10 *:rounded-[2.4rem] lg:*:rounded-3xl lg:*:mx-20 lg:h-[30rem] *:h-[14rem] lg:*:w-[24rem]">

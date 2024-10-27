@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -20,7 +19,7 @@ export default function Footer() {
 
 				<div className="flex flex-col lg:mr-96">
 					<div className="flex flex-col lg:flex-row">
-						<Image
+						<img
 							src="ebsb-logo.png"
 							alt="EBSB Logo"
 							width={100}
@@ -39,19 +38,19 @@ export default function Footer() {
 							width={40}
 							height={40}
 						/>
-						<Image
+						<img
 							src="youtube-logo.svg"
 							alt="Logo"
 							width={40}
 							height={40}
 						/>
-						<Image
+						<img
 							src="fb-logo.svg"
 							alt="Logo"
 							width={40}
 							height={40}
 						/>
-						<Image
+						<img
 							src="x-logo.svg"
 							alt="Logo"
 							width={40}

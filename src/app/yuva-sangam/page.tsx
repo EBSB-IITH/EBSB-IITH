@@ -13,10 +13,10 @@ export default function Page() {
 				</div>
 				<img
 					src="watermark.svg"
-					className="w-fit left-[3rem] lg:left-[10rem] top-[3rem] lg:top-[10rem] absolute scale-[4] lg:scale-[5]" />
+					className="w-fit pointer-events-none left-[3rem] lg:left-[10rem] top-[3rem] lg:top-[10rem] absolute scale-[4] lg:scale-[5]" />
 				<img
 					src="watermark.svg"
-					className="w-fit z-0 right-[3rem] lg:right-[10rem] bottom-[3rem] lg:bottom-[10rem] absolute scale-[-4] lg:scale-[-5]" />
+					className="w-fit pointer-events-none z-0 right-[3rem] lg:right-[10rem] bottom-[3rem] lg:bottom-[10rem] absolute scale-[-4] lg:scale-[-5]" />
 			</div>
 
 			<div className="mx-64 leading-snug mt-20 mb-28 text-center ">
