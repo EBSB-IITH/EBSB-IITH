@@ -1,7 +1,7 @@
 'use client';
 
 import Card from "@/components/team/Card";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Page() {
