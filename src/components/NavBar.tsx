@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import { Sidebar } from "./Sidebar"
-import Image from "next/image"
 import { useState } from "react";
 
 export default function NavBar() {
@@ -16,7 +15,7 @@ export default function NavBar() {
 
 			<div className={'relative flex flex-row pt-4 px-4 lg:py-6 align-middle lg:justify-center'}>
 				<Link href="/">
-					<Image
+					<img
 						src="/ebsb-logo.png"
 						alt="EBSB Logo"
 						width={60}
@@ -61,7 +60,7 @@ export default function NavBar() {
 					/>
 				</Link>
 				<Link href="https://iith.ac.in">
-					<Image
+					<img
 						src="/iith-logo.png"
 						alt="EBSB Logo"
 						width={45}
