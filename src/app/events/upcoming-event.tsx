@@ -28,9 +28,9 @@ export default function UpcomingEventHome({ title, description, date, time, venu
 			  <p className="normal-text text-sm sm:text-base md:text-lg">
 				Date - {date}
 			  </p>
-			  <p className="normal-text text-sm sm:text-base md:text-lg">
+			  {/* <p className="normal-text text-sm sm:text-base md:text-lg">
 				Time - {time}
-			  </p>
+			  </p> */}
 			  <p className="normal-text text-sm  sm:text-base md:text-lg">
 				Venue - {venue}
 			  </p>
