@@ -1,3 +1,6 @@
+import { DiwaliGallery23 } from "@/components/gallery/Diwali";
+import { OnamGallery24 } from "@/components/gallery/Onam";
+
 export default function Page() {
 	return (
 		<div className="flex flex-col">
@@ -8,6 +11,12 @@ export default function Page() {
 					<img src="gallery-head-bg.png" className="absolute pointer-events-none z-1 scale-y-[0.7] lg:scale-y-100 h-full top-0 left-0 px-4 lg:px-24" />
 				</div>
 			</div>
+
+			<div className="flex flex-col mt-20 *:mb-20">
+				<OnamGallery24 />
+				<DiwaliGallery23 />
+			</div>
+
 		</div>
 
 	)
