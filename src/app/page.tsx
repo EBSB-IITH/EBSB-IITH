@@ -46,7 +46,7 @@ export default function Page() {
 
       </div>
       <div className="flex flex-col mt-20 lg:mt-24">
-        <div className="mx-auto font-bold text-2xl lg:text-3xl text-center">OUR GALLERY OF HAPPY MOMENTS</div>
+        <div className="mx-auto font-bold text-2xl lg:text-3xl text-center mb-12">OUR GALLERY OF HAPPY MOMENTS</div>
         <GalleryHome />
       </div>
 
