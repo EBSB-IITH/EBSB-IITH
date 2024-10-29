@@ -81,3 +81,19 @@ body {
   }
 }
 
+.heading {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 58.88px;
+  text-align: center;
+}
+
+/* Responsive adjustments for large screens */
+@media (min-width: 1024px) {
+  .heading {
+    font-size: 64px; /* or your desired large-screen size */
+      line-height: 90px; /* adjust accordingly */
+  }
+}
+

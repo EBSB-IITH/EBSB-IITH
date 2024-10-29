@@ -6,6 +6,7 @@ import UpcomingEventHome, { EventDetails } from "./upcoming-event";
 import { PastEventCard, PastEventCardDetails } from "@/components/Past-Event";
 import { PastEvent, eventDetails, PastEvent_details } from "./each-past-event";
 import Carousel from "@/components/Carousel";
+import Link from "next/link";
 
 export const upcomingEvent: EventDetails = {
   title: "DIWALI'24",
@@ -25,7 +26,9 @@ export default function Page() {
   };
 
   const handleEventChange = (event: string) => {
-    setSelectedEvent(event);
+    if (event !== "holi") {
+      setSelectedEvent(event);
+    }
   };
 
   const renderPastEvents = () => {
@@ -52,26 +55,100 @@ export default function Page() {
             }}
           ></div>
 
-          <div className="flex z-20 items-end">
-            {selectedEvent === "onam"||selectedEvent === "sankranti" ? (
-              <>
-                <img src="/photos/tree2.png" alt="Event photo 3" className="w-24 lg:h-full lg:w-80 object-cover" />
-                <img src="/photos/bowl.png" alt="Bowl photo" className="w-10 lg:w-20 object-cover -ml-12 lg:-ml-28" />
-              </>
+          <div className="z-20 flex w-full justify-between items-center">
+            {selectedEvent === "onam" ? (
+              <div className="relative w-full flex items-center">
+                <div className="relative flex items-center">
+                  <img
+                    src="/photos/tree2.png"
+                    alt="Event photo 3"
+                    className="w-24 lg:h-full lg:w-80 object-cover"
+                  />
+                  <img
+                    src="/photos/bowl.png"
+                    alt="Bowl photo"
+                    className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-10 lg:w-20 object-cover"
+                  />
+                </div>
+                <div className="flex-grow text-center">
+                  <div className="text-4xl lg:text-6xl font-bold text-center">
+                    {eventData.title}
+                  </div>
+                  <div className="text-lg lg:text-xl text-center">
+                    {eventData.date}
+                  </div>
+                  <Link href="/gallery" passHref>
+                    <button className="text-sm lg:text-xl relative bg-background text-foreground border-2 border-white px-1 py-1 mb-4 mt-10 lg:mt-28 lg:py-1 rounded-lg w-fit z-30">
+                      VIEW ALL PHOTOS
+                    </button>
+                  </Link>
+                </div>
+
+                <img
+                  src={eventData.label_photos[1]}
+                  alt="Event photo 3"
+                  className="w-24 lg:w-80 z-20 object-cover"
+                />
+              </div>
+            ) : selectedEvent === "ethnicnight" ? (
+              <div className="flex w-full items-center pb-5 ">
+                <img
+                  src={eventData.label_photos[0]}
+                  alt="Other Event"
+                  className="absolute lg:left-[4rem] bottom-[rem] lg:bottom-[9rem] scale-[0.70] lg:scale-[2.6] pl-3 lg:pl-12 z-1 object-cover"
+                />
+                <div className="flex-grow pl-20 lg:pl-80 text-center">
+                  <div className="text-4xl  lg:text-6xl font-bold text-center">
+                    {eventData.title}
+                  </div>
+                  <div className="text-lg lg:text-xl text-center">
+                    {eventData.date}
+                  </div>
+                  <Link href="/gallery" passHref>
+                    <button className="text-sm lg:text-xl relative bg-background text-foreground border-2 border-white px-1 py-1 mb-4 mt-10 lg:mt-28 lg:py-1 rounded-lg w-fit z-30">
+                      VIEW ALL PHOTOS
+                    </button>
+                  </Link>
+                </div>
+
+                <img
+                  src={eventData.label_photos[1]}
+                  alt="Event photo 3"
+                  className="w-20 lg:w-80 z-20 object-cover"
+                />
+              </div>
             ) : (
-              // Content to display when selectedEvent is not "onam"
-              <img src={eventData.label_photos[0]} alt="Other Event" className="w-24 h-24 lg:w-80 lg:h-80 z-20 object-cover" />
+              <div className="flex w-full items-center">
+                <img
+                  src={eventData.label_photos[0]}
+                  alt="Other Event"
+                  className="w-20 lg:w-80 z-20 object-cover"
+                />
+                <div className="flex-grow text-center">
+                  <div className="text-4xl lg:text-6xl font-bold text-center">
+                    {eventData.title}
+                  </div>
+                  <div className="text-lg lg:text-xl text-center">
+                    {eventData.date}
+                  </div>
+                  <Link href="/gallery" passHref>
+                    <button className="text-sm lg:text-xl relative bg-background text-foreground border-2 border-white px-1 py-1 mb-4 mt-10 lg:mt-28 lg:py-1 rounded-lg w-fit z-30">
+                      VIEW ALL PHOTOS
+                    </button>
+                  </Link>
+                </div>
+
+                <img
+                  src={eventData.label_photos[1]}
+                  alt="Event photo 3"
+                  className="w-20 lg:w-80 z-20 object-cover"
+                />
+              </div>
             )}
+
           </div>
 
-          <div>
-            <div>{eventData.title}</div>
-            <div className="text-lg lg:text-2xl">{eventData.date}</div>
-            <button className="text-sm lg:text-xl relative bg-background text-foreground border-2 border-white px-1 py-1 mb-4 mt-10 lg:mt-28 lg:py-1 rounded-lg w-fit z-30">
-              VIEW ALL PHOTOS
-            </button>
-          </div>
-          <img src={eventData.label_photos[1]} alt="Event photo 3" className="w-24 lg:w-80   z-20 object-cover" />
+
         </h2>
 
         <p className="normal-text text-center text-lg lg:text-xl px-5 lg:px-20 py-10 lg:py-16">{eventData.description}</p>
@@ -99,16 +176,34 @@ export default function Page() {
           <p>{eventData.matter2}</p>
         </div>
 
-        <div className="videos-container flex flex-wrap w-full justify-around mt-6">
-          {eventData.videos.map((video, index) => (
-            <div key={index} className="video-wrapper w-full lg:w-full box-border rounded-3xl">
-              <video controls className="rounded-3xl shadow-md w-full">
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          ))}
-        </div>
+        {eventData.videos[0] !== "" ? (
+          <div className="videos-container flex flex-wrap w-full justify-around mt-6">
+            {eventData.videos.map((video, index) => (
+              <div key={index} className="video-wrapper w-full lg:w-full box-border rounded-3xl">
+                {/* Check if the link is a YouTube URL */}
+                {video.includes("youtu") ? (
+                  <iframe
+                    width="100%"
+                    height="600"
+                    src={`https://www.youtube.com/embed/${video.split("youtu.be/")[1]?.split("?")[0]}`}
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="rounded-3xl shadow-md w-full h-[300px] lg:h-[600px]"
+                  ></iframe>
+                ) : (
+                  <video controls className="rounded-3xl shadow-md w-full h-[250px] lg:h-[600px]">
+                    <source src={video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                )}
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="flex justify-center items-center h-3 w-full"></div>
+        )}
+
       </div>
     );
   };
