@@ -8,9 +8,9 @@ import { PastEvent, eventDetails, PastEvent_details } from "./each-past-event";
 import Carousel from "@/components/Carousel";
 
 export const upcomingEvent: EventDetails = {
-  title: "DUSSHERA'24",
+  title: "DIWALI'24",
   description: "The celebration of victory of good over evil",
-  date: "2nd Oct to 3rd Oct 2024",
+  date: "30 Oct to 1 Nov 2024",
   time: "6:30 - 10:00 PM",
   venue: "Near old mess lawns"
 };
@@ -34,7 +34,7 @@ export default function Page() {
 
     return (
       <div className="event-details border border-foreground rounded-3xl shadow-lg bg-[#FAF5EA] mx-3 w-full max-w-[90vw] lg:max-w-7xl lg:px-0 overflow-hidden">
-        <h2 className="text-center flex justify-between border-black bg-foreground text-white rounded-3xl text-2xl lg:text-6xl pt-10 lg:pt-32 font-bold relative">
+        <h2 className="text-center flex justify-between border-black bg-foreground text-white rounded-3xl text-2xl lg:text-6xl pt-10 lg:pt-32 font-bold relative h-[200px] lg:h-[600px]">
           <div
             className="absolute top-0 right-0 h-full w-full bg-no-repeat z-0"
             style={{
@@ -51,19 +51,27 @@ export default function Page() {
               backgroundPosition: "top right"
             }}
           ></div>
-          
-              <div className="flex z-20 items-end">
-              <img src="/photos/tree2.png" alt="Event photo 3" className="w-24 lg:h-full lg:w-80 object-cover" />
-              <img src="/photos/bowl.png" alt="Bowl photo" className="w-10 lg:w-20 object-cover -ml-12 lg:-ml-28" />
-            </div>
-            <div>
-              <div>{eventData.title}</div>
-              <div className="text-lg lg:text-2xl">{eventData.date}</div>
-              <button className="text-sm lg:text-xl relative bg-background text-foreground border-2 border-white px-2 py-1 mb-4 mt-10 lg:mt-28 lg:py-1 rounded-lg w-fit z-30">
-                VIEW ALL PHOTOS
-              </button>
-            </div>
-            <img src="/photos/tree1.png" alt="Event photo 3" className="w-24 lg:w-80  z-20 object-cover" />
+
+          <div className="flex z-20 items-end">
+            {selectedEvent === "onam"||selectedEvent === "sankranti" ? (
+              <>
+                <img src="/photos/tree2.png" alt="Event photo 3" className="w-24 lg:h-full lg:w-80 object-cover" />
+                <img src="/photos/bowl.png" alt="Bowl photo" className="w-10 lg:w-20 object-cover -ml-12 lg:-ml-28" />
+              </>
+            ) : (
+              // Content to display when selectedEvent is not "onam"
+              <img src={eventData.label_photos[0]} alt="Other Event" className="w-24 h-24 lg:w-80 lg:h-80 z-20 object-cover" />
+            )}
+          </div>
+
+          <div>
+            <div>{eventData.title}</div>
+            <div className="text-lg lg:text-2xl">{eventData.date}</div>
+            <button className="text-sm lg:text-xl relative bg-background text-foreground border-2 border-white px-1 py-1 mb-4 mt-10 lg:mt-28 lg:py-1 rounded-lg w-fit z-30">
+              VIEW ALL PHOTOS
+            </button>
+          </div>
+          <img src={eventData.label_photos[1]} alt="Event photo 3" className="w-24 lg:w-80   z-20 object-cover" />
         </h2>
 
         <p className="normal-text text-center text-lg lg:text-xl px-5 lg:px-20 py-10 lg:py-16">{eventData.description}</p>
@@ -164,8 +172,8 @@ export default function Page() {
                   backgroundPosition: "bottom right", // Lamp on right for mobile
                 }}
               ></div>
-              </div>
             </div>
+          </div>
 
           <div
             className="absolute inset-0 z-20 bg-no-repeat bg-cover flex justify-between items-end lg:justify-end"
@@ -223,9 +231,9 @@ export default function Page() {
 
             {/* Upcoming event details */}
             <div className="relative  mb-10 mt-10 lg:mt-0 z-10 w-full">
-            <div className="hidden lg:block heading-wireframe-h1 ">
-              UPCOMING EVENT
-            </div>
+              <div className="hidden lg:block heading-wireframe-h1 ">
+                UPCOMING EVENT
+              </div>
 
               <div className="w-full flex justify-center lg:justify-start">
                 <UpcomingEventHome {...upcomingEvent} />
@@ -256,16 +264,23 @@ export default function Page() {
             <div className="flex gap-3 mt-5">
 
               {/* Year dropdown */}
-              <div className="w-1/2">
+              <div className="w-1/2 flex  px-4 py-2 border  border-foreground rounded-lg">
                 {/* <label htmlFor="year" className="block text-lg font-bold mb-2 text-center">
                   Select Year
                 </label> */}
+                {/* Image beside dropdown */}
+                <img
+                  src="/photos/dropdown1.png"
+                  alt="Event Year"
+                  className="w-1/4 h-auto rounded-lg"
+                />
                 <select
                   id="year"
                   value={selectedYear}
                   onChange={(e) => handleYearChange(e.target.value)}
-                  className="block w-full px-4 py-2 border  border-foreground bg-[#FAF5EA] rounded-lg focus:ring-2 focus:ring-foreground focus:outline-none"
+                  className="block w-full  bg-[#FAF5EA]  focus:ring-2 focus:ring-foreground focus:outline-none"
                 >
+
                   {Object.keys(eventDetails).map((year) => (
                     <option key={year} value={year}>
                       {year}
@@ -275,15 +290,21 @@ export default function Page() {
               </div>
 
               {/* Event dropdown */}
-              <div className="w-1/2">
+              <div className="w-1/2 flex px-4 py-2 border border-foreground rounded-lg focus:ring-foreground">
                 {/* <label htmlFor="event" className="block text-lg font-bold mb-2 text-center">
                   Select Event
                 </label> */}
+                {/* Image beside dropdown */}
+                <img
+                  src="/photos/dropdown2.png"
+                  alt="Event Year"
+                  className="w-1/4 h-auto rounded-lg"
+                />
                 <select
                   id="event"
                   value={selectedEvent}
                   onChange={(e) => handleEventChange(e.target.value)}
-                  className="block w-full px-4 py-2 border border-foreground bg-[#FAF5EA] rounded-lg focus:ring-2 focus:ring-foreground focus:outline-none"
+                  className="block w-full  bg-[#FAF5EA]  focus:ring-2  focus:outline-none"
                 >
                   {Object.keys(eventDetails[selectedYear]).map((event) => (
                     <option key={event} value={event}>
