@@ -6,6 +6,7 @@ import Link from "next/link";
 export function Sidebar({ toShow, setDrawerOpen }: { toShow: boolean, setDrawerOpen: any }) {
 	return (
 		<div data-toshow={toShow} className={'data-[toshow=false]:hidden data-[toshow=true]:absolute flex flex-col z-40 bg-foreground text-background h-[110vh] w-[100vw] left-0 top-0 py-20 px-12'} >
+			<img src="close.svg" className="w-[2rem] absolute top-4 left-4" onClick={() => { setDrawerOpen(false); document.getElementById("html")!.style.setProperty("overflow", "auto") }} />
 			<div className="text-3xl font-semibold mb-14">Explore EBSB</div>
 			<Link href="/"><SideBarElement title="Home" imgSrc="home-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
 			<Link href="/about">		<SideBarElement title="About Us" imgSrc="about-icon.svg" setDrawerOpen={setDrawerOpen} /></Link>
