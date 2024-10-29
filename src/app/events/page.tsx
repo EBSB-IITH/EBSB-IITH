@@ -160,7 +160,7 @@ export default function Page() {
         </div>
 
         <div className="photos-container overflow-hidden mt-4">
-          <div className="flex space-x-4 lg:px-5 overflow-x-auto scrollbar-hidden">
+          <div className="flex space-x-4 px-3 lg:px-5 overflow-x-auto scrollbar-hidden">
             {eventData.photos.map((photo, index) => (
               <img
                 key={index}
