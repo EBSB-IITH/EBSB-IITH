@@ -148,7 +148,7 @@ export default function Page() {
 
 			<div data-isweb={isWeb} className="flex flex-col data-[isweb=false]:hidden justify-items-center mb-2 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">WEB</div>
-				<div className="text-lg mb-6">The Digital Pulse of EBSB: 
+				<div className="text-lg mb-6 text-center w-3/4 mx-auto md:w-auto">The Digital Pulse of EBSB: 
 				Connecting Cultures, Celebrating Diversity</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
 					<Card src="team/web/anand.png" title="WEB HEAD" name="Anand Kasyup" />
