@@ -1,14 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import UpcomingEventHome, { EventDetails } from "./upcoming-event";
-import { PastEventCard, PastEventCardDetails } from "@/components/Past-Event";
-import { PastEvent, eventDetails, PastEvent_details } from "./each-past-event";
+import { eventDetails } from "./each-past-event";
 import Carousel from "@/components/Carousel";
 import Link from "next/link";
 
-export const upcomingEvent: EventDetails = {
+const upcomingEvent: EventDetails = {
   title: "DIWALI'24",
   description: "The celebration of victory of good over evil",
   date: "30 Oct to 1 Nov 2024",

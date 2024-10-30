@@ -138,7 +138,9 @@ export function ObjectivesSection() {
 				/>
 			</div>
 
-			<Link href="/about"><div data-tonotshow={(usePathname() == "/about").valueOf()} className="data-[tonotshow=true]:hidden"><GrayButton text="KNOW MORE ABOUT US" /></div></Link>
+			<Link href="/about">
+				<div data-tonotshow={(usePathname() == "/about").valueOf()} className="data-[tonotshow=true]:hidden"><GrayButton text="KNOW MORE ABOUT US" /></div>
+			</Link>
 
 		</div>
 	)

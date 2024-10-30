@@ -1,4 +1,5 @@
 import { WhiteButton } from "@/components/Button";
+import Link from "next/link";
 
 export default function Page() {
 	return (
@@ -8,8 +9,11 @@ export default function Page() {
 					<div className="z-10 text-[1.8rem] lg:text-[3.4rem] w-[20rem] lg:w-[40rem] font-extrabold text-center leading-tight">YUVA SANGAM’24</div>
 					<div className="text-center text-[0.9rem] lg:text-[1rem] w-[16rem] lg:w-[38rem] py-8 z-10">The program aims to provide participants with a deep understanding of the diverse cultural, traditional, and developmental aspects of different states while facilitating youth interactions.</div>
 					<div className="pt-16">
-						<WhiteButton text="REGISTER NOW" source="https://ebsb.aicte-india.org/" />
+						<Link href="https://ebsb.aicte-india.org/">
+							<WhiteButton text="REGISTER NOW" />
+						</Link>
 					</div>
+
 				</div>
 				<img
 					src="watermark.svg"

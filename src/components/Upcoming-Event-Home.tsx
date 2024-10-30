@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { WhiteButton } from "./Button"
 
 
@@ -20,7 +21,9 @@ export default function UpcomingEventHome() {
 					<div className="relative text-sm lg:text-lg z-10">Venue - {upcomingEvent.venue}</div>
 				</div>
 				<div className="flex flex-row justify-between *:mx-4 lg:*:mr-4 lg:pr-8 ">
-					<WhiteButton text="KNOW MORE" source="/events" />
+					<Link href="/events">
+						<WhiteButton text="KNOW MORE" />
+					</Link>
 					{/* <WhiteButton text="REGISTER NOW" source="/" /> */}
 				</div>
 			</div>
@@ -30,6 +33,6 @@ export default function UpcomingEventHome() {
 				<img src="dusshera/24/diya.svg" className="relative lg:absolute order-2 lg:order-3 w-[6rem] lg:w-fit lg:bottom-0 lg:right-[16rem] lg:scale-75 z-[12]" />
 				<img src="watermark.svg" className="absolute top-0 right-32 lg:scale-[4.5] rotate-12 z-1" />
 			</div>
-		</div>
+		</div >
 	)
 }

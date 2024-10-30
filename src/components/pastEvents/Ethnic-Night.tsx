@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { WhiteButton } from "../Button";
 import { outerDivStyle, headingStyle, yearStyle, subheadingStyle, descriptionStyle, buttonStyle } from "./style-data";
 
@@ -8,9 +9,12 @@ export function EthnicNight23() {
 			<div className={subheadingStyle}>Celebrations</div>
 			<div className={yearStyle}>2023</div>
 			<div className={descriptionStyle}>An enchanting evening of music, dance, and art, Cultural Canvas <br /> brought the diverse beauty of our nation to life at the New Mess Lawns</div>
-			<div className={buttonStyle}>
-				<WhiteButton text="Explore More" source="/events" />
-			</div>
+
+			<Link href="/events">
+				<div className={buttonStyle}>
+					<WhiteButton text="Explore More" />
+				</div>
+			</Link>
 
 			<img src="ethnicNight/23/man.svg" className="absolute right-0 lg:right-[2rem] scale-[1.2] lg:scale-[2.3] bottom-[2rem] lg:bottom-[8rem] z-10" />
 			<img src="ethnicNight/23/woman.svg" className="absolute left-8 lg:left-[4rem] bottom-[2rem] lg:bottom-[8rem] scale-[1.2] lg:scale-[2.3] z-10" />
