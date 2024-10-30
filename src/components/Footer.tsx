@@ -70,7 +70,7 @@ function Contact({ style }: { style: string }) {
 		<div className={"flex flex-col mb-8 *:mt-3 " + style}>
 			<div className="text-2xl font-bold text-center lg:text-start">CONTACT US</div>
 			<div className="text-center lg:text-start">Email - ebsbclub@campus.iith.ac.in</div>
-			<div className="text-center lg:text-start">Contact - +91 9182734726</div>
+			<div className="text-center lg:text-start">Contact - +91 8074728497</div>
 			<div className="text-center lg:text-start">Location - Indian Institute of Technology Hyderabad<br />IITH Road, Near NH-65 Sangareddy, Kandi, Telangana - 502285</div>
 		</div>
 	)

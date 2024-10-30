@@ -7,9 +7,9 @@ export function EthnicNight23() {
 			<div className={headingStyle}>ETHNIC NIGHT'23</div>
 			<div className={subheadingStyle}>Celebrations</div>
 			<div className={yearStyle}>2023</div>
-			<div className={descriptionStyle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat<br />rutrum ornare. Curabitur pellentesque venenatis sem, quis rhoncus risus porta sit amet.<br />Pellentesque tempor leo est, in venenatis felis fermentum id. Vestibulum in odio nulla.<br />Fusce vel felis vitae nisl.</div>
+			<div className={descriptionStyle}>An enchanting evening of music, dance, and art, Cultural Canvas <br /> brought the diverse beauty of our nation to life at the New Mess Lawns</div>
 			<div className={buttonStyle}>
-				<WhiteButton text="Explore More" />
+				<WhiteButton text="Explore More" source="/events" />
 			</div>
 
 			<img src="ethnicNight/23/man.svg" className="absolute right-0 lg:right-[2rem] scale-[1.2] lg:scale-[2.3] bottom-[2rem] lg:bottom-[8rem] z-10" />

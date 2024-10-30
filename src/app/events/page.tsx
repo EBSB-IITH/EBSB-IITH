@@ -71,14 +71,14 @@ export default function Page() {
                   />
                 </div>
                 <div className="flex-grow text-center">
-                  <div className="text-4xl lg:text-6xl font-bold text-center">
+                  <div className="text-lg lg:text-6xl font-bold text-center">
                     {eventData.title}
                   </div>
-                  <div className="text-lg lg:text-xl text-center">
+                  <div className="text-sm lg:text-xl text-center">
                     {eventData.date}
                   </div>
                   <Link href="/gallery" passHref>
-                    <button className="text-sm lg:text-xl relative bg-background text-foreground border-2 border-white px-1 py-1 mb-4 mt-10 lg:mt-28 lg:py-1 rounded-lg w-fit z-30">
+                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit z-30">
                       VIEW ALL PHOTOS
                     </button>
                   </Link>
@@ -98,14 +98,14 @@ export default function Page() {
                   className="absolute lg:left-[4rem] bottom-[rem] lg:bottom-[9rem] scale-[0.70] lg:scale-[2.6] pl-3 lg:pl-12 z-1 object-cover"
                 />
                 <div className="flex-grow pl-20 lg:pl-80 text-center">
-                  <div className="text-4xl  lg:text-6xl font-bold text-center">
+                  <div className="text-lg lg:text-6xl font-bold text-center">
                     {eventData.title}
                   </div>
-                  <div className="text-lg lg:text-xl text-center">
+                  <div className="text-sm lg:text-xl text-center">
                     {eventData.date}
                   </div>
                   <Link href="/gallery" passHref>
-                    <button className="text-sm lg:text-xl relative bg-background text-foreground border-2 border-white px-1 py-1 mb-4 mt-10 lg:mt-28 lg:py-1 rounded-lg w-fit z-30">
+                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit z-30">
                       VIEW ALL PHOTOS
                     </button>
                   </Link>
@@ -125,14 +125,14 @@ export default function Page() {
                   className="w-20 lg:w-80 z-20 object-cover"
                 />
                 <div className="flex-grow text-center">
-                  <div className="text-4xl lg:text-6xl font-bold text-center">
+                  <div className="text-lg lg:text-6xl font-bold text-center">
                     {eventData.title}
                   </div>
-                  <div className="text-lg lg:text-xl text-center">
+                  <div className="text-sm lg:text-xl text-center">
                     {eventData.date}
                   </div>
                   <Link href="/gallery" passHref>
-                    <button className="text-sm lg:text-xl relative bg-background text-foreground border-2 border-white px-1 py-1 mb-4 mt-10 lg:mt-28 lg:py-1 rounded-lg w-fit z-30">
+                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit z-30">
                       VIEW ALL PHOTOS
                     </button>
                   </Link>
@@ -365,9 +365,9 @@ export default function Page() {
                 </label> */}
                 {/* Image beside dropdown */}
                 <img
-                  src="/photos/dropdown1.png"
+                  src="/photos/dropdown1.svg"
                   alt="Event Year"
-                  className="w-1/4 h-auto rounded-lg"
+                  className="w-1/4 p-1 my-auto h-auto rounded-lg"
                 />
                 <select
                   id="year"
@@ -391,9 +391,9 @@ export default function Page() {
                 </label> */}
                 {/* Image beside dropdown */}
                 <img
-                  src="/photos/dropdown2.png"
+                  src="/photos/dropdown2.svg"
                   alt="Event Year"
-                  className="w-1/4 h-auto rounded-lg"
+                  className="w-1/4 p-1 my-auto h-auto rounded-lg"
                 />
                 <select
                   id="event"

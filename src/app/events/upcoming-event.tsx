@@ -38,8 +38,8 @@ export default function UpcomingEventHome({ title, description, date, time, venu
 		  </div>
   
 		  {/* Button container with improved mobile layout */}
-		  <div className="normal-text sm:gap-4  mt-4 sm:mt-6">
-			<WhiteButton text="REGISTER NOW" />
+		  <div className="sm:gap-4  mt-4 sm:mt-6">
+			<WhiteButton text="VIEW SCHEDULE" source="/events" />
 		  </div>
 		</div>
 	  </div>

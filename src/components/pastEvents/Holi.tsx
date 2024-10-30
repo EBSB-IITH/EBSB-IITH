@@ -7,9 +7,9 @@ export function Holi23() {
 			<div className={headingStyle}>HOLI'23</div>
 			<div className={subheadingStyle}>Celebrations</div>
 			<div className={yearStyle}>2023</div>
-			<div className={descriptionStyle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat<br />rutrum ornare. Curabitur pellentesque venenatis sem, quis rhoncus risus porta sit amet.<br />Pellentesque tempor leo est, in venenatis felis fermentum id. Vestibulum in odio nulla.<br />Fusce vel felis vitae nisl.</div>
+			<div className={descriptionStyle}>Holi, the festival of colors, truly unites diverse cultures across India. Celebrated with colors and joyous festivities, it fosters harmony and brotherhood</div>
 			<div className={buttonStyle}>
-				<WhiteButton text="Explore More" />
+				<WhiteButton text="Explore More" source="/events" />
 			</div>
 
 			<img src="holi/23/colours.png" className="absolute right-[-0.8rem] lg:right-6 scale-75 lg:scale-100 bottom-10 lg:bottom-8 z-10" />
