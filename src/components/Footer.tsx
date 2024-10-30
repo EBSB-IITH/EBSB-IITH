@@ -32,30 +32,36 @@ export default function Footer() {
 						</div>
 					</div>
 					<div className="flex flex-row mt-4 lg:mt-8 *:mr-6 mx-auto lg:mx-0">
-						<img
-							src="ig-logo.svg"
-							alt="Logo"
-							width={40}
-							height={40}
-						/>
-						<img
-							src="youtube-logo.svg"
-							alt="Logo"
-							width={40}
-							height={40}
-						/>
-						<img
-							src="fb-logo.svg"
-							alt="Logo"
-							width={40}
-							height={40}
-						/>
-						<img
+						<a href="https://www.instagram.com/ebsb_club_iith/" target="_blank">
+							<img
+								src="ig-logo.svg"
+								alt="Logo"
+								width={40}
+								height={40}
+							/>
+						</a>
+						<a href="https://www.youtube.com/@EchoIITH" target="_blank" className="my-auto	" >
+							<img
+								src="youtube-logo.svg"
+								alt="Logo"
+								width={50}
+								height={50}
+							/>
+						</a>
+						<a href="https://www.facebook.com/profile.php?id=100070286642769" target="_blank" >
+							<img
+								src="fb-logo.svg"
+								alt="Logo"
+								width={40}
+								height={40}
+							/>
+						</a>
+						{/* <img
 							src="x-logo.svg"
 							alt="Logo"
 							width={40}
 							height={40}
-						/>
+						/> */}
 					</div>
 				</div>
 
@@ -69,8 +75,8 @@ function Contact({ style }: { style: string }) {
 	return (
 		<div className={"flex flex-col mb-8 *:mt-3 " + style}>
 			<div className="text-2xl font-bold text-center lg:text-start">CONTACT US</div>
-			<div className="text-center lg:text-start">Email - ebsbclub@campus.iith.ac.in</div>
-			<div className="text-center lg:text-start">Contact - +91 8074728497</div>
+			<div className="text-center lg:text-start">Email - <a href="mailto:ebsbclub@campus.iith.ac.in">ebsbclub@campus.iith.ac.in</a> </div>
+			<div className="text-center lg:text-start">Contact - <a href="tel:+91 8074728497">+91 8074728497</a> </div>
 			<div className="text-center lg:text-start">Location - Indian Institute of Technology Hyderabad<br />IITH Road, Near NH-65 Sangareddy, Kandi, Telangana - 502285</div>
 		</div>
 	)

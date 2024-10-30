@@ -23,7 +23,7 @@ export default function Page() {
             src="watermark.svg"
             className="w-fit z-0 right-[3.5rem] pointer-events-none lg:right-[16rem] bottom-[6rem] lg:bottom-[14rem] absolute scale-[-2] lg:scale-[-5]" />
         </div>
-        <div className="mt-16 lg:mt-48 z-10 hover:brightness-90"><Link href="https://ekbharat.gov.in/">Checkout EBSB Govt Website</Link></div>
+        <div className="mt-16 lg:mt-48 z-10 hover:bg-white p-3 rounded-md hover:text-foreground hover:font-semibold hover:cursor-pointer"><Link href="https://ekbharat.gov.in/">Checkout EBSB Govt Website</Link></div>
         <img
           src="flowers-hp.svg"
           className="w-[8rem] lg:w-fit z-10 pointer-events-none bottom-[-3rem] lg:bottom-[-6rem] left-0 absolute" />

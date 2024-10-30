@@ -5,9 +5,13 @@ export function KeyThemesSection() {
 			<div className="px-1 lg:px-48 mt-6 lg:mt-4 mb-8">To celebrate the idea of India as a nation wherein different cultural units across varied geographies coalesce and interact with each other, a glorious manifestation of culture.</div>
 			<div className="mb-8 lg:mb-4 grid grid-cols-6 *:*:self-center lg:*:*:p-3 lg:grid-cols-5 lg:grid-rows-2 w-full gap-4 *:flex *:flex-col *:*:mb-2">
 
-				<div className="col-span-2 lg:col-span-1">
-					<img src="about/music.png " className="h-20 lg:h-40" />
+				<div className="mb-6 col-span-2 lg:col-span-1">
+					<img src="about/music.png" className="h-20 lg:h-40" />
 					<div>MUSIC</div>
+				</div>
+				<div className="col-span-2 lg:col-span-1">
+					<img src="about/handicrafts.png " className="h-20 lg:h-40" />
+					<div>HANDICRAFTS</div>
 				</div>
 				<div className="col-span-2 lg:col-span-1">
 					<img src="about/dance.png " className="h-20 lg:h-40 " />
@@ -39,11 +43,7 @@ export function KeyThemesSection() {
 					<div>SPORTS</div>
 				</div>
 				<div className="col-span-3 lg:col-span-1">
-					<img src="about/handicrafts.png" className="h-20 scale-90 lg:h-40 px-6" />
-					<div>HANDICRAFTS</div>
-				</div>
-				<div className="mb-6 col-span-2 lg:col-span-1">
-					<img src="about/cuisine.png" className="h-20 lg:h-40" />
+					<img src="about/cuisine.png" className="h-20 scale-90 lg:h-40 px-6" />
 					<div>DIVERSE CUISINE</div>
 				</div>
 			</div>

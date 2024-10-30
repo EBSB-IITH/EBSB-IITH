@@ -2,9 +2,9 @@ import { WhiteButton } from "./Button"
 
 
 const upcomingEvent = {
-	title: "DUSSHERA'24",
+	title: "DIWALI AND GARBA NIGHT'24",
 	description: "The celebration of victory of good over evil",
-	date: "2nd Oct to 3rd Oct 2024",
+	date: "October 30 - November 1, 2024",
 	time: "6:30 - 10:00 PM",
 	venue: "Near old mess lawns"
 }
@@ -14,14 +14,14 @@ export default function UpcomingEventHome() {
 			<div className="flex flex-col lg:pr-12">
 				<div className="mb-24 lg:mb-40">
 					<div className="relative text-[2rem] lg:text-[3rem] font-bold z-10">{upcomingEvent.title}</div>
-					<div className="relative mb-8 lg:mb-12 z-10">{upcomingEvent.description}</div>
-					<div className="relative text-sm z-10">Date - {upcomingEvent.date}</div>
-					<div className="relative text-sm z-10">Time - {upcomingEvent.time}</div>
-					<div className="relative text-sm z-10">Venue - {upcomingEvent.venue}</div>
+					<div className="relative mb-8 lg:text-lg lg:mb-12 z-10">{upcomingEvent.description}</div>
+					<div className="relative text-sm lg:text-lg z-10">Date - {upcomingEvent.date}</div>
+					<div className="relative text-sm lg:text-lg z-10">Time - {upcomingEvent.time}</div>
+					<div className="relative text-sm lg:text-lg z-10">Venue - {upcomingEvent.venue}</div>
 				</div>
 				<div className="flex flex-row justify-between *:mx-4 lg:*:mr-4 lg:pr-8 ">
-					<WhiteButton text="KNOW MORE" />
-					<WhiteButton text="REGISTER NOW" />
+					<WhiteButton text="KNOW MORE" source="/events" />
+					{/* <WhiteButton text="REGISTER NOW" source="/" /> */}
 				</div>
 			</div>
 			<div className="flex flex-row lg:block mt-6 lg:mt-0 justify-center *:self-end lg:*:self-start">
