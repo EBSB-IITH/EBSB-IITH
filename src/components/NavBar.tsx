@@ -24,7 +24,7 @@ export default function NavBar() {
 					/>
 				</Link>
 
-				<div className={'flex lg:bg-white flex-row lg:py-5 lg:px-12 lg:rounded-[40px] lg:*:px-12 lg:text-lg'}>
+				<div className={'flex lg:bg-white flex-row lg:py-5 lg:px-12 lg:rounded-[40px] lg:*:px-6 xl:*:px-12 lg:text-lg'}>
 					<Sidebar toShow={drawerOpen} setDrawerOpen={setDrawerOpen} />
 					<img src="menu.svg" className="block lg:hidden" onClick={() => { setDrawerOpen(true); document.getElementById("html")!.style.setProperty("overflow", "clip") }} />
 

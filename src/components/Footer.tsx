@@ -32,42 +32,44 @@ export default function Footer() {
 						</div>
 					</div>
 					<div className="flex flex-row mt-4 lg:mt-8 *:mr-6 mx-auto lg:mx-0">
-						<a href="https://www.instagram.com/ebsb_club_iith/" target="_blank">
+						<Link href="https://www.instagram.com/ebsb_club_iith/">
 							<img
 								src="ig-logo.svg"
 								alt="Logo"
 								width={40}
 								height={40}
 							/>
-						</a>
-						<a href="https://www.youtube.com/@EchoIITH" target="_blank" className="my-auto	" >
+						</Link>
+						<Link href="https://www.youtube.com/@EchoIITH">
 							<img
 								src="youtube-logo.svg"
 								alt="Logo"
-								width={50}
-								height={50}
+								width={40}
+								height={40}
 							/>
-						</a>
-						<a href="https://www.facebook.com/profile.php?id=100070286642769" target="_blank" >
+						</Link>
+						<Link href="https://www.facebook.com/profile.php?id=100070286642769">
 							<img
 								src="fb-logo.svg"
 								alt="Logo"
 								width={40}
 								height={40}
 							/>
-						</a>
-						{/* <img
-							src="x-logo.svg"
-							alt="Logo"
-							width={40}
-							height={40}
-						/> */}
-					</div>
-				</div>
+						</Link>
+						<Link href="https://x.com/clubebsb">
+							<img
+								src="x-logo.svg"
+								alt="Logo"
+								width={40}
+								height={40}
+							/>
+						</Link>
+					</div >
+				</div >
 
 				<Contact style="hidden lg:block" />
-			</div>
-		</div>
+			</div >
+		</div >
 	)
 }
 
