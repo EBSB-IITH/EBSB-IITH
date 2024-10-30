@@ -7,7 +7,7 @@ import Carousel from "@/components/Carousel";
 import Link from "next/link";
 
 const upcomingEvent: EventDetails = {
-  title: "DIWALI'24",
+  title: "DIWALI AND GARBA NIGHT'24",
   description: "The celebration of victory of good over evil",
   date: "30 Oct to 1 Nov 2024",
   time: "6:30 - 10:00 PM",
