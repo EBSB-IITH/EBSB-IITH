@@ -87,7 +87,8 @@ export default function Page() {
 
 			<div data-isfinance={isFinance} className="flex flex-col data-[isfinance=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">FINANCE & EQUIPMENT</div>
-				<div className="text-lg mb-6">The art of crafting & sparking social buzz</div>
+				<div className="text-lg mb-6">Where Numbers meet Cultures
+				</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
 					<Card src="team/finance/naman.png" title="FINANCE & EQUIPMENT HEAD" name="Naman Preet Singh" />
 					<div className="flex flex-row flex-wrap justify-center mt-12 *:mb-2 lg:*:mb-auto *:mx-2 lg:*:mx-4">
@@ -103,7 +104,8 @@ export default function Page() {
 
 			<div data-isevents={isEvents} className="flex flex-col data-[isevents=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">EVENTS</div>
-				<div className="text-lg mb-6">The art of crafting & sparking social buzz</div>
+				<div className="text-lg mb-6">The heart of EBSB
+				</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
 					<Card src="team/events/yash.png" title="EVENTS HEAD" name="Yash Sonawane" />
 					<div className="flex flex-row flex-wrap justify-center mt-12 *:mb-2 lg:*:mb-auto *:mx-2 lg:*:mx-4">
@@ -119,7 +121,7 @@ export default function Page() {
 
 			<div data-isdesign={isDesign} className="flex flex-col data-[isdesign=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">DESIGN</div>
-				<div className="text-lg mb-6">The art of crafting & sparking social buzz</div>
+				<div className="text-lg mb-6">We take care of what EBSB looks like!</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
 					<Card src="team/design/manasi.png" title="DESIGN HEAD" name="Manasi Pasekar" />
 					<div className="flex flex-row flex-wrap justify-center mt-12 *:mb-2 lg:*:mb-auto *:mx-2 lg:*:mx-4">
@@ -132,7 +134,8 @@ export default function Page() {
 
 			<div data-ismultimedia={isMultimedia} className="flex flex-col data-[ismultimedia=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">MULTIMEDIA</div>
-				<div className="text-lg mb-6">The art of crafting & sparking social buzz</div>
+				<div className="text-lg mb-6">Har Tasveer Mein Bharat Ki Jhalk
+				</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
 					<Card src="team/multimedia/pritam.png" title="MULTIMEDIA HEAD" name="Pritam Kumar Mandal" />
 					<div className="flex flex-row flex-wrap justify-center mt-12 *:mb-2 lg:*:mb-auto *:mx-2 lg:*:mx-4">
@@ -145,7 +148,8 @@ export default function Page() {
 
 			<div data-isweb={isWeb} className="flex flex-col data-[isweb=false]:hidden justify-items-center mb-2 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">WEB</div>
-				<div className="text-lg mb-6">The art of crafting & sparking social buzz</div>
+				<div className="text-lg mb-6">The Digital Pulse of EBSB: 
+				Connecting Cultures, Celebrating Diversity</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
 					<Card src="team/web/anand.png" title="WEB HEAD" name="Anand Kasyup" />
 					<div className="flex flex-row flex-wrap justify-center mt-12 *:mb-2 lg:*:mb-auto *:mx-4">
