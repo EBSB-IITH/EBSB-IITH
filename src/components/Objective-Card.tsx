@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export const enum ObjectiveCardType { Small, Medium, Large }
 export default function ObjectiveCard({ heading, description, imgSrc, type }: { heading: string, description: string, imgSrc: string, type: ObjectiveCardType }) {
 
