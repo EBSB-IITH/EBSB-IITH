@@ -237,7 +237,7 @@ export default function Page() {
         <div className="relative flex flex-col">
           {/* Lamp Section */}
           <div
-            className="absolute lg:hidden inset-0 z-20 bg-no-repeat bg-cover flex justify-between items-end lg:justify-end"
+            className="absolute lg:hidden inset-0 z-10 bg-no-repeat bg-cover flex justify-between items-end lg:justify-end"
             style={{
               backgroundSize: "25%",
               paddingRight: "0rem",
@@ -245,7 +245,7 @@ export default function Page() {
             }}
           >
             {/* Lamps positioned for mobile (one in each corner) */}
-            <div className="flex justify-between w-full px-5 lg:hidden lg:px-0 lg:space-x-4 items-end z-20">
+            <div className="flex justify-between w-full px-5 lg:hidden lg:px-0 lg:space-x-4 items-end z-10">
               <div
                 className="bg-no-repeat bg-cover"
                 style={{
@@ -269,7 +269,7 @@ export default function Page() {
           </div>
 
           <div
-            className="absolute inset-0 z-20 bg-no-repeat bg-cover flex justify-between items-end lg:justify-end"
+            className="absolute inset-0 z-10 bg-no-repeat bg-cover flex justify-between items-end lg:justify-end"
             style={{
               backgroundSize: "25%",
               paddingRight: "4rem",
@@ -278,7 +278,7 @@ export default function Page() {
           >
 
             {/* Lamps for desktop screens */}
-            <div className="hidden lg:flex space-x-4 items-end z-20">
+            <div className="hidden lg:flex space-x-4 items-end z-10">
               <div
                 className="bg-no-repeat bg-cover"
                 style={{
@@ -302,7 +302,7 @@ export default function Page() {
           </div>
 
           {/* Upcoming Events Section */}
-          <div className="relative  lg:h-[88vh] w-full flex flex-col items-center lg:items-start bg-[#611D42] text-background  lg:pt-32  opacity-96 z-10">
+          <div className="relative  lg:h-[88vh] w-full flex flex-col items-center lg:items-start bg-[#611D42] text-background  lg:pt-32  opacity-96 ">
             {/* Background images for decorations */}
             <div
               className="absolute top-0 right-0 h-full w-full bg-no-repeat"
