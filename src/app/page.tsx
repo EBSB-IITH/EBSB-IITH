@@ -1,7 +1,7 @@
 'use client'
 
 import Carousel from "@/components/Carousel";
-import GalleryHome from "@/components/Gallery-Home";
+//import GalleryHome from "@/components/Gallery-Home";
 import { ObjectivesSection } from "@/components/Objective";
 import UpcomingEventHome from "@/components/Upcoming-Event-Home";
 import Link from "next/link";
