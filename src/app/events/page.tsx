@@ -53,7 +53,7 @@ export default function Page() {
             }}
           ></div>
 
-          <div className="z-20 flex w-full justify-between items-center">
+          <div className=" flex w-full justify-between items-center">
             {selectedEvent === "onam" ? (
               <div className="relative w-full flex items-center">
                 <div className="relative flex items-center">
@@ -76,7 +76,7 @@ export default function Page() {
                     {eventData.date}
                   </div>
                   <Link href="/gallery" passHref>
-                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit z-30">
+                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit">
                       VIEW ALL PHOTOS
                     </button>
                   </Link>
@@ -85,7 +85,7 @@ export default function Page() {
                 <img
                   src={eventData.label_photos[1]}
                   alt="Event photo 3"
-                  className="w-24 lg:w-80 z-20 object-cover"
+                  className="w-24 lg:w-80 object-cover z-10"
                 />
               </div>
             ) : selectedEvent === "ethnicnight" ? (
@@ -93,7 +93,7 @@ export default function Page() {
                 <img
                   src={eventData.label_photos[0]}
                   alt="Other Event"
-                  className="absolute lg:left-[4rem] bottom-[rem] lg:bottom-[9rem] scale-[0.70] lg:scale-[2.6] pl-3 lg:pl-12 z-1 object-cover"
+                  className="absolute lg:left-[4rem] bottom-[rem] lg:bottom-[9rem] scale-[0.70] lg:scale-[2.6] pl-3 lg:pl-12 object-cover"
                 />
                 <div className="flex-grow pl-20 lg:pl-80 text-center">
                   <div className="text-lg lg:text-6xl font-bold text-center">
@@ -103,7 +103,7 @@ export default function Page() {
                     {eventData.date}
                   </div>
                   <Link href="/gallery" passHref>
-                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit z-30">
+                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit ">
                       VIEW ALL PHOTOS
                     </button>
                   </Link>
@@ -112,7 +112,7 @@ export default function Page() {
                 <img
                   src={eventData.label_photos[1]}
                   alt="Event photo 3"
-                  className="w-20 lg:w-80 z-20 object-cover"
+                  className="w-20 lg:w-80 object-cover z-10"
                 />
               </div>
             ) : (
@@ -120,7 +120,7 @@ export default function Page() {
                 <img
                   src={eventData.label_photos[0]}
                   alt="Other Event"
-                  className="w-20 lg:w-80 z-20 object-cover"
+                  className="w-20 lg:w-80 object-cover"
                 />
                 <div className="flex-grow text-center">
                   <div className="text-lg lg:text-6xl font-bold text-center">
@@ -130,7 +130,7 @@ export default function Page() {
                     {eventData.date}
                   </div>
                   <Link href="/gallery" passHref>
-                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit z-30">
+                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit ">
                       VIEW ALL PHOTOS
                     </button>
                   </Link>
@@ -139,7 +139,7 @@ export default function Page() {
                 <img
                   src={eventData.label_photos[1]}
                   alt="Event photo 3"
-                  className="w-20 lg:w-80 z-20 object-cover"
+                  className="w-20 lg:w-80 object-cover z-10"
                 />
               </div>
             )}
@@ -210,7 +210,7 @@ export default function Page() {
     <button
       key={year}
       onClick={() => handleYearChange(year)}
-      className={`relative text-lg lg:text-xl px-6 lg:px-8 py-2 lg:py-3 rounded-3xl w-fit z-30 hover:bg-foreground hover:text-white transition duration-200 ${selectedYear === year ? "bg-white border-2 border-foreground text-foreground" : "bg-white  text-foreground"
+      className={`relative text-lg lg:text-xl px-6 lg:px-8 py-2 lg:py-3 rounded-3xl w-fit  hover:bg-foreground hover:text-white transition duration-200 ${selectedYear === year ? "bg-white border-2 border-foreground text-foreground" : "bg-white  text-foreground"
         }`}
     >
       {year}
@@ -221,7 +221,7 @@ export default function Page() {
     <button
       key={event}
       onClick={() => handleEventChange(event)}
-      className={`relative px-6 lg:px-8 py-2 lg:py-3 rounded-3xl w-fit z-30 hover:bg-foreground hover:text-white transition duration-200 ${selectedEvent === event
+      className={`relative px-6 lg:px-8 py-2 lg:py-3 rounded-3xl w-fit  hover:bg-foreground hover:text-white transition duration-200 ${selectedEvent === event
         ? "bg-white text-foreground font-bold text-lg lg:text-2xl"
         : "bg-white text-foreground text-base lg:text-xl"
         }`}
@@ -323,7 +323,7 @@ export default function Page() {
             ></div>
 
             {/* Upcoming event details */}
-            <div className="relative  mb-10 mt-10 lg:mt-0 z-10 w-full">
+            <div className="relative  mb-10 mt-10 lg:mt-0 z-20 w-full">
               <div className="hidden lg:block heading-wireframe-h1 ">
                 UPCOMING EVENT
               </div>
