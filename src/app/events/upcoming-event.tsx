@@ -1,6 +1,6 @@
-import Link from "next/link";
+//import Link from "next/link";
 import { useState } from "react";
-import { WhiteButton } from "../../components/Button";
+//import { WhiteButton } from "../../components/Button";
 
 export interface EventDetails {
 	title: string;
