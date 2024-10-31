@@ -5,8 +5,8 @@ import UpcomingEventHome, { EventDetails } from "./upcoming-event";
 import { eventDetails } from "./each-past-event";
 import Carousel from "@/components/Carousel";
 import Link from "next/link";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+//import "slick-carousel/slick/slick.css";
+//import "slick-carousel/slick/slick-theme.css";
 
 const upcomingEvent: EventDetails = {
   title: "DIWALI AND GARBA NIGHT'24",
