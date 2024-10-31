@@ -16,7 +16,7 @@ export const eventDetails: {
 			title: "ONAM'24",
 			description: "Onam, the splendid harvest festival of Kerala, is a vibrant celebration that unites the state with an aura of enthusiasm and joy. This cherished tradition symbolizes the rich cultural heritage and communal harmony of Kerala. It is a time when the people of Kerala come together to welcome the mythical King Mahabali, adorning their homes with colorful floral arrangements and preparing a sumptuous feast.",
 			photos: ["/onam/24/1.jpg", "/onam/24/2.jpg", "/onam/24/3.jpg", "/onam/24/4.jpg", "/onam/24/5.jpg", "/onam/24/6.jpg", "/onam/24/7.jpg", "/onam/24/8.jpg", "/onam/24/9.jpg", "/onam/24/10.jpg", "/onam/24/11.jpg", "/onam/24/12.jpg"],
-			label_photos: ["/photos/tree2,png", "/photos/tree1.png"],
+			label_photos: ["/photos/tree2.png", "/photos/tree1.png"],
 			videos: ["https://youtu.be/3oksFLAvUcc?si=kHUbEXPvTX80OvyZ"],
 			matter1: "During our grand Onam celebration in August 2023, the EBSB Team of 2023-24 infused the spirit of this festive season with a diverse range of enjoyable activities. Participants gathered near the Old Mess Lawns to partake in the merriment.",
 			matter2: "From the exhilarating Tug of War, where teams competed to test their rope-whispering skills, to the playful Sundarikku Pottuthodal game that combined precision and creativity, the event was a delightful blend of tradition and fun. Musical Chairs added a rhythm to the festivities, with contestants dancing their way to a seat. The Lemon and Spoon challenge turned a simple fruit into a high-stakes companion on an exciting journey to victory. Finally, the Athapookalam, a flower rangoli, transformed the venue into a colorful art gallery curated by creative hands. It was a delightful celebration that left everyone with cherished memories and a deeper appreciation of Onam and Kerala's vibrant culture.",
@@ -34,16 +34,16 @@ export const eventDetails: {
 		// },
 		holi: {
 			title: "HOLI'24",
-			description: "The celebration of Holi in 2024.",
-			photos: ["/photos/holi2023_1.jpg"],
+			description: "Holi, the festival of colors, truly unites diverse cultures across India. Celebrated with colors and joyous festivities, it fosters harmony and brotherhood",
+			photos: ["/holi/23/1.jpg","/holi/23/2.jpg","/holi/23/3.jpg","/holi/23/4.jpg","/holi/23/5.jpg","/holi/23/6.jpg","/holi/23/7.jpg","/holi/23/8.jpg","/holi/23/9.jpg","/holi/23/10.jpg"],
 			label_photos: ["/holi/23/colours.png", "/holi/23/colours.svg"],
 			videos: [""],
-			matter1: "Holi, the festival of colors, truly unites diverse cultures across India. Celebrated with colors and joyous festivities, it fosters harmony and brotherhood",
-			matter2: "Holi celebrations at IITH are marked by joy and excitement, creating an atmosphere of pure enjoyment. Participants come together to celebrate with a rich array of colors and water, transforming the surroundings into a breathtaking display of colorful magic. It’s a festive occasion that strengthens bonds and creates lasting memories.",
+			matter1: "Holi celebrations at IITH are marked by joy and excitement, creating an atmosphere of pure enjoyment.",
+			matter2: " Participants come together to celebrate with a rich array of colors and water, transforming the surroundings into a breathtaking display of colorful magic. It’s a festive occasion that strengthens bonds and creates lasting memories.",
 			date: "March 24, 2024 "
 		},
 		ethnicnight: {
-			title: "ETHNIC NIGHT 24'",
+			title: "ETHNIC NIGHT'24",
 			description: "An enchanting evening of music, dance, and art, Cultural Canvas brought the diverse beauty of our nation to life at the New Mess Lawns.",
 			photos: ["/ethnicNight/23/1.jpg", "/ethnicNight/23/2.jpg", "/ethnicNight/23/3.jpg", "/ethnicNight/23/4.jpg", "/ethnicNight/23/5.jpg", "/ethnicNight/23/6.jpg", "/ethnicNight/23/7.jpg", "/ethnicNight/23/8.jpg", "/ethnicNight/23/9.jpg"],
 			label_photos: ["/ethnicNight/23/woman.svg", "/ethnicNight/23/man.svg"],
@@ -68,7 +68,7 @@ export const eventDetails: {
 			title: "ONAM'23",
 			description: "Onam, the splendid harvest festival of Kerala, is a vibrant celebration that unites the state with an aura of enthusiasm and joy. This cherished tradition symbolizes the rich cultural heritage and communal harmony of Kerala. It is a time when the people of Kerala come together to welcome the mythical King Mahabali, adorning their homes with colorful floral arrangements and preparing a sumptuous feast.",
 			photos: ["/onam/24/1.jpg", "/onam/24/2.jpg", "/onam/24/3.jpg", "/onam/24/4.jpg", "/onam/24/5.jpg", "/onam/24/6.jpg", "/onam/24/7.jpg", "/onam/24/8.jpg", "/onam/24/9.jpg", "/onam/24/10.jpg", "/onam/24/11.jpg", "/onam/24/12.jpg"],
-			label_photos: ["/photos/tree2,png", "/photos/tree1.png"],
+			label_photos: ["/photos/tree2.png", "/photos/tree1.png"],
 			videos: [""],
 			matter1: "During our grand Onam celebration in August 2023, the EBSB Team of 2023-24 infused the spirit of this festive season with a diverse range of enjoyable activities. Participants gathered near the Old Mess Lawns to partake in the merriment.",
 			matter2: "From the exhilarating Tug of War, where teams competed to test their rope-whispering skills, to the playful Sundarikku Pottuthodal game that combined precision and creativity, the event was a delightful blend of tradition and fun. Musical Chairs added a rhythm to the festivities, with contestants dancing their way to a seat. The Lemon and Spoon challenge turned a simple fruit into a high-stakes companion on an exciting journey to victory. Finally, the Athapookalam, a flower rangoli, transformed the venue into a colorful art gallery curated by creative hands. It was a delightful celebration that left everyone with cherished memories and a deeper appreciation of Onam and Kerala's vibrant culture.",
@@ -113,16 +113,6 @@ export const eventDetails: {
 			matter1: "With captivating performances of classical dances, regional poetry, and soulful music, the event dazzled and united the community. Engaging games like ring toss and the Saree Draping Challenge added fun and excitement, while a grand ramp walk showcased traditional wear in all its glory.",
 			matter2: "The night ended on a high with a screening of ‘RRR,’ drawing over 500 attendees. EBSB members created buzz through creative PR activities, including rose invitations and a vibrant photo booth, leaving everyone with cherished memories of a night celebrating unity in diversity.",
 			date: " "
-		},
-		holi: {
-			title: "HOLI'23",
-			description: "The celebration of Holi in 2023.",
-			photos: ["/photos/holi2023_1.jpg"],
-			label_photos: ["/holi/23/colours.png", "/holi/23/colours.svg"],
-			videos: [""],
-			matter1: "A detailed description of the Onam 2024 event with details of the rituals, cultural programs, and celebrations.",
-			matter2: "",
-			date: ""
 		},
 	},
 
