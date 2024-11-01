@@ -55,7 +55,7 @@ export const eventDetails: {
 		sankranti: {
 			title: "SANKRANTI'24",
 			description: "Makar Sankranti is more than just a seasonal festival. It is an important cultural event that promotes unity, diversity, and the richness of India’s heritage. Celebrated across the country with different names and customs, this festival marks the transition of the Sun into Capricorn symbolizing the shift towards longer days representing hope, renewal, and new beginnings.",
-			photos: ["/sankranti/23/5.jpg", "/sankranti/23/6.jpg", "/sankranti/23/7.jpg", "/sankranti/23/8.jpg", "/sankranti/23/9.jpg", "/sankranti/23/10.jpg", "/sankranti/23/1.jpg", "/sankranti/23/2.jpg", "/sankranti/23/3.jpg", "/sankranti/23/4.jpg", "/sankranti/23/11.jpg"],
+			photos: ["/sankranti/23/1.jpg","/sankranti/23/5.jpg", "/sankranti/23/6.jpg", "/sankranti/23/7.jpg", "/sankranti/23/8.jpg", "/sankranti/23/9.jpg", "/sankranti/23/10.jpg", "/sankranti/23/2.jpg", "/sankranti/23/3.jpg", "/sankranti/23/4.jpg", "/sankranti/23/11.jpg"],
 			label_photos: ["/photos/tree2.png", "/photos/tree1.png"],
 			videos: ["https://youtu.be/pfx_lwd4hgg?si=lSsg5Frww5hgcu6w"],
 			matter1: "Makar Sankranthi was celebrated harmoniously by combining tradition with engaging activities. The evening began around the glowing Lohri bonfire, as students gathered to embrace the spirit of togetherness and celebration. A photobooth; crafted by the EBSB team, allowed participants to capture memorable moments against colorful backdrops.",
@@ -67,7 +67,7 @@ export const eventDetails: {
 		onam: {
 			title: "ONAM'23",
 			description: "Onam, the splendid harvest festival of Kerala, is a vibrant celebration that unites the state with an aura of enthusiasm and joy. This cherished tradition symbolizes the rich cultural heritage and communal harmony of Kerala. It is a time when the people of Kerala come together to welcome the mythical King Mahabali, adorning their homes with colorful floral arrangements and preparing a sumptuous feast.",
-			photos: ["/onam/24/1.jpg", "/onam/24/2.jpg", "/onam/24/3.jpg", "/onam/24/4.jpg", "/onam/24/5.jpg", "/onam/24/6.jpg", "/onam/24/7.jpg", "/onam/24/8.jpg", "/onam/24/9.jpg", "/onam/24/10.jpg", "/onam/24/11.jpg", "/onam/24/12.jpg"],
+			photos: [ "/onam/24/7.jpg", "/onam/24/9.jpg", "/onam/24/4.jpg", "/onam/24/5.jpg", "/onam/24/6.jpg", "/onam/24/2.jpg", "/onam/24/8.jpg", "/onam/24/3.jpg", "/onam/24/10.jpg", "/onam/24/11.jpg", "/onam/24/12.jpg"],
 			label_photos: ["/photos/tree2.png", "/photos/tree1.png"],
 			videos: [""],
 			matter1: "During our grand Onam celebration in August 2023, the EBSB Team of 2023-24 infused the spirit of this festive season with a diverse range of enjoyable activities. Participants gathered near the Old Mess Lawns to partake in the merriment.",
@@ -97,7 +97,7 @@ export const eventDetails: {
 		sankranti: {
 			title: "SANKRANTI'23",
 			description: "Makar Sankranti is more than just a seasonal festival. It is an important cultural event that promotes unity, diversity, and the richness of India’s heritage. Celebrated across the country with different names and customs, this festival marks the transition of the Sun into Capricorn symbolizing the shift towards longer days representing hope, renewal, and new beginnings.",
-			photos: ["/sankranti/23/1.jpg", "/sankranti/23/2.jpg", "/sankranti/23/3.jpg", "/sankranti/23/4.jpg", "/sankranti/23/5.jpg", "/sankranti/23/6.jpg", "/sankranti/23/7.jpg", "/sankranti/23/8.jpg", "/sankranti/23/9.jpg", "/sankranti/23/10.jpg", "/sankranti/23/11.jpg"],
+			photos: [ "/sankranti/23/2.jpg", "/sankranti/23/3.jpg", "/sankranti/23/4.jpg", "/sankranti/23/5.jpg", "/sankranti/23/6.jpg", "/sankranti/23/7.jpg", "/sankranti/23/8.jpg", "/sankranti/23/9.jpg", "/sankranti/23/10.jpg", "/sankranti/23/11.jpg"],
 			label_photos: ["/photos/tree2.png", "/photos/tree1.png"],
 			videos: [""],
 			matter1: "Makar Sankranthi was celebrated harmoniously by combining tradition with engaging activities. The evening began around the glowing Lohri bonfire, as students gathered to embrace the spirit of togetherness and celebration. A photobooth; crafted by the EBSB team, allowed participants to capture memorable moments against colorful backdrops.",
