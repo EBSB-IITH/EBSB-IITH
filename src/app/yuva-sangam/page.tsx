@@ -6,8 +6,8 @@ export default function Page() {
 		<div className="flex flex-col">
 			<div className="flex flex-col *:mx-auto overflow-clip text-background bg-foreground rounded-b-[4rem] lg:rounded-b-[8rem] pt-[2rem] relative" >
 				<div className="flex flex-col *:mx-auto mt-24 mb-20 lg:mb-36 z-10 lg:mt-52">
-					<div className="z-10 text-[1.8rem] lg:text-[3.4rem] w-[20rem] lg:w-[40rem] font-extrabold text-center leading-tight">YUVA SANGAM’24</div>
-					<div className="text-center text-[0.9rem] lg:text-[1rem] w-[16rem] lg:w-[38rem] py-8 z-10">The program aims to provide participants with a deep understanding of the diverse cultural, traditional, and developmental aspects of different states while facilitating youth interactions.</div>
+					<div className="z-10 text-[1.8rem] lg:text-[3.4rem] w-[20rem] lg:w-[40rem] font-extrabold text-center leading-tight">YUVA SANGAM</div>
+					<div className="text-center text-[0.9rem] lg:text-[1rem] w-[16rem] lg:w-[38rem] py-8 z-10">Initiated by the Govt of India, this program aims to provide participants with a deep understanding of the diverse cultural, traditional, and developmental aspects of different states while facilitating youth interactions.</div>
 					{/* <div className="pt-16">
 						<Link href="https://ebsb.aicte-india.org/">
 							<WhiteButton text="REGISTER NOW" />
@@ -24,8 +24,7 @@ export default function Page() {
 			</div>
 
 			<div className="mx-12 lg:mx-64 leading-snug mt-20 mb-20 lg:mb-28 text-center ">
-				Ek Bharat Shreshtha Bharat Yuva Sangam (युवा संगम) Phase-III is a Government of India initiative aimed at fostering people-to-people connections, especially among the youth throughout the nation. This phase of the program focuses on organizing exposure tours for young individuals, primarily students from higher educational institutions and other young people from different parts of India. These tours take them to various states in the country, offering them an immersive experience in various aspects of life.<br /><br />During these tours, the participants will gain exposure in five key areas: Paryatan (Tourism), Parampara (Traditions), Pragati (Development), Paraspar Sampark (People-to-people connect), and Prodyogik (Technology). The program aims to provide participants with a deep understanding of the diverse cultural, traditional, and developmental aspects of different states while facilitating youth interactions.
-			</div>
+				Ek Bharat Shreshtha Bharat Yuva Sangam (युवा संगम) is a Government of India initiative aimed at fostering people-to-people connections, especially among the youth throughout the nation. This program focuses on organizing exposure tours for young individuals, primarily students from higher educational institutions and other young people from different parts of India. These tours take them to various states in the country, offering them an immersive experience in various aspects of life. </div>
 
 			<div className="text-center mb-20 lg:mb-28">
 				<div className="font-bold text-[2rem]">ABOUT IIT HYDERABAD</div>
@@ -52,7 +51,7 @@ export default function Page() {
 			</div>
 
 			<div className="flex flex-col mx-6 lg:mx-24 py-8 lg:py-12 border-black border-2 rounded-[1.4rem] ">
-				<div className="text-center font-bold text-[2rem]">HOW TO REACH</div>
+				<div className="text-center font-bold text-[2rem]">HOW TO REACH IITH</div>
 				<div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-auto lg:grid-rows-3 gap-2 lg:gap-4 pt-8 lg:pt-16 px-6 lg:px-12 leading-snug *:mb-4">
 
 					<div className="">

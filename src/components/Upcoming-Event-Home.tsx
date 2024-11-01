@@ -4,7 +4,7 @@ import { WhiteButton } from "./Button"
 
 const upcomingEvent = {
 	title: "KHUSHIYON WALI DIWALI '24",
-	description: "#KhushiyonWaliDiwali - Diwali Celebrations and Garba Night",
+	description: "Diwali Celebrations and Garba Night at IITH",
 	date: "30 Oct to 1 Nov 2024",
 	time: "6:30 PM Onwards",
 	venue: "Near old mess lawns"
@@ -24,9 +24,9 @@ export default function UpcomingEventHome() {
 					<Link href="/events">
 						<WhiteButton text="KNOW MORE" />
 					</Link>
-					<Link href="https://docs.google.com/forms/d/e/1FAIpQLScXwgwEokPOiXiI1J9l8-8PyVzfB7akBXCWN8tk7SzAWx99MQ/viewform" >
+					{/* <Link href="https://docs.google.com/forms/d/e/1FAIpQLScXwgwEokPOiXiI1J9l8-8PyVzfB7akBXCWN8tk7SzAWx99MQ/viewform" >
 						<WhiteButton text="REGISTER NOW"  />
-					</Link>
+					</Link> */}
 				</div>
 			</div>
 			<div className="flex flex-row lg:block mt-6 lg:mt-0 justify-center *:self-end lg:*:self-start">

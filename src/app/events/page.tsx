@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const upcomingEvent: EventDetails = {
   title: "KHUSHIYON WALI DIWALI '24",
-  description: "#KhushiyonWaliDiwali - Diwali Celebrations and Garba Night",
+  description: "Diwali Celebrations and Garba Night at IITH",
   date: "30 Oct to 1 Nov 2024",
   time: "6:30 PM Onwards",
   venue: "Near old mess lawns"
