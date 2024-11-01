@@ -22,7 +22,7 @@ export default function Page() {
 				<EthnicNightGallery23 />
 				<SankrantiGallery23 />
 				<DiwaliGallery23 />
-				<DussheraGallery23 />
+				<DussheraGallery23 /> 
 			</div>
 
 		</div>
