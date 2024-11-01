@@ -29,7 +29,8 @@ export default function Page() {
 				</div>
 				<div className="flex text-center flex-col bg-foreground text-background self-center">
 					<div className="text-2xl font-bold mb-8">PURPOSE</div>
-					<div className="leading-tight">We celebrate diverse festivals, promoting unity in variety through online and media showcases, highlighting state features.</div>
+					<div className="leading-tight">To foster a sense of brotherhood among individuals and create a space for celebrating Indian culture.
+					</div>
 				</div>
 			</div>
 
