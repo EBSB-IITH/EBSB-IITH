@@ -43,7 +43,9 @@ export default function Carousel() {
 		for (let i = 0; i < totalElements; i++) {
 			const elem = evRef.current!.children[3] as HTMLDivElement
 
-			const boxsize = elem.offsetWidth + (elem.computedStyleMap().get("margin-right")! as any).value;
+			//const boxsize = elem.offsetWidth + (elem.computedStyleMap().get("margin-right")! as any).value;
+			// Doesnt work in firefox as it is not supported yet
+			const boxsize = elem.offsetWidth + 24;
 
 			console.log(boxsize);
 			(evRef.current!.children[i] as HTMLDivElement).style.transform = "translate(-" + (boxsize * currentIdx) + "px,0px)"
