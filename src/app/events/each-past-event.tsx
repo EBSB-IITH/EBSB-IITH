@@ -19,7 +19,7 @@ export const eventDetails: {
 			label_photos: ["/photos/tree2.png", "/photos/tree1.png"],
 			videos: ["https://youtu.be/3oksFLAvUcc?si=kHUbEXPvTX80OvyZ"],
 			matter1: "During our grand Onam celebration in September 2024, the EBSB Team of 2024-25 infused the spirit of this festive season with a diverse range of enjoyable activities. Participants gathered near the Old Mess Lawns to partake in the merriment.",
-			matter2: "From the exhilarating Tug of War, where teams competed to test their rope-whispering skills, to the playful Sundarikku Pottuthodal game that combined precision and creativity, the event was a delightful blend of tradition and fun. <br/> Finally, the Athapookalam, a flower rangoli, transformed the venue into a colorful art gallery curated by creative hands. It was a delightful celebration that left everyone with cherished memories and a deeper appreciation of Onam and Kerala's vibrant culture.",
+			matter2: "From the exhilarating Tug of War, where teams competed to test their rope-whispering skills, to the playful Sundarikku Pottuthodal game that combined precision and creativity, the event was a delightful blend of tradition and fun. Finally, the Athapookalam, a flower rangoli, transformed the venue into a colorful art gallery curated by creative hands. It was a delightful celebration that left everyone with cherished memories and a deeper appreciation of Onam and Kerala's vibrant culture.",
 			date: "September 15, 2024"
 		},
 		// dusshera: {

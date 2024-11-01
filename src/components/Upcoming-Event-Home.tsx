@@ -20,7 +20,7 @@ export default function UpcomingEventHome() {
 					<div className="relative text-sm lg:text-lg z-10">Time - {upcomingEvent.time}</div>
 					<div className="relative text-sm lg:text-lg z-10">Venue - {upcomingEvent.venue}</div>
 				</div>
-				<div className="flex flex-row justify-between *:mx-4 lg:*:mr-4 lg:pr-8 ">
+				<div className="flex flex-row justify-center md:justify-start *:mx-4 lg:*:mr-4 lg:pr-8 ">
 					<Link href="/events">
 						<WhiteButton text="KNOW MORE" />
 					</Link>
