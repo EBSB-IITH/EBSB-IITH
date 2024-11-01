@@ -42,7 +42,7 @@ export const eventDetails: {
 			matter2: " Participants come together to celebrate with a rich array of colors and water, transforming the surroundings into a breathtaking display of colorful magic. It’s a festive occasion that strengthens bonds and creates lasting memories.",
 			date: "March 24, 2024 "
 		},
-		ethnicNight: {
+		ethnicnight: {
 			title: "ETHNIC NIGHT'24",
 			description: "An enchanting evening of music, dance, and art, Ethnic Night brought the diverse beauty of our nation to life.",
 			photos: ["/ethnicNight/23/1.jpg", "/ethnicNight/23/2.jpg", "/ethnicNight/23/3.jpg", "/ethnicNight/23/4.jpg", "/ethnicNight/23/5.jpg", "/ethnicNight/23/6.jpg", "/ethnicNight/23/7.jpg", "/ethnicNight/23/8.jpg", "/ethnicNight/23/9.jpg"],
@@ -104,16 +104,16 @@ export const eventDetails: {
 			matter2: "The celebration also featured captivating Shuffle and Vibes performances, alongside Kite flying and Rangoli competitions, showcasing students’ artistic talents. Friendly competition in games such as Kabaddi, Kho-Kho, and Dodgeball further enhanced the teamwork. Overall, the event celebrated cultural heritage while promoting community engagement.",
 			date: ""
 		},
-		ethnicnight: {
-			title: "ETHNIC NIGHT'23",
-			description: "An enchanting evening of music, dance, and art, Cultural Canvas brought the diverse beauty of our nation to life at the New Mess Lawns.",
-			photos: ["/ethnicNight/23/1.jpg", "/ethnicNight/23/2.jpg", "/ethnicNight/23/3.jpg", "/ethnicNight/23/4.jpg", "/ethnicNight/23/5.jpg", "/ethnicNight/23/6.jpg", "/ethnicNight/23/7.jpg", "/ethnicNight/23/8.jpg", "/ethnicNight/23/9.jpg"],
-			label_photos: ["/ethnicNight/23/woman.svg", "/ethnicNight/23/man.svg"],
-			videos: [""],
-			matter1: "With captivating performances of classical dances, regional poetry, and soulful music, the event dazzled and united the community. Engaging games like ring toss and the Saree Draping Challenge added fun and excitement, while a grand ramp walk showcased traditional wear in all its glory.",
-			matter2: "The night ended on a high with a screening of ‘RRR,’ drawing over 500 attendees. EBSB members created buzz through creative PR activities, including rose invitations and a vibrant photo booth, leaving everyone with cherished memories of a night celebrating unity in diversity.",
-			date: " "
-		},
+		// ethnicnight: {
+		// 	title: "ETHNIC NIGHT'23",
+		// 	description: "An enchanting evening of music, dance, and art, Cultural Canvas brought the diverse beauty of our nation to life at the New Mess Lawns.",
+		// 	photos: ["/ethnicNight/23/1.jpg", "/ethnicNight/23/2.jpg", "/ethnicNight/23/3.jpg", "/ethnicNight/23/4.jpg", "/ethnicNight/23/5.jpg", "/ethnicNight/23/6.jpg", "/ethnicNight/23/7.jpg", "/ethnicNight/23/8.jpg", "/ethnicNight/23/9.jpg"],
+		// 	label_photos: ["/ethnicNight/23/woman.svg", "/ethnicNight/23/man.svg"],
+		// 	videos: [""],
+		// 	matter1: "With captivating performances of classical dances, regional poetry, and soulful music, the event dazzled and united the community. Engaging games like ring toss and the Saree Draping Challenge added fun and excitement, while a grand ramp walk showcased traditional wear in all its glory.",
+		// 	matter2: "The night ended on a high with a screening of ‘RRR,’ drawing over 500 attendees. EBSB members created buzz through creative PR activities, including rose invitations and a vibrant photo booth, leaving everyone with cherished memories of a night celebrating unity in diversity.",
+		// 	date: " "
+		// },
 	},
 
 };
