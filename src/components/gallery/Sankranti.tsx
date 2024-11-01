@@ -1,44 +1,22 @@
-import { headingStyle, innerDivStyle, outerDivStyle } from "./eventGalleryStyle"
+import { headingStyle, innerDivStyle, outerDivStyle } from "./eventGalleryStyle";
+import Image from "next/image";
 
 export function SankrantiGallery23() {
-	return (
-		<div className={outerDivStyle}>
-			<div className={headingStyle}>SANKRANTI '23</div>
-			<div className={innerDivStyle}>
-				<div >
-					<img src="sankranti/23/1.jpg" />
-				</div>
-				<div>
-					<img src="sankranti/23/2.jpg" />
-				</div>
-				<div>
-					<img src="sankranti/23/3.jpg" />
-				</div>
-				<div>
-					<img src="sankranti/23/4.jpg" />
-				</div>
-				<div>
-					<img src="sankranti/23/5.jpg" />
-				</div>
-				<div>
-					<img src="sankranti/23/6.jpg" />
-				</div>
-				<div>
-					<img src="sankranti/23/7.jpg" />
-				</div>
-				<div>
-					<img src="sankranti/23/8.jpg" />
-				</div>
-				<div>
-					<img src="sankranti/23/9.jpg" />
-				</div>
-				<div>
-					<img src="sankranti/23/10.jpg" />
-				</div>
-				<div>
-					<img src="sankranti/23/11.jpg" />
-				</div>
-			</div>
-		</div >
-	)
+  return (
+    <div className={outerDivStyle}>
+      <div className={headingStyle}>SANKRANTI '23</div>
+      <div className={innerDivStyle}>
+        {[...Array(11)].map((_, index) => (
+          <div key={index} className="relative lg:w-[27rem]"> {/* Adjust size as needed */}
+            <Image
+              alt={`Sankranti image ${index + 1}`}
+              src={`/sankranti/23/${index + 1}.jpg`}
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
