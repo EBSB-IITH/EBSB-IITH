@@ -8,7 +8,7 @@ export function EthnicNight23() {
 			<div className={headingStyle}>ETHNIC NIGHT'23</div>
 			<div className={subheadingStyle}>Celebrations</div>
 			<div className={yearStyle}>2023</div>
-			<div className={descriptionStyle}>An enchanting evening of music, dance, and art, Cultural Canvas <br /> brought the diverse beauty of our nation to life at the New Mess Lawns</div>
+			<div className={descriptionStyle}>An enchanting evening of music, dance, and art,Ethnic Night<br /> brought the diverse beauty of our nation to life.</div>
 
 			<Link href="/events">
 				<div className={buttonStyle}>

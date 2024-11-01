@@ -3,10 +3,10 @@ import { WhiteButton } from "./Button"
 
 
 const upcomingEvent = {
-	title: "DIWALI AND GARBA NIGHT'24",
-	description: "The celebration of victory of good over evil",
-	date: "October 30 - November 1, 2024",
-	time: "6:30 - 10:00 PM",
+	title: "KHUSHIYON WALI DIWALI '24",
+	description: "#KhushiyonWaliDiwali - Diwali Celebrations and Garba Night",
+	date: "30 Oct to 1 Nov 2024",
+	time: "6:30 PM Onwards",
 	venue: "Near old mess lawns"
 }
 export default function UpcomingEventHome() {

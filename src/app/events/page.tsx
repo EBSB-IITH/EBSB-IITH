@@ -9,10 +9,10 @@ import Link from "next/link";
 //import "slick-carousel/slick/slick-theme.css";
 
 const upcomingEvent: EventDetails = {
-  title: "DIWALI AND GARBA NIGHT'24",
-  description: "The celebration of victory of good over evil",
+  title: "KHUSHIYON WALI DIWALI '24",
+  description: "#KhushiyonWaliDiwali - Diwali Celebrations and Garba Night",
   date: "30 Oct to 1 Nov 2024",
-  time: "6:30 - 10:00 PM",
+  time: "6:30 PM Onwards",
   venue: "Near old mess lawns"
 };
 
