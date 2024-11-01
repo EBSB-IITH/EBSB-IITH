@@ -41,7 +41,7 @@ export default function Page() {
       <ObjectivesSection />
 
       <div className="flex flex-col mt-14 lg:mt-28 justify-center items-center *:mx-auto px-3">
-        <div className="font-bold text-2xl lg:text-3xl">UPCOMING EVENTS</div>
+        <div className="font-bold text-2xl lg:text-3xl">ONGOING EVENT</div>
         <UpcomingEventHome />
 
       </div>

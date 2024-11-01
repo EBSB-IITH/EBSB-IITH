@@ -23,9 +23,9 @@ export default function UpcomingEventHome({ title, description, date, venue }: E
 
 	return (
 		<div className="flex flex-col px-4 sm:px-6 md:px-8 lg:px-40 mt-4 sm:mt-6 md:mt-8 lg:mt-10 py-4 sm:py-6 md:py-8">
-			<div className="flex flex-col max-w-xl">
+			<div className="flex flex-col max-w-3xl">
 				<div className="mb-4 sm:mb-6 md:mb-8 lg:mb-10">
-					<h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[3rem] font-bold mb-3 sm:mb-4 md:mb-6 lg:mb-10 leading-tight">
+					<h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[3rem] font-bold mb-3 sm:mb-4 md:mb-6 lg:mb-10 leading-tight  ">
 						{title}
 					</h1>
 					<p className="normal-text text-base sm:text-lg md:text-xl mb-4 sm:mb-6 md:mb-8 leading-relaxed">

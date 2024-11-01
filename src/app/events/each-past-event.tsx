@@ -42,7 +42,7 @@ export const eventDetails: {
 			matter2: " Participants come together to celebrate with a rich array of colors and water, transforming the surroundings into a breathtaking display of colorful magic. It’s a festive occasion that strengthens bonds and creates lasting memories.",
 			date: "March 24, 2024 "
 		},
-		ethnicnight: {
+		ethnicNight: {
 			title: "ETHNIC NIGHT'24",
 			description: "An enchanting evening of music, dance, and art, Ethnic Night brought the diverse beauty of our nation to life.",
 			photos: ["/ethnicNight/23/1.jpg", "/ethnicNight/23/2.jpg", "/ethnicNight/23/3.jpg", "/ethnicNight/23/4.jpg", "/ethnicNight/23/5.jpg", "/ethnicNight/23/6.jpg", "/ethnicNight/23/7.jpg", "/ethnicNight/23/8.jpg", "/ethnicNight/23/9.jpg"],
