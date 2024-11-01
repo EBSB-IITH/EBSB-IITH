@@ -10,7 +10,7 @@ export interface EventDetails {
 	venue: string;
 }
 
-export default function UpcomingEventHome({ title, description, date, venue }: EventDetails) {
+export default function UpcomingEventHome({ title, description,time, date, venue }: EventDetails) {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
 	const handleButtonClick = () => {
@@ -32,6 +32,7 @@ export default function UpcomingEventHome({ title, description, date, venue }: E
 						{description}
 					</p>
 					<div className="space-y-2 sm:space-y-3">
+						<p className="normal-text text-sm sm:text-base md:text-lg">Time - {time}</p>
 						<p className="normal-text text-sm sm:text-base md:text-lg">Date - {date}</p>
 						<p className="normal-text text-sm sm:text-base md:text-lg">Venue - {venue}</p>
 					</div>
