@@ -28,7 +28,7 @@ return (
 					<Image fill alt="" src="onam/24/7.jpg" />
 				</div>
 				<div>
-					<img src="onam/24/8.jpg" />
+					<Image fill alt=""  src="onam/24/8.jpg" />
 				</div>
 				<div>
 					<Image fill alt="" src="onam/24/9.jpg" />
