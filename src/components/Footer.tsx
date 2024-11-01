@@ -44,8 +44,8 @@ export default function Footer() {
 							<img
 								src="youtube-logo.svg"
 								alt="Logo"
-								width={40}
-								height={40}
+								width={50}
+								height={50}
 							/>
 						</Link>
 						<Link href="https://www.facebook.com/profile.php?id=100070286642769">

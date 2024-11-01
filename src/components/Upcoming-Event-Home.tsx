@@ -24,7 +24,9 @@ export default function UpcomingEventHome() {
 					<Link href="/events">
 						<WhiteButton text="KNOW MORE" />
 					</Link>
-					{/* <WhiteButton text="REGISTER NOW" source="/" /> */}
+					<Link href="https://docs.google.com/forms/d/e/1FAIpQLScXwgwEokPOiXiI1J9l8-8PyVzfB7akBXCWN8tk7SzAWx99MQ/viewform" >
+						<WhiteButton text="REGISTER NOW"  />
+					</Link>
 				</div>
 			</div>
 			<div className="flex flex-row lg:block mt-6 lg:mt-0 justify-center *:self-end lg:*:self-start">
