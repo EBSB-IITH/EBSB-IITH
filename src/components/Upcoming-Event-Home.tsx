@@ -11,7 +11,7 @@ const upcomingEvent = {
 }
 export default function UpcomingEventHome() {
 	return (
-		<div className="relative flex flex-col lg:flex-row bg-foreground text-background overflow-clip lg:mx-24 mt-16 rounded-xl lg:rounded-3xl px-2 lg:px-16 pt-12 pb-12 max-w-5/6 min-w-5/6 lg:w-4/6 *:text-center lg:*:text-start self-center">
+		<div className="relative flex flex-col lg:flex-row bg-foreground text-background overflow-clip lg:mx-24 mt-16 rounded-xl lg:rounded-3xl px-2 lg:px-16 pt-12 pb-12 max-w-5/6 min-w-5/6 lg:w-4/6 *:text-center lg:*:text-start self-center mx-auto">
 			<div className="flex flex-col lg:pr-12">
 				<div className="mb-24 lg:mb-40">
 					<div className="relative text-[2rem] lg:text-[3rem] font-bold z-10">{upcomingEvent.title}</div>
