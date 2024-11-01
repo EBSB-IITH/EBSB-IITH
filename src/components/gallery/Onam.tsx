@@ -7,7 +7,7 @@ export function OnamGallery24() {
       <div className={headingStyle}>ONAM '24</div>
       <div className={innerDivStyle}>
         {[...Array(12)].map((_, index) => (
-          <div key={index} className="relative lg:w-[27rem]"> {/* Adjust size as needed */}
+          <div key={index} className=" relative"> {/* Adjust size as needed */}
             <Image
               alt={`Onam image ${index + 1}`}
               src={`/onam/24/${index + 1}.jpg`}

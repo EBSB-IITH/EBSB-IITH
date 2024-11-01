@@ -7,7 +7,7 @@ export function SankrantiGallery23() {
       <div className={headingStyle}>SANKRANTI '23</div>
       <div className={innerDivStyle}>
         {[...Array(11)].map((_, index) => (
-          <div key={index} className="relative lg:w-[27rem]"> {/* Adjust size as needed */}
+          <div key={index} className="relative "> {/* Adjust size as needed */}
             <Image
               alt={`Sankranti image ${index + 1}`}
               src={`/sankranti/23/${index + 1}.jpg`}
