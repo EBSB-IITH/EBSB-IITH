@@ -40,7 +40,7 @@ export default function Page() {
 
       <ObjectivesSection />
 
-      <div className=" w-[90%] md:w-auto flex flex-col mt-14 lg:mt-28 justify-center *:mx-auto">
+      <div className=" w-[90%] md:w-auto flex flex-col mt-14 lg:mt-28 justify-center items-center *:mx-auto">
         <div className="font-bold text-2xl lg:text-3xl">UPCOMING EVENTS</div>
         <UpcomingEventHome />
 
