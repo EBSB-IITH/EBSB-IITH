@@ -5,12 +5,14 @@ import UpcomingEventHome, { EventDetails } from "./upcoming-event";
 import { eventDetails } from "./each-past-event";
 import Carousel from "@/components/Carousel";
 import Link from "next/link";
+//import "slick-carousel/slick/slick.css";
+//import "slick-carousel/slick/slick-theme.css";
 
 const upcomingEvent: EventDetails = {
-  title: "DIWALI AND GARBA NIGHT'24",
-  description: "The celebration of victory of good over evil",
+  title: "KHUSHIYON WALI DIWALI '24",
+  description: "Diwali Celebrations and Garba Night at IITH",
   date: "30 Oct to 1 Nov 2024",
-  time: "6:30 - 10:00 PM",
+  time: "6:30 PM Onwards",
   venue: "Near old mess lawns"
 };
 
@@ -24,9 +26,7 @@ export default function Page() {
   };
 
   const handleEventChange = (event: string) => {
-    if (event !== "holi") {
       setSelectedEvent(event);
-    }
   };
 
   const renderPastEvents = () => {
@@ -53,7 +53,7 @@ export default function Page() {
             }}
           ></div>
 
-          <div className="z-20 flex w-full justify-between items-center">
+          <div className="flex w-full justify-between items-center">
             {selectedEvent === "onam" ? (
               <div className="relative w-full flex items-center">
                 <div className="relative flex items-center">
@@ -76,7 +76,7 @@ export default function Page() {
                     {eventData.date}
                   </div>
                   <Link href="/gallery" passHref>
-                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit z-30">
+                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit ">
                       VIEW ALL PHOTOS
                     </button>
                   </Link>
@@ -85,7 +85,7 @@ export default function Page() {
                 <img
                   src={eventData.label_photos[1]}
                   alt="Event photo 3"
-                  className="w-24 lg:w-80 z-20 object-cover"
+                  className="w-24 lg:w-80 z-10 object-cover"
                 />
               </div>
             ) : selectedEvent === "ethnicnight" ? (
@@ -93,7 +93,7 @@ export default function Page() {
                 <img
                   src={eventData.label_photos[0]}
                   alt="Other Event"
-                  className="absolute lg:left-[4rem] bottom-[rem] lg:bottom-[9rem] scale-[0.70] lg:scale-[2.6] pl-3 lg:pl-12 z-1 object-cover"
+                  className="absolute lg:left-[4rem] bottom-[rem] lg:bottom-[9rem] scale-[0.70] lg:scale-[2.6] pl-3 lg:pl-12 object-cover"
                 />
                 <div className="flex-grow pl-20 lg:pl-80 text-center">
                   <div className="text-lg lg:text-6xl font-bold text-center">
@@ -103,16 +103,15 @@ export default function Page() {
                     {eventData.date}
                   </div>
                   <Link href="/gallery" passHref>
-                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit z-30">
+                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit">
                       VIEW ALL PHOTOS
                     </button>
                   </Link>
                 </div>
-
                 <img
                   src={eventData.label_photos[1]}
                   alt="Event photo 3"
-                  className="w-20 lg:w-80 z-20 object-cover"
+                  className="w-20 lg:w-80 z-10 object-cover"
                 />
               </div>
             ) : (
@@ -120,7 +119,7 @@ export default function Page() {
                 <img
                   src={eventData.label_photos[0]}
                   alt="Other Event"
-                  className="w-20 lg:w-80 z-20 object-cover"
+                  className="w-20 lg:w-80 object-cover"
                 />
                 <div className="flex-grow text-center">
                   <div className="text-lg lg:text-6xl font-bold text-center">
@@ -130,7 +129,7 @@ export default function Page() {
                     {eventData.date}
                   </div>
                   <Link href="/gallery" passHref>
-                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit z-30">
+                    <button className="text-sm lg:text-xl font-semibold relative bg-background text-foreground border-2 border-white p-2 mb-4 mt-10 lg:mt-28 rounded-lg w-fit">
                       VIEW ALL PHOTOS
                     </button>
                   </Link>
@@ -139,7 +138,7 @@ export default function Page() {
                 <img
                   src={eventData.label_photos[1]}
                   alt="Event photo 3"
-                  className="w-20 lg:w-80 z-20 object-cover"
+                  className="w-20 lg:w-80 z-10 object-cover"
                 />
               </div>
             )}
@@ -210,7 +209,7 @@ export default function Page() {
     <button
       key={year}
       onClick={() => handleYearChange(year)}
-      className={`relative text-lg lg:text-xl px-6 lg:px-8 py-2 lg:py-3 rounded-3xl w-fit z-30 hover:bg-foreground hover:text-white transition duration-200 ${selectedYear === year ? "bg-white border-2 border-foreground text-foreground" : "bg-white  text-foreground"
+      className={`relative text-lg lg:text-xl px-6 lg:px-8 py-2 lg:py-3 rounded-3xl w-fit  hover:bg-foreground hover:text-white transition duration-200 ${selectedYear === year ? "bg-white border-2 border-foreground text-foreground" : "bg-white  text-foreground"
         }`}
     >
       {year}
@@ -221,7 +220,7 @@ export default function Page() {
     <button
       key={event}
       onClick={() => handleEventChange(event)}
-      className={`relative px-6 lg:px-8 py-2 lg:py-3 rounded-3xl w-fit z-30 hover:bg-foreground hover:text-white transition duration-200 ${selectedEvent === event
+      className={`relative px-6 lg:px-8 py-2 lg:py-3 rounded-3xl w-fit hover:bg-foreground hover:text-white transition duration-200 ${selectedEvent === event
         ? "bg-white text-foreground font-bold text-lg lg:text-2xl"
         : "bg-white text-foreground text-base lg:text-xl"
         }`}
@@ -237,7 +236,7 @@ export default function Page() {
         <div className="relative flex flex-col">
           {/* Lamp Section */}
           <div
-            className="absolute lg:hidden inset-0 z-20 bg-no-repeat bg-cover flex justify-between items-end lg:justify-end"
+            className="absolute lg:hidden inset-0 z-10 bg-no-repeat bg-cover flex justify-between items-end lg:justify-end"
             style={{
               backgroundSize: "25%",
               paddingRight: "0rem",
@@ -245,7 +244,7 @@ export default function Page() {
             }}
           >
             {/* Lamps positioned for mobile (one in each corner) */}
-            <div className="flex justify-between w-full px-5 lg:hidden lg:px-0 lg:space-x-4 items-end z-20">
+            <div className="flex justify-between w-full px-5 lg:hidden lg:px-0 lg:space-x-4 items-end z-10">
               <div
                 className="bg-no-repeat bg-cover"
                 style={{
@@ -269,7 +268,7 @@ export default function Page() {
           </div>
 
           <div
-            className="absolute inset-0 z-20 bg-no-repeat bg-cover flex justify-between items-end lg:justify-end"
+            className="absolute inset-0 z-10 bg-no-repeat bg-cover flex justify-between items-end lg:justify-end"
             style={{
               backgroundSize: "25%",
               paddingRight: "4rem",
@@ -278,7 +277,7 @@ export default function Page() {
           >
 
             {/* Lamps for desktop screens */}
-            <div className="hidden lg:flex space-x-4 items-end z-20">
+            <div className="hidden lg:flex space-x-4 items-end z-10">
               <div
                 className="bg-no-repeat bg-cover"
                 style={{
@@ -302,7 +301,7 @@ export default function Page() {
           </div>
 
           {/* Upcoming Events Section */}
-          <div className="relative  lg:h-[88vh] w-full flex flex-col items-center lg:items-start bg-[#611D42] text-background  lg:pt-32  opacity-96 z-10">
+          <div className="relative  lg:h-[88vh] w-full flex flex-col items-center lg:items-start bg-[#611D42] text-background  lg:pt-32  opacity-96 ">
             {/* Background images for decorations */}
             <div
               className="absolute top-0 right-0 h-full w-full bg-no-repeat"
@@ -323,9 +322,9 @@ export default function Page() {
             ></div>
 
             {/* Upcoming event details */}
-            <div className="relative  mb-10 mt-10 lg:mt-0 z-10 w-full">
+            <div className="relative  mb-10 mt-10 lg:mt-0 z-20 w-full">
               <div className="hidden lg:block heading-wireframe-h1 ">
-                UPCOMING EVENT
+                ONGOING EVENT
               </div>
 
               <div className="w-full flex justify-center lg:justify-start">

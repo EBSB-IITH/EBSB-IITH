@@ -10,8 +10,8 @@ export function KeyThemesSection() {
 					<div>MUSIC</div>
 				</div>
 				<div className="col-span-2 lg:col-span-1">
-					<img src="about/handicrafts.png " className="h-20 lg:h-40" />
-					<div>HANDICRAFTS</div>
+					<img src="about/sports.png " className="h-20 lg:h-40" />
+					<div>SPORTS</div>
 				</div>
 				<div className="col-span-2 lg:col-span-1">
 					<img src="about/dance.png " className="h-20 lg:h-40 " />
@@ -39,8 +39,8 @@ export function KeyThemesSection() {
 					<div>LITERATURE</div>
 				</div>
 				<div className="col-span-3 lg:col-span-1">
-					<img src="about/sports.png" className="h-20 lg:h-40 px-4 " />
-					<div>SPORTS</div>
+					<img src="about/handicrafts.png" className="h-20 lg:h-40 px-4 " />
+					<div>HANDICRAFTS</div>
 				</div>
 				<div className="col-span-3 lg:col-span-1">
 					<img src="about/cuisine.png" className="h-20 scale-90 lg:h-40 px-6" />

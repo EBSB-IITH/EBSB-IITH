@@ -7,7 +7,7 @@ export function Dusshera23() {
 			<div className={headingStyle}>DUSSEHRA'23</div>
 			<div className={subheadingStyle}>Celebrations</div>
 			<div className={yearStyle}>2023</div>
-			<div className={descriptionStyle}>Dusshera is a significant Hindu festival celebrated with immense joy and fervour <br className="hidden lg:block" />throughout India. <br className="block ld:hidden" /><br className="block ld:hidden" />This grand festival not only holds religious significance but <br className="hidden lg:block" />also symbolizes the victory of righteousness, truth and justice in out lives.</div>
+			<div className={descriptionStyle}>Dusshera is a significant festival celebrated with immense joy and fervour <br className="hidden lg:block" />throughout India. <br className="block ld:hidden" /><br className="block ld:hidden" />This grand festival not only holds religious significance but <br className="hidden lg:block" />also symbolizes the victory of righteousness, truth and justice in our lives.</div>
 			<Link href="/events">
 				<div className={buttonStyle}>
 					<WhiteButton text="Explore More" />
