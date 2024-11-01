@@ -1,7 +1,7 @@
 'use client'
 
 import Carousel from "@/components/Carousel";
-//import GalleryHome from "@/components/Gallery-Home";
+import GalleryHome from "@/components/Gallery-Home";
 import { ObjectivesSection } from "@/components/Objective";
 import UpcomingEventHome from "@/components/Upcoming-Event-Home";
 import Link from "next/link";
@@ -45,10 +45,10 @@ export default function Page() {
         <UpcomingEventHome />
 
       </div>
-      {/* <div className="flex flex-col mt-20 lg:mt-24">
+      <div className="flex flex-col mt-20 lg:mt-24">
         <div className="mx-auto font-bold text-2xl lg:text-3xl text-center mb-12">OUR GALLERY OF HAPPY MOMENTS</div>
         <GalleryHome />
-      </div> */}
+      </div>
 
       <div className="flex flex-col mt-12">
         <div className="mx-auto font-bold text-2xl lg:text-3xl">PAST EVENTS</div>
