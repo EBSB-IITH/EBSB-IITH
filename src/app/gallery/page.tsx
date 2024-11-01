@@ -17,10 +17,10 @@ export default function Page() {
 
 			<div className="flex flex-col mt-12 ">
 				<OnamGallery24 />
-				{/* <EthnicNightGallery23 />
+				<EthnicNightGallery23 />
 				<SankrantiGallery23 />
 				<DiwaliGallery23 />
-				<DussheraGallery23 /> */}
+				<DussheraGallery23 /> 
 			</div>
 
 		</div>
