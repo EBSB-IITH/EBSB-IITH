@@ -324,7 +324,7 @@ export default function Page() {
             {/* Upcoming event details */}
             <div className="relative  mb-10 mt-10 lg:mt-0 z-20 w-full">
               <div className="hidden lg:block heading-wireframe-h1 ">
-                ONGOING EVENT
+                OUR LAST EVENT
               </div>
 
               <div className="w-full flex justify-center lg:justify-start">
