@@ -25,7 +25,7 @@ export const eventDetails: {
 		diwali: {
 			title: "Diwali'24",
 			description: "Diwali, also known as the Festival of Lights, is one of the most beloved and widely celebrated festivals in India. Rooted in ancient traditions, it symbolizes the victory of good over evil, and knowledge over ignorance. Signifying new beginnings and prosperity, Diwali is a time for communities to come together, illuminating hearts with diyas, rangoli, and festive cheer. It is a celebration of hope, joy, and the enduring power of togetherness.",
-			photos: ["/diwali/24/1.JPG","/diwali/24/2.JPG","/diwali/24/3.JPG","/diwali/24/4.JPG","/diwali/24/5.JPG","/diwali/24/6.JPG","/diwali/24/7.JPG","/diwali/24/8.JPG","/diwali/24/9.JPG","/diwali/24/10.JPG","/diwali/24/11.JPG","/diwali/24/12.JPG","/diwali/24/13.JPG","/diwali/24/14.JPG","/diwali/24/15.JPG","/diwali/24/16.JPG","/diwali/24/17.JPG","/diwali/24/18.JPG","/diwali/24/19.JPG","/diwali/24/20.JPG","/diwali/24/21.JPG","/diwali/24/22.JPG","/diwali/24/23.JPG","/diwali/24/24.JPG","/diwali/24/25.JPG","/diwali/24/26.JPG","/diwali/24/27.JPG","/diwali/24/28.JPG","/diwali/24/29.JPG"],
+			photos: ["/diwali/24/1.JPG", "/diwali/24/2.JPG", "/diwali/24/3.JPG", "/diwali/24/4.JPG", "/diwali/24/5.JPG", "/diwali/24/6.JPG", "/diwali/24/7.JPG", "/diwali/24/8.JPG", "/diwali/24/9.JPG", "/diwali/24/10.JPG", "/diwali/24/11.JPG", "/diwali/24/12.JPG", "/diwali/24/13.JPG", "/diwali/24/14.JPG", "/diwali/24/15.JPG", "/diwali/24/16.JPG", "/diwali/24/17.JPG", "/diwali/24/18.JPG", "/diwali/24/19.JPG", "/diwali/24/20.JPG", "/diwali/24/21.JPG", "/diwali/24/22.JPG", "/diwali/24/23.JPG", "/diwali/24/24.JPG", "/diwali/24/25.JPG", "/diwali/24/26.JPG", "/diwali/24/27.JPG", "/diwali/24/28.JPG", "/diwali/24/29.JPG"],
 			label_photos: ["/dusshera/24/diya.svg", "/dusshera/24/diya.svg"],
 			videos: [""],
 			matter1: "During Diwali, the campus came alive with festive cheer as students and staff gathered to celebrate #KhushiyonWali Diwali through a variety of exciting events. Spanning three days, the celebrations were packed with creativity and enthusiasm. Beginning the first day with activities like Diya Painting, Mehndi design, and Clay modeling, allowed participants to showcase their artistic flair. The evening continued with an Origami lantern-making session, filling the atmosphere with a sense of teamwork and innovation.			",
@@ -45,7 +45,7 @@ export const eventDetails: {
 		holi: {
 			title: "HOLI'24",
 			description: "Holi, the festival of colors, truly unites diverse cultures across India. Celebrated with colors and joyous festivities, it fosters harmony and brotherhood",
-			photos: ["/holi/23/1.jpg","/holi/23/2.jpg","/holi/23/3.jpg","/holi/23/4.jpg","/holi/23/5.jpg","/holi/23/6.jpg","/holi/23/7.jpg","/holi/23/8.jpg","/holi/23/9.jpg","/holi/23/10.jpg"],
+			photos: ["/holi/23/1.jpg", "/holi/23/2.jpg", "/holi/23/3.jpg", "/holi/23/4.jpg", "/holi/23/5.jpg", "/holi/23/6.jpg", "/holi/23/7.jpg", "/holi/23/8.jpg", "/holi/23/9.jpg", "/holi/23/10.jpg"],
 			label_photos: ["/holi/23/colours.png", "/holi/23/colours.svg"],
 			videos: [""],
 			matter1: "Holi celebrations at IITH are marked by joy and excitement, creating an atmosphere of pure enjoyment.",
@@ -65,7 +65,7 @@ export const eventDetails: {
 		sankranti: {
 			title: "SANKRANTI'24",
 			description: "Makar Sankranti is more than just a seasonal festival. It is an important cultural event that promotes unity, diversity, and the richness of India’s heritage. Celebrated across the country with different names and customs, this festival marks the transition of the Sun into Capricorn symbolizing the shift towards longer days representing hope, renewal, and new beginnings.",
-			photos: ["/sankranti/23/1.jpg","/sankranti/23/5.jpg", "/sankranti/23/6.jpg", "/sankranti/23/7.jpg", "/sankranti/23/8.jpg", "/sankranti/23/9.jpg", "/sankranti/23/10.jpg", "/sankranti/23/2.jpg", "/sankranti/23/3.jpg", "/sankranti/23/4.jpg", "/sankranti/23/11.jpg"],
+			photos: ["/sankranti/23/1.jpg", "/sankranti/23/5.jpg", "/sankranti/23/6.jpg", "/sankranti/23/7.jpg", "/sankranti/23/8.jpg", "/sankranti/23/9.jpg", "/sankranti/23/10.jpg", "/sankranti/23/2.jpg", "/sankranti/23/3.jpg", "/sankranti/23/4.jpg", "/sankranti/23/11.jpg"],
 			label_photos: ["/photos/tree2.png", "/photos/tree1.png"],
 			videos: ["https://youtu.be/pfx_lwd4hgg?si=lSsg5Frww5hgcu6w"],
 			matter1: "Makar Sankranthi was celebrated harmoniously by combining tradition with engaging activities. The evening began around the glowing Lohri bonfire, as students gathered to embrace the spirit of togetherness and celebration. A photobooth; crafted by the EBSB team, allowed participants to capture memorable moments against colorful backdrops.",
@@ -77,7 +77,7 @@ export const eventDetails: {
 		onam: {
 			title: "ONAM'23",
 			description: "Onam, the splendid harvest festival of Kerala, is a vibrant celebration that unites the state with an aura of enthusiasm and joy. This cherished tradition symbolizes the rich cultural heritage and communal harmony of Kerala. It is a time when the people of Kerala come together to welcome the mythical King Mahabali, adorning their homes with colorful floral arrangements and preparing a sumptuous feast.",
-			photos: [ "/onam/24/7.jpg", "/onam/24/9.jpg", "/onam/24/4.jpg", "/onam/24/5.jpg", "/onam/24/6.jpg", "/onam/24/2.jpg", "/onam/24/8.jpg", "/onam/24/3.jpg", "/onam/24/10.jpg", "/onam/24/11.jpg", "/onam/24/12.jpg"],
+			photos: ["/onam/24/7.jpg", "/onam/24/9.jpg", "/onam/24/4.jpg", "/onam/24/5.jpg", "/onam/24/6.jpg", "/onam/24/2.jpg", "/onam/24/8.jpg", "/onam/24/3.jpg", "/onam/24/10.jpg", "/onam/24/11.jpg", "/onam/24/12.jpg"],
 			label_photos: ["/photos/tree2.png", "/photos/tree1.png"],
 			videos: [""],
 			matter1: "During our grand Onam celebration in August 2023, the EBSB Team of 2023-24 infused the spirit of this festive season with a diverse range of enjoyable activities. Participants gathered near the Old Mess Lawns to partake in the merriment.",
@@ -107,7 +107,7 @@ export const eventDetails: {
 		sankranti: {
 			title: "SANKRANTI'23",
 			description: "Makar Sankranti is more than just a seasonal festival. It is an important cultural event that promotes unity, diversity, and the richness of India’s heritage. Celebrated across the country with different names and customs, this festival marks the transition of the Sun into Capricorn symbolizing the shift towards longer days representing hope, renewal, and new beginnings.",
-			photos: [ "/sankranti/23/2.jpg", "/sankranti/23/3.jpg", "/sankranti/23/4.jpg", "/sankranti/23/5.jpg", "/sankranti/23/6.jpg", "/sankranti/23/7.jpg", "/sankranti/23/8.jpg", "/sankranti/23/9.jpg", "/sankranti/23/10.jpg", "/sankranti/23/11.jpg"],
+			photos: ["/sankranti/23/2.jpg", "/sankranti/23/3.jpg", "/sankranti/23/4.jpg", "/sankranti/23/5.jpg", "/sankranti/23/6.jpg", "/sankranti/23/7.jpg", "/sankranti/23/8.jpg", "/sankranti/23/9.jpg", "/sankranti/23/10.jpg", "/sankranti/23/11.jpg"],
 			label_photos: ["/photos/tree2.png", "/photos/tree1.png"],
 			videos: [""],
 			matter1: "Makar Sankranthi was celebrated harmoniously by combining tradition with engaging activities. The evening began around the glowing Lohri bonfire, as students gathered to embrace the spirit of togetherness and celebration. A photobooth; crafted by the EBSB team, allowed participants to capture memorable moments against colorful backdrops.",

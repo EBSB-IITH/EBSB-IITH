@@ -1,4 +1,4 @@
-import { DiwaliGallery23 } from "@/components/gallery/Diwali";
+import { DiwaliGallery23, DiwaliGallery24 } from "@/components/gallery/Diwali";
 import { DussheraGallery23 } from "@/components/gallery/Dusshera";
 import { EthnicNightGallery23 } from "@/components/gallery/EthnicNight";
 import { OnamGallery24 } from "@/components/gallery/Onam";
@@ -18,11 +18,12 @@ export default function Page() {
 			</div>
 
 			<div className="flex flex-col mt-12 ">
+				<DiwaliGallery24 />
 				<OnamGallery24 />
 				<EthnicNightGallery23 />
 				<SankrantiGallery23 />
 				<DiwaliGallery23 />
-				<DussheraGallery23 /> 
+				<DussheraGallery23 />
 			</div>
 
 		</div>
