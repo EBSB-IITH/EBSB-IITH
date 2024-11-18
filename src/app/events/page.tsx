@@ -18,7 +18,7 @@ const upcomingEvent: EventDetails = {
 
 export default function Page() {
   const [selectedYear, setSelectedYear] = useState("2024");
-  const [selectedEvent, setSelectedEvent] = useState("onam");
+  const [selectedEvent, setSelectedEvent] = useState("diwali");
 
   const handleYearChange = (year: string) => {
     setSelectedYear(year);
@@ -69,7 +69,7 @@ export default function Page() {
                   />
                 </div>
                 <div className="flex-grow text-center">
-                  <div className="text-lg lg:text-6xl font-bold text-center">
+                  <div className="text-lg lg:text-6xl font-bold text-center ">
                     {eventData.title}
                   </div>
                   <div className="text-sm lg:text-xl text-center">

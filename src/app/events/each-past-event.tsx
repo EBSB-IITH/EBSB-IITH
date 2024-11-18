@@ -12,6 +12,16 @@ export const eventDetails: {
 	[year: string]: { [event: string]: { title: string; description: string; photos: string[]; label_photos: string[]; videos: string[]; matter1: string; matter2: string; date: string } };
 } = {
 	"2024": {
+		diwali: {
+			title: "Diwali'24",
+			description: "Diwali, also known as the Festival of Lights, is one of the most beloved and widely celebrated festivals in India. Rooted in ancient traditions, it symbolizes the victory of good over evil, and knowledge over ignorance. Signifying new beginnings and prosperity, Diwali is a time for communities to come together, illuminating hearts with diyas, rangoli, and festive cheer. It is a celebration of hope, joy, and the enduring power of togetherness.",
+			photos: ["/diwali/24/4.JPG", "/diwali/24/7.JPG", "/diwali/24/2.JPG", "/diwali/24/5.JPG", "/diwali/24/6.JPG", "/diwali/24/3.JPG", "/diwali/24/8.JPG", "/diwali/24/9.JPG", "/diwali/24/10.JPG", "/diwali/24/11.JPG", "/diwali/24/12.JPG", "/diwali/24/13.JPG", "/diwali/24/14.JPG", "/diwali/24/15.JPG", "/diwali/24/16.JPG", "/diwali/24/17.JPG", "/diwali/24/18.JPG", "/diwali/24/19.JPG", "/diwali/24/20.JPG", "/diwali/24/21.JPG", "/diwali/24/22.JPG", "/diwali/24/23.JPG", "/diwali/24/24.JPG", "/diwali/24/25.JPG", "/diwali/24/26.JPG", "/diwali/24/27.JPG", "/diwali/24/28.JPG", "/diwali/24/29.JPG"],
+			label_photos: ["/dusshera/24/diya.svg", "/dusshera/24/diya.svg"],
+			videos: [""],
+			matter1: "During Diwali, the campus came alive with festive cheer as students and staff gathered to celebrate #KhushiyonWali Diwali through a variety of exciting events. Spanning three days, the celebrations were packed with creativity and enthusiasm. Beginning the first day with activities like Diya Painting, Mehndi design, and Clay modeling, allowed participants to showcase their artistic flair. The evening continued with an Origami lantern-making session, filling the atmosphere with a sense of teamwork and innovation.			",
+			matter2: "To make the occasion more funny and interactive, the second day was organized with games such as Sweets on String, along with classic favorites like Musical Chairs and the festive-themed Diwali Bingo. As night fell, the sky lit up with glowing lanterns released by the attendees, symbolizing hope and unity.The celebrations on the third day reached a successful conclusion with an engaging Garba night, complemented by a captivating dance performance from the Shuffle team. This event significantly enhanced the overall festive atmosphere and left all attendees in high spirits.",
+			date: ""
+		},
 		onam: {
 			title: "ONAM'24",
 			description: "Onam, the splendid harvest festival of Kerala, is a vibrant celebration that unites the state with an aura of enthusiasm and joy. This cherished tradition symbolizes the rich cultural heritage and communal harmony of Kerala. It is a time when the people of Kerala come together to welcome the mythical King Mahabali, adorning their homes with colorful floral arrangements and preparing a sumptuous feast.",
@@ -21,16 +31,6 @@ export const eventDetails: {
 			matter1: "During our grand Onam celebration in September 2024, the EBSB Team of 2024-25 infused the spirit of this festive season with a diverse range of enjoyable activities. Participants gathered near the Old Mess Lawns to partake in the merriment.",
 			matter2: "From the exhilarating Tug of War, where teams competed to test their rope-whispering skills, to the playful Sundarikku Pottuthodal game that combined precision and creativity, the event was a delightful blend of tradition and fun. Finally, the Athapookalam, a flower rangoli, transformed the venue into a colorful art gallery curated by creative hands. It was a delightful celebration that left everyone with cherished memories and a deeper appreciation of Onam and Kerala's vibrant culture.",
 			date: "September 15, 2024"
-		},
-		diwali: {
-			title: "Diwali'24",
-			description: "Diwali, also known as the Festival of Lights, is one of the most beloved and widely celebrated festivals in India. Rooted in ancient traditions, it symbolizes the victory of good over evil, and knowledge over ignorance. Signifying new beginnings and prosperity, Diwali is a time for communities to come together, illuminating hearts with diyas, rangoli, and festive cheer. It is a celebration of hope, joy, and the enduring power of togetherness.",
-			photos: ["/diwali/24/1.JPG", "/diwali/24/2.JPG", "/diwali/24/3.JPG", "/diwali/24/4.JPG", "/diwali/24/5.JPG", "/diwali/24/6.JPG", "/diwali/24/7.JPG", "/diwali/24/8.JPG", "/diwali/24/9.JPG", "/diwali/24/10.JPG", "/diwali/24/11.JPG", "/diwali/24/12.JPG", "/diwali/24/13.JPG", "/diwali/24/14.JPG", "/diwali/24/15.JPG", "/diwali/24/16.JPG", "/diwali/24/17.JPG", "/diwali/24/18.JPG", "/diwali/24/19.JPG", "/diwali/24/20.JPG", "/diwali/24/21.JPG", "/diwali/24/22.JPG", "/diwali/24/23.JPG", "/diwali/24/24.JPG", "/diwali/24/25.JPG", "/diwali/24/26.JPG", "/diwali/24/27.JPG", "/diwali/24/28.JPG", "/diwali/24/29.JPG"],
-			label_photos: ["/dusshera/24/diya.svg", "/dusshera/24/diya.svg"],
-			videos: [""],
-			matter1: "During Diwali, the campus came alive with festive cheer as students and staff gathered to celebrate #KhushiyonWali Diwali through a variety of exciting events. Spanning three days, the celebrations were packed with creativity and enthusiasm. Beginning the first day with activities like Diya Painting, Mehndi design, and Clay modeling, allowed participants to showcase their artistic flair. The evening continued with an Origami lantern-making session, filling the atmosphere with a sense of teamwork and innovation.			",
-			matter2: "To make the occasion more funny and interactive, the second day was organized with games such as Sweets on String, along with classic favorites like Musical Chairs and the festive-themed Diwali Bingo. As night fell, the sky lit up with glowing lanterns released by the attendees, symbolizing hope and unity.The celebrations on the third day reached a successful conclusion with an engaging Garba night, complemented by a captivating dance performance from the Shuffle team. This event significantly enhanced the overall festive atmosphere and left all attendees in high spirits.",
-			date: ""
 		},
 		// dusshera: {
 		// 	title: "Dusshera'24",
