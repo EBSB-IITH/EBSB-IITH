@@ -8,8 +8,6 @@ export default function NavBar() {
 
 	const [drawerOpen, setDrawerOpen] = useState(false)
 
-
-
 	return (
 		< div className="absolute top-0 z-50 w-full" >
 
