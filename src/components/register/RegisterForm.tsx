@@ -1,13 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { RegType } from "./Registration";
 import { SelectEvents } from "./SelectEvents";
+import { RegTypeContext } from "./RegTypeContext";
 
 export function RegisterForm({ registerType }: { registerType: RegType }) {
 	const [selectedEvents, setSelectedEvents] = useState(Array<boolean>(4))
 
-	useEffect(() => {
-		console.log(selectedEvents)
-	}, [selectedEvents])
+	const regType = useContext(RegTypeContext)
 
 	return (
 		<div className="flex flex-col bg-foreground text-background rounded-r-2xl px-10 py-10">
@@ -46,7 +45,7 @@ export function RegisterForm({ registerType }: { registerType: RegType }) {
 
 				<button className="bg-background text-foreground rounded-lg font-bold pt-2.5 pb-1.5 text-center align-middle leading-none w-fit px-4 self-end" onClick={() => {
 
-				}}>SUBMIT</button>
+				}}>{regType == RegType.Single ? "SUBMIT" : "NEXT"}</button>
 
 			</div>
 		</div>
