@@ -17,8 +17,8 @@ const upcomingEvent: EventDetails = {
 };
 
 export default function Page() {
-  const [selectedYear, setSelectedYear] = useState("2024");
-  const [selectedEvent, setSelectedEvent] = useState("diwali");
+  const [selectedYear, setSelectedYear] = useState("2025");
+  const [selectedEvent, setSelectedEvent] = useState("Sankranti");
 
   const handleYearChange = (year: string) => {
     setSelectedYear(year);
