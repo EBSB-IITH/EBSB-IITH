@@ -126,20 +126,22 @@ export default function Page() {
 					<Card src="team/design/manasi.png" title="DESIGN HEAD" name="Manasi Pasekar" />
 					<div className="flex flex-row flex-wrap justify-center mt-12 *:mb-2 lg:*:mb-auto *:mx-2 lg:*:mx-4">
 						<Card src="team/design/rishi.png" title="" name="Rishi Sangade" />
-						<Card src="team/design/kishore.png" title="" name="Kishore j K" />
+						<Card src="team/design/bhumi.jpg" title="" name="Bhumi Bagdiya" />
+						<Card src="team/design/kishore.png" title="" name="Kishore J K" />
 						<Card src="team/design/shreevel.png" title="" name="Shreevel K J" />
+						<Card src="team/design/prajwal.jpeg" title="" name="Prajawl Bhanse" />
 					</div>
 				</div>
 			</div>
 
 			<div data-ismultimedia={isMultimedia} className="flex flex-col data-[ismultimedia=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">MULTIMEDIA</div>
-				<div className="text-lg mb-6">Har Tasveer Mein Bharat Ki Jhalk
-				</div>
+				<div className="text-lg mb-6">Har Tasveer Mein Bharat Ki Jhalk </div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
 					<Card src="team/multimedia/pritam.png" title="MULTIMEDIA HEAD" name="Pritam Kumar Mandal" />
 					<div className="flex flex-row flex-wrap justify-center mt-12 *:mb-2 lg:*:mb-auto *:mx-2 lg:*:mx-4">
 						<Card src="team/multimedia/sasa.png" title="" name="Sasa Mardi" />
+						<Card src="team/multimedia/surya.jpg" title="" name="Surya Teja" />
 						<Card src="team/multimedia/viraj.png" title="" name="Viraj Mohan Rajpure" />
 						<Card src="team/multimedia/vaishnav.png" title="" name="Vaishnav Dhruv" />
 					</div>
@@ -148,8 +150,8 @@ export default function Page() {
 
 			<div data-isweb={isWeb} className="flex flex-col data-[isweb=false]:hidden justify-items-center mb-2 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">WEB</div>
-				<div className="text-lg mb-6 text-center w-3/4 mx-auto md:w-auto">The Digital Pulse of EBSB: 
-				Connecting Cultures, Celebrating Diversity</div>
+				<div className="text-lg mb-6 text-center w-3/4 mx-auto md:w-auto">The Digital Pulse of EBSB:
+					Connecting Cultures, Celebrating Diversity</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
 					<Card src="team/web/anand.png" title="WEB HEAD" name="Anand Kasyup" />
 					<div className="flex flex-row flex-wrap justify-center mt-12 *:mb-2 lg:*:mb-auto *:mx-4">
