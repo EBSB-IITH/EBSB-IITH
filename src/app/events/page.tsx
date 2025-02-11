@@ -9,9 +9,9 @@ import Link from "next/link";
 //import "slick-carousel/slick/slick-theme.css";
 
 const upcomingEvent: EventDetails = {
-  title: "KHUSHIYON WALI DIWALI '24",
-  description: "Diwali Celebrations and Garba Night at IITH",
-  date: "30 Oct to 1 Nov 2024",
+  title: "MAKAR SANKRANTI 25'",
+  description: "Makar Sankranti, the festival of harvest and new beginnings, celebrated at IITH",
+  date: "12 Jan to 14 Jan 2025",
   time: "6:30 PM Onwards",
   venue: "Near old mess lawns"
 };
@@ -240,17 +240,17 @@ export default function Page() {
             style={{
               backgroundSize: "25%",
               paddingRight: "0rem",
-              paddingBottom: "0rem", // Reduced padding at the bottom for lamps
+              paddingBottom: "0rem", // Reduced padding at the bottom for tree
             }}
           >
-            {/* Lamps positioned for mobile (one in each corner) */}
+            {/* tree positioned for mobile (one in each corner) */}
             <div className="flex justify-between w-full px-5 lg:hidden lg:px-0 lg:space-x-4 items-end z-10">
               <div
                 className="bg-no-repeat bg-cover"
                 style={{
-                  backgroundImage: `url('/photos/lamps2.png')`,
-                  width: "90px", // Adjust size for mobile
-                  height: "70px", // Adjust size for mobile
+                  backgroundImage: `url('/photos/tree2.png')`,
+                  width: "70px", // Adjust size for mobile
+                  height: "100px", // Adjust size for mobile
                   backgroundPosition: "bottom left", // Lamp on left for mobile
                 }}
               ></div>
@@ -258,9 +258,9 @@ export default function Page() {
               <div
                 className="bg-no-repeat bg-cover"
                 style={{
-                  backgroundImage: `url('/photos/lamps1.png')`,
-                  width: "90px", // Adjust size for mobile
-                  height: "70px", // Adjust size for mobile
+                  backgroundImage: `url('/photos/tree1.png')`,
+                  width: "110px", // Adjust size for mobile
+                  height: "150px", // Adjust size for mobile
                   backgroundPosition: "bottom right", // Lamp on right for mobile
                 }}
               ></div>
@@ -272,18 +272,18 @@ export default function Page() {
             style={{
               backgroundSize: "25%",
               paddingRight: "4rem",
-              paddingBottom: "2.5rem", // Reduced padding at the bottom for lamps
+              paddingBottom: "2.5rem", // Reduced padding at the bottom for tree
             }}
           >
 
-            {/* Lamps for desktop screens */}
+            {/* tree for desktop screens */}
             <div className="hidden lg:flex space-x-4 items-end z-10">
               <div
                 className="bg-no-repeat bg-cover"
                 style={{
-                  backgroundImage: `url('/photos/lamps2.png')`,
+                  backgroundImage: `url('/photos/tree2.png')`,
                   width: '220px', // Adjust width and height as needed
-                  height: '160px',
+                  height: '320px',
                   backgroundPosition: 'bottom right',
                 }}
               ></div>
@@ -291,9 +291,9 @@ export default function Page() {
               <div
                 className="bg-no-repeat bg-cover"
                 style={{
-                  backgroundImage: `url('/photos/lamps1.png')`,
+                  backgroundImage: `url('/photos/tree1.png')`,
                   width: '300px', // Adjust width and height as needed
-                  height: '220px',
+                  height: '420px',
                   backgroundPosition: 'bottom right',
                 }}
               ></div>

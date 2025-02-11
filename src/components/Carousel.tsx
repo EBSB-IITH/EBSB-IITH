@@ -101,8 +101,8 @@ export default function Carousel() {
 	return (
 		<div className="relative flex flex-col">
 			<div ref={evRef} className="flex flex-row pt-12 *:mr-6 overflow-clip transition ">
-				<Onam24 />
 				<Dusshera23 />
+				<Onam24 />
 				<EthnicNight23 />
 				<Holi23 />
 			</div>

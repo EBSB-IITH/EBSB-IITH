@@ -5,9 +5,9 @@ import { outerDivStyle, headingStyle, yearStyle, subheadingStyle, descriptionSty
 export function EthnicNight23() {
 	return (
 		<div className={outerDivStyle}>
-			<div className={headingStyle}>ETHNIC NIGHT'23</div>
+			<div className={headingStyle}>ETHNIC NIGHT'24</div>
 			<div className={subheadingStyle}>Celebrations</div>
-			<div className={yearStyle}>2023</div>
+			<div className={yearStyle}>2024</div>
 			<div className={descriptionStyle}>An enchanting evening of music, dance, and art,Ethnic Night<br /> brought the diverse beauty of our nation to life.</div>
 
 			<Link href="/events">

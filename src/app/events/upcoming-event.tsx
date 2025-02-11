@@ -1,4 +1,5 @@
 //import Link from "next/link";
+import Link from "next/link";
 import { useState } from "react";
 //import { WhiteButton } from "../../components/Button";
 
@@ -40,9 +41,10 @@ export default function UpcomingEventHome({ title, description,time, date, venue
 
 				<button
 					className="relative sm:gap-4 mt-4 z-30 sm:mt-6 bg-background text-foreground px-6 py-2.5 font-bold rounded-lg w-fit hover:cursor-pointer"
-					onClick={handleButtonClick}
 				>
+					<Link href="https://www.instagram.com/p/DErdgR7hiKp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
 					VIEW SCHEDULE
+					</Link>
 				</button>
 
 			</div>
