@@ -18,11 +18,21 @@ const upcomingEvent: EventDetails = {
 
 export default function Page() {
   const [selectedYear, setSelectedYear] = useState("2025");
-  const [selectedEvent, setSelectedEvent] = useState("Sankranti");
+  const [selectedEvent, setSelectedEvent] = useState(Object.keys(eventDetails["2025"])[0]);
 
   const handleYearChange = (year: string) => {
     setSelectedYear(year);
-    setSelectedEvent("onam"); // Set first event as selected on year change
+    // Get the list of events for the selected year
+    const eventsForYear = Object.keys(eventDetails[year]);
+
+    // Check if the current selected event exists in the new year's events
+    if (eventsForYear.includes(selectedEvent.toLowerCase())) {
+      // If it exists, keep the selected event
+      setSelectedEvent(selectedEvent);
+    } else {
+      // If it doesn't exist, set the selected event to the first event in the list
+      setSelectedEvent(eventsForYear[0]);
+    }
   };
 
   const handleEventChange = (event: string) => {
@@ -31,6 +41,7 @@ export default function Page() {
 
   const renderPastEvents = () => {
     const eventData = eventDetails[selectedYear]?.[selectedEvent.toLowerCase()];
+    console.log(eventData);
     if (!eventData) return <div>No details available</div>;
 
     return (
