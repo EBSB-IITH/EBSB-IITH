@@ -109,7 +109,7 @@ export default function Page() {
 				<div className="flex flex-col justify-items-center *:mx-auto">
 					<div className="flex flex-row flex-wrap justify-center *:mb-3 lg:*:mb-auto *:mx-3 lg:*:mx-4">
 					<Card src="team/events/pratyus.png" title="EVENTS HEAD" name="Pratyus Kumar Panda" />
-					<Card src="team/events/pranay.png" title="EVENTS HEAD" name="Pranay Reddy Ragi" />
+					<Card src="team/events/Pranay.png" title="EVENTS HEAD" name="Pranay Reddy Ragi" />
 					</div>
 				</div>
 			</div>

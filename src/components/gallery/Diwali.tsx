@@ -31,7 +31,7 @@ export function DiwaliGallery24() {
           <div key={index} className="relative"> {/* Adjust size as needed */}
             <Image
               alt={`Diwali image ${index + 1}`}
-              src={`/diwali/24/${index + 1}.JPG`}
+              src={`/diwali/24/${index + 1}.jpg`}
               layout="fill"
               objectFit="cover"
             />
