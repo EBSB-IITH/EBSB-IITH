@@ -142,7 +142,7 @@ export default function Page() {
 				<div className="text-lg mb-6 text-center w-3/4 mx-auto md:w-auto">The Digital Pulse of EBSB:
 					Connecting Cultures, Celebrating Diversity</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
-					<Card src="team/web/ruthwik.JPG" title="WEB HEAD" name="Ruthwik Kanna" />
+					<Card src="team/web/ruthwik.jpg" title="WEB HEAD" name="Ruthwik Kanna" />
 					<div className="flex flex-row flex-wrap justify-center mt-12 *:mb-2 lg:*:mb-auto *:mx-4">
 	
 					</div>
