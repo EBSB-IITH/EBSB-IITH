@@ -128,8 +128,7 @@ export default function Page() {
 
 			<div data-ismultimedia={isMultimedia} className="flex flex-col data-[ismultimedia=false]:hidden justify-items-center mb-16 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">MULTIMEDIA</div>
-				<div className="text-lg mb-6">Har Tasveer Mein Bharat Ki Jhalk
-				</div>
+				<div className="text-lg mb-6">Har Tasveer Mein Bharat Ki Jhalk </div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
 					<Card src="team/multimedia/suryateja.jpg" title="MULTIMEDIA HEAD" name="Surya Teja Uppala" />
 					{/*<div className="flex flex-row flex-wrap justify-center mt-12 *:mb-2 lg:*:mb-auto *:mx-2 lg:*:mx-4">
@@ -140,8 +139,8 @@ export default function Page() {
 
 			<div data-isweb={isWeb} className="flex flex-col data-[isweb=false]:hidden justify-items-center mb-2 lg:mb-24 *:mx-auto">
 				<div className="text-[2rem] lg:text-[3rem] font-bold">WEB</div>
-				<div className="text-lg mb-6 text-center w-3/4 mx-auto md:w-auto">The Digital Pulse of EBSB: 
-				Connecting Cultures, Celebrating Diversity</div>
+				<div className="text-lg mb-6 text-center w-3/4 mx-auto md:w-auto">The Digital Pulse of EBSB:
+					Connecting Cultures, Celebrating Diversity</div>
 				<div className="flex flex-col justify-items-center *:mx-auto">
 					<Card src="team/web/ruthwik.jpg" title="WEB HEAD" name="Ruthwik Kanna" />
 					<div className="flex flex-row flex-wrap justify-center mt-12 *:mb-2 lg:*:mb-auto *:mx-4">

@@ -5,9 +5,9 @@ import { outerDivStyle, headingStyle, yearStyle, subheadingStyle, descriptionSty
 export function Holi23() {
 	return (
 		<div className={outerDivStyle}>
-			<div className={headingStyle}>HOLI'23</div>
+			<div className={headingStyle}>HOLI'24</div>
 			<div className={subheadingStyle}>Celebrations</div>
-			<div className={yearStyle}>2023</div>
+			<div className={yearStyle}>2024</div>
 			<div className={descriptionStyle}>Holi, the festival of colors, truly unites diverse cultures across India. Celebrated with colors and joyous festivities, it fosters harmony and brotherhood</div>
 			<Link href="/events">
 				<div className={buttonStyle}>

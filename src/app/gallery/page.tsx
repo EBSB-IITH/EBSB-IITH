@@ -3,7 +3,7 @@ import { DussheraGallery23 } from "@/components/gallery/Dusshera";
 import { EthnicNightGallery23 } from "@/components/gallery/EthnicNight";
 import { OnamGallery24 } from "@/components/gallery/Onam";
 import Image from "next/image";
-import { SankrantiGallery23 } from "@/components/gallery/Sankranti";
+import { SankrantiGallery23, SankrantiGallery25 } from "@/components/gallery/Sankranti";
 
 export default function Page() {
 	return (
@@ -18,6 +18,7 @@ export default function Page() {
 			</div>
 
 			<div className="flex flex-col mt-12 ">
+				<SankrantiGallery25 />
 				<DiwaliGallery24 />
 				<OnamGallery24 />
 				<EthnicNightGallery23 />
