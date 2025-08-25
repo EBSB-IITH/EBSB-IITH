@@ -7,6 +7,7 @@ export default function Page(){
   const [formType, setFormType] = useState<FormType>("single");
   const [teamStep, setTeamStep] = useState(1);
   const [isModalVisible, setIsModalVisible] = useState(false);
+  
 
   const showModal = () => {
     setIsModalVisible(true);
@@ -39,57 +40,65 @@ return(
       
         {formType === "single" ? (
           <>
+          <form
+          action="https://docs.google.com/forms/d/e/1FAIpQLSeEDIFtDyZKE9_P0tcxohte8r2ZqYA2rwFvX_XXnnF2tvQXPw/formResponse"
+          method="POST"
+          target="hidden_iframe"
+          onSubmit={() => showModal}>
         {/* Name Input */}          
         <div className="mb-4">
           <label className="block text-background mb-2">Name</label>
-          <input type="text" className="w-full px-3 py-2 rounded-md bg-background text-foreground" />
+          <input type="text" name = "entry.2092238618" className="w-full px-3 py-2 rounded-md bg-background text-foreground" />
         </div>
         
         {/* Roll Number Input */}
         <div className="mb-4">
           <label className="block text-background mb-2">Roll Number</label>
-          <input type="text" className="w-full px-3 py-2 rounded-md bg-background text-foreground" />
+          <input type="text" name = "entry.1675119418"className="w-full px-3 py-2 rounded-md bg-background text-foreground" />
         </div>
         
         {/* Mobile Number Input */}
         <div className="mb-4">
           <label className="block text-background mb-2">Mobile Number</label>
-          <input type="tel" className="w-full px-3 py-2 rounded-md bg-background text-foreground" />
+          <input type="tel" name = "entry.479301265" className="w-full px-3 py-2 rounded-md bg-background text-foreground" />
         </div>
         
         {/* Email ID Input */}
         <div className="mb-4">
           <label className="block text-background mb-2">Email ID</label>
-          <input type="email" className="w-full px-3 py-2 rounded-md bg-background text-foreground" />
+          <input type="email"name = "entry.1556369182" className="w-full px-3 py-2 rounded-md bg-background text-foreground" />
         </div>
         
-        {/* Select Events */}
+        {/* Select Events 
         <div className="mb-4">
           <label className="block text-background mb-2">Select Events</label>
           <div className="bg-background rounded-md p-3">
             <div className="flex items-center mb-2">
-              <input type="checkbox" name="event" className="mr-2" />
+              <input type="checkbox" name="entry.1753222212" className="mr-2" />
               <span className="text-foreground">Kho-Kho</span>
             </div>
             <div className="flex items-center mb-2">
-              <input type="checkbox" name="event" className="mr-2" />
+              <input type="checkbox" name="entry.1753222212" className="mr-2" />
               <span className="text-foreground">Kite-Flying</span>
             </div>
             <div className="flex items-center mb-2">
-              <input type="checkbox" name="event" className="mr-2" />
+              <input type="checkbox" name="entry.1753222212" className="mr-2" />
               <span className="text-foreground">Rangoli</span>
             </div>
             <div className="flex items-center">
-              <input type="checkbox" name="event" className="mr-2" />
+              <input type="checkbox" name="entry.1753222212" className="mr-2" />
               <span className="text-foreground">Tug-of-war</span>
             </div>
           </div>
-        </div>
+        </div>*/}
         
         {/* Submit Button */}
         <div className="text-right">
-          <button className="bg-background text-foreground px-4 py-2 rounded-md" onClick={showModal}>Submit</button>
+          <button className="bg-background text-foreground px-4 py-2 rounded-md" type="submit" >Submit</button>
         </div>
+        </form>
+        {/* Hidden Iframe for form submission */}
+          <iframe name="hidden_iframe" style={{ display: "none" }} />
         </>
         ) : (
         <>

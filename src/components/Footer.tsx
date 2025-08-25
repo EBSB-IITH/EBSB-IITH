@@ -78,7 +78,7 @@ function Contact({ style }: { style: string }) {
 		<div className={"flex flex-col mb-8 *:mt-3 " + style}>
 			<div className="text-2xl font-bold text-center lg:text-start">CONTACT US</div>
 			<div className="text-center lg:text-start">Email - <a href="mailto:ebsbclub@campus.iith.ac.in">ebsbclub@campus.iith.ac.in</a> </div>
-			<div className="text-center lg:text-start">Contact - <a href="tel:+91 8074728497">+91 8074728497</a> </div>
+			<div className="text-center lg:text-start">Contact - <a href="tel:+91 9910337161">+91 9910337161</a> </div>
 			<div className="text-center lg:text-start">Location - Indian Institute of Technology Hyderabad<br />IITH Road, Near NH-65 Sangareddy, Kandi, Telangana - 502285</div>
 		</div>
 	)
