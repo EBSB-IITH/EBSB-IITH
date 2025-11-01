@@ -41,3 +41,23 @@ export function DiwaliGallery24() {
     </div>
   );
 }
+
+export function DiwaliGallery25() {
+  return (
+    <div className={outerDivStyle}>
+      <div className={headingStyle}>DIWALI '25</div>
+        <div className={`${innerDivStyle} animate-gallery-scroll`}>
+        {[...Array(10)].map((_, index) => ( 
+          <div key={index} className="relative"> {/* Adjust size as needed */}
+            <Image
+              alt={`Diwali image ${index + 1}`}
+              src={`/diwali/25/${index + 1}.JPG`}
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
