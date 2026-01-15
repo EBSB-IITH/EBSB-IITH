@@ -11,6 +11,19 @@ export interface PastEvent {
 export const eventDetails: {
 	[year: string]: { [event: string]: { title: string; description: string; photos: string[]; label_photos: string[]; videos: string[]; matter1: string; matter2: string; date: string } };
 } = {
+
+	"2026": {
+		sankranti: {
+			title: "Sankranti'25",
+			description: "Makar Sankranti, the festival of harvest and new beginnings, symbolizes joy, tradition, and togetherness. It marks the transition of the sun into Capricorn, ushering in longer days and fresh starts. Celebrated with beautiful kites, colorful rangoli, and age-old rituals, it is one of India’s most celebrated festivals.",
+			photos: ["/sankranti/26/1.jpg","/sankranti/26/2.jpg","/sankranti/26/3.jpg","/sankranti/26/4.jpg","/sankranti/26/5.jpg","/sankranti/26/7.jpg","/sankranti/26/8.jpg","/sankranti/26/10.jpg","/sankranti/26/11.jpg","/sankranti/26/12.jpg","/sankranti/26/13.jpg","/sankranti/26/14.jpg","/sankranti/26/15.jpg","/sankranti/26/16.jpg"],
+			label_photos: ["/photos/tree2.png", "/photos/tree1.png"],
+			videos: [""],
+			matter1: "EBSB celebrated Makar Sankranti with three joyful days of festivities, uniting students and staff in the spirit of the festival. The first day focused on traditional sports like dodgeball, kabaddi, and kho-kho, encouraging teamwork and energetic participation. The second day featured a DIY kite-making session and a warm bonfire, followed by mesmerizing cultural performances, including shuffle dance, soulful singing, and dhol beats, ending with a lively DJ night.",
+			matter2: "The final day highlighted the festival’s essence with a fun kite-flying session and a colorful rangoli competition, leaving everyone with refreshing memories and a deep sense of togetherness.",
+			date: ""
+		},
+	},
 	
 	"2025": {
 		sankranti: {
