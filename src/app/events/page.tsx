@@ -9,9 +9,9 @@ import Link from "next/link";
 //import "slick-carousel/slick/slick-theme.css";
 
 const upcomingEvent: EventDetails = {
-  title: "MAKAR SANKRANTI 25'",
+  title: "MAKAR SANKRANTI 26'",
   description: "Makar Sankranti, the festival of harvest and new beginnings, celebrated at IITH",
-  date: "12 Jan to 14 Jan 2025",
+  date: "15 Jan to 17 Jan 2026",
   time: "6:30 PM Onwards",
   venue: "Near old mess lawns"
 };

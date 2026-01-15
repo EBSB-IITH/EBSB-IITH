@@ -20,3 +20,23 @@ export function OnamGallery24() {
     </div>
   );
 }
+
+export function OnamGallery25() {
+  return (
+    <div className={outerDivStyle}>
+      <div className={headingStyle}>ONAM '25</div>
+      <div className={innerDivStyle}>
+        {[...Array(12)].map((_, index) => (
+          <div key={index} className=" relative"> {/* Adjust size as needed */}
+            <Image
+              alt={`Onam image ${index + 1}`}
+              src={`/onam/24/${index + 1}.jpg`}
+              layout="fill" 
+              objectFit="cover"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

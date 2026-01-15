@@ -11,6 +11,7 @@ export interface PastEvent {
 export const eventDetails: {
 	[year: string]: { [event: string]: { title: string; description: string; photos: string[]; label_photos: string[]; videos: string[]; matter1: string; matter2: string; date: string } };
 } = {
+	
 	"2025": {
 		sankranti: {
 			title: "Sankranti'25",
@@ -22,6 +23,47 @@ export const eventDetails: {
 			matter2: "The final day highlighted the festival’s essence with a fun kite-flying session and a colorful rangoli competition, leaving everyone with refreshing memories and a deep sense of togetherness.",
 			date: ""
 		},
+		diwali: {
+			title: "Diwali'25",
+			description: "Diwali, also known as the Festival of Lights, is one of the most beloved and widely celebrated festivals in India. Rooted in ancient traditions, it symbolizes the victory of good over evil, and knowledge over ignorance. Signifying new beginnings and prosperity, Diwali is a time for communities to come together, illuminating hearts with diyas, rangoli, and festive cheer. It is a celebration of hope, joy, and the enduring power of togetherness.",
+			photos: ["/diwali/25/1.jpeg", "/diwali/25/2.jpeg", "/diwali/25/3.jpeg", "/diwali/25/4.jpeg", "/diwali/25/5.jpeg", "/diwali/25/6.jpeg", "/diwali/25/7.jpeg", "/diwali/25/8.jpeg, /diwali/25/9.jpeg"],
+			label_photos: ["/dusshera/24/diya.svg", "/dusshera/24/diya.svg"],
+			videos: [""],
+			matter1: "During Diwali, the campus came alive with festive cheer as students and staff gathered to celebrate #KhushiyonWali Diwali through a variety of exciting events. Spanning three days, the celebrations were packed with creativity and enthusiasm. Beginning the first day with activities like Diya Painting, Mehndi design, and Clay modeling, allowed participants to showcase their artistic flair. The evening continued with an Origami lantern-making session, filling the atmosphere with a sense of teamwork and innovation.			",
+			matter2: "To make the occasion more funny and interactive, the second day was organized with games such as Sweets on String, along with classic favorites like Musical Chairs and the festive-themed Diwali Bingo. As night fell, the sky lit up with glowing lanterns released by the attendees, symbolizing hope and unity.The celebrations on the third day reached a successful conclusion with an engaging Garba night, complemented by a captivating dance performance from the Shuffle team. This event significantly enhanced the overall festive atmosphere and left all attendees in high spirits.",
+			date: ""
+		},
+		dusshera: {
+			title: "DUSSEHRA'25",
+			description: "Dussehra, celebrating the victory of good over evil, was observed with activities highlighting India’s cultural diversity. The event aimed to bring together different traditions and develop a sense of unity within the community. It also provided an opportunity for participants to showcase their creativity and cultural knowledge through various competitions.",
+			photos: ["/dusshera/23/1.jpg", "/dusshera/23/2.jpg", "/dusshera/23/3.jpg", "/dusshera/23/4.jpg", "/dusshera/23/5.jpg", "/dusshera/23/6.jpg", "/dusshera/23/7.jpg", "/dusshera/23/8.jpg", "/dusshera/23/9.jpg", "/dusshera/23/10.jpg", "/dusshera/23/11.jpg"],
+			label_photos: ["/dusshera/24/diya.svg", "/dusshera/24/diya.svg"],
+			videos: ["https://youtu.be/z9jeJwqYg3g?si=X1TcOLTDYCm7VWtM"],
+			matter1: "On October 17th, the Golu Doll Competition featured arranged dolls portray stories from Indian culture, while the Rangoli Competition displayed beautiful designs that reflected the beauty of the festival. On October 19th, the Telangana tradition of Bathukamma saw participants making floral arrangements representing unity. This was followed by a Garba Night, where everyone participated in traditional Garba and Dandiya dances.",
+			matter2: "The venue's decorations and a photo booth added to the overall atmosphere of fun and celebration. The two-day event captured the essence of Dussehra through creative expression, cultural practices, and the joyful involvement of the community.",
+			date: " "
+		},
+		ethnicnight: {
+			title: "ETHNIC NIGHT'25",
+			description: "An enchanting evening of music, dance, and art, Ethnic Night brought the diverse beauty of our nation to life.",
+			photos: ["/ethnicNight/23/1.jpg", "/ethnicNight/23/2.jpg", "/ethnicNight/23/3.jpg", "/ethnicNight/23/4.jpg", "/ethnicNight/23/5.jpg", "/ethnicNight/23/6.jpg", "/ethnicNight/23/7.jpg", "/ethnicNight/23/8.jpg", "/ethnicNight/23/9.jpg"],
+			label_photos: ["/ethnicNight/23/woman.svg", "/ethnicNight/23/man.svg"],
+			videos: ["/videos/ethnic-night-24.mp4"],
+			matter1: "With captivating performances of classical dances, regional poetry, and soulful music, the event dazzled and united the community. Engaging games like ring toss and the Saree Draping Challenge added fun and excitement, while a grand ramp walk showcased traditional wear in all its glory.",
+			matter2: "The night ended on a high with a screening of ‘RRR,’ drawing over 500 attendees. EBSB members created buzz through creative PR activities, including rose invitations and a vibrant photo booth, leaving everyone with cherished memories of a night celebrating unity in diversity.",
+			date: "March 2, 2024 "
+		},
+		onam: {
+			title: "ONAM'25",
+			description: "Onam, the splendid harvest festival of Kerala, is a vibrant celebration that unites the state with an aura of enthusiasm and joy. This cherished tradition symbolizes the rich cultural heritage and communal harmony of Kerala. It is a time when the people of Kerala come together to welcome the mythical King Mahabali, adorning their homes with colorful floral arrangements and preparing a sumptuous feast.",
+			photos: ["/onam/24/7.jpg", "/onam/24/9.jpg", "/onam/24/4.jpg", "/onam/24/5.jpg", "/onam/24/6.jpg", "/onam/24/2.jpg", "/onam/24/8.jpg", "/onam/24/3.jpg", "/onam/24/10.jpg", "/onam/24/11.jpg", "/onam/24/12.jpg"],
+			label_photos: ["/photos/tree2.png", "/photos/tree1.png"],
+			videos: [""],
+			matter1: "During our grand Onam celebration in August 2023, the EBSB Team of 2023-24 infused the spirit of this festive season with a diverse range of enjoyable activities. Participants gathered near the Old Mess Lawns to partake in the merriment.",
+			matter2: "From the exhilarating Tug of War, where teams competed to test their rope-whispering skills, to the playful Sundarikku Pottuthodal game that combined precision and creativity, the event was a delightful blend of tradition and fun. Musical Chairs added a rhythm to the festivities, with contestants dancing their way to a seat. The Lemon and Spoon challenge turned a simple fruit into a high-stakes companion on an exciting journey to victory. Finally, the Athapookalam, a flower rangoli, transformed the venue into a colorful art gallery curated by creative hands. It was a delightful celebration that left everyone with cherished memories and a deeper appreciation of Onam and Kerala's vibrant culture.",
+			date: ""
+		},
+		
 	},
 	"2024": {
 		diwali: {

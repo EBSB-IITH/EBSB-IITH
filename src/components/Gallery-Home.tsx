@@ -8,6 +8,9 @@ export default function GalleryHome() {
 				<Image alt="" layout="fill" objectFit="cover" src="onam/24/3.jpg" />
 			</div>
 			<div className="relative">
+				<Image alt="" layout="fill" objectFit="cover" src="diwali/25/3.jpeg" />
+			</div>
+			<div className="relative">
 				<Image alt="" layout="fill" objectFit="cover" src="diwali/23/2.jpg" />
 			</div>
 			<div className="relative">

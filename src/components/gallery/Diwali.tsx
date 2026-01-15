@@ -47,11 +47,11 @@ export function DiwaliGallery25() {
     <div className={outerDivStyle}>
       <div className={headingStyle}>DIWALI '25</div>
         <div className={`${innerDivStyle} animate-gallery-scroll`}>
-        {[...Array(10)].map((_, index) => ( 
+        {[...Array(9)].map((_, index) => ( 
           <div key={index} className="relative"> {/* Adjust size as needed */}
             <Image
               alt={`Diwali image ${index + 1}`}
-              src={`/diwali/25/${index + 1}.JPG`}
+              src={`/diwali/25/${index + 1}.jpeg`}
               layout="fill"
               objectFit="cover"
             />
