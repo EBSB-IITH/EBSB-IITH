@@ -26,11 +26,11 @@ export function DussheraGallery25() {
     <div className={outerDivStyle}>
       <div className={headingStyle}>DUSSHERA '25</div>
       <div className={innerDivStyle}>
-        {[...Array(11)].map((_, index) => (
+        {[...Array(9)].map((_, index) => (
           <div key={index} className="relative"> {/* Adjust size as needed */}
             <Image
               alt={`Dusshera image ${index + 1}`}
-              src={`/dusshera/23/${index + 1}.jpg`}
+              src={`/dusshera/25/${index + 1}.jpeg`}
               layout="fill"
               objectFit="cover"
             />

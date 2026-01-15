@@ -36,7 +36,7 @@ export const eventDetails: {
 		dusshera: {
 			title: "DUSSEHRA'25",
 			description: "Dussehra, celebrating the victory of good over evil, was observed with activities highlighting India’s cultural diversity. The event aimed to bring together different traditions and develop a sense of unity within the community. It also provided an opportunity for participants to showcase their creativity and cultural knowledge through various competitions.",
-			photos: ["/dusshera/23/1.jpg", "/dusshera/23/2.jpg", "/dusshera/23/3.jpg", "/dusshera/23/4.jpg", "/dusshera/23/5.jpg", "/dusshera/23/6.jpg", "/dusshera/23/7.jpg", "/dusshera/23/8.jpg", "/dusshera/23/9.jpg", "/dusshera/23/10.jpg", "/dusshera/23/11.jpg"],
+			photos: ["/dusshera/25/1.jpeg", "/dusshera/25/2.jpeg", "/dusshera/25/3.jpeg", "/dusshera/25/4.jpeg", "/dusshera/25/5.jpeg", "/dusshera/25/6.jpeg", "/dusshera/25/7.jpeg", "/dusshera/25/8.jpeg", "/dusshera/25/9.jpeg"],
 			label_photos: ["/dusshera/24/diya.svg", "/dusshera/24/diya.svg"],
 			videos: ["https://youtu.be/z9jeJwqYg3g?si=X1TcOLTDYCm7VWtM"],
 			matter1: "On October 17th, the Golu Doll Competition featured arranged dolls portray stories from Indian culture, while the Rangoli Competition displayed beautiful designs that reflected the beauty of the festival. On October 19th, the Telangana tradition of Bathukamma saw participants making floral arrangements representing unity. This was followed by a Garba Night, where everyone participated in traditional Garba and Dandiya dances.",
@@ -46,7 +46,7 @@ export const eventDetails: {
 		ethnicnight: {
 			title: "ETHNIC NIGHT'25",
 			description: "An enchanting evening of music, dance, and art, Ethnic Night brought the diverse beauty of our nation to life.",
-			photos: ["/ethnicNight/23/1.jpg", "/ethnicNight/23/2.jpg", "/ethnicNight/23/3.jpg", "/ethnicNight/23/4.jpg", "/ethnicNight/23/5.jpg", "/ethnicNight/23/6.jpg", "/ethnicNight/23/7.jpg", "/ethnicNight/23/8.jpg", "/ethnicNight/23/9.jpg"],
+			photos: ["/ethnicNight/25/1.jpeg", "/ethnicNight/25/2.jpeg", "/ethnicNight/25/3.jpeg", "/ethnicNight/25/4.jpeg", "/ethnicNight/25/5.jpeg", "/ethnicNight/25/6.jpeg", "/ethnicNight/25/7.jpeg", "/ethnicNight/25/8.jpeg", "/ethnicNight/25/9.jpeg"],
 			label_photos: ["/ethnicNight/23/woman.svg", "/ethnicNight/23/man.svg"],
 			videos: ["/videos/ethnic-night-24.mp4"],
 			matter1: "With captivating performances of classical dances, regional poetry, and soulful music, the event dazzled and united the community. Engaging games like ring toss and the Saree Draping Challenge added fun and excitement, while a grand ramp walk showcased traditional wear in all its glory.",
@@ -56,7 +56,7 @@ export const eventDetails: {
 		onam: {
 			title: "ONAM'25",
 			description: "Onam, the splendid harvest festival of Kerala, is a vibrant celebration that unites the state with an aura of enthusiasm and joy. This cherished tradition symbolizes the rich cultural heritage and communal harmony of Kerala. It is a time when the people of Kerala come together to welcome the mythical King Mahabali, adorning their homes with colorful floral arrangements and preparing a sumptuous feast.",
-			photos: ["/onam/24/7.jpg", "/onam/24/9.jpg", "/onam/24/4.jpg", "/onam/24/5.jpg", "/onam/24/6.jpg", "/onam/24/2.jpg", "/onam/24/8.jpg", "/onam/24/3.jpg", "/onam/24/10.jpg", "/onam/24/11.jpg", "/onam/24/12.jpg"],
+			photos: ["/onam/25/1.jpeg", "/onam/25/2.jpeg", "/onam/25/3.jpeg", "/onam/25/5.jpeg", "/onam/25/6.jpeg", "/onam/25/7.jpeg", "/onam/25/8.jpeg", "/onam/25/9.jpeg", "/onam/25/4.jpeg"],
 			label_photos: ["/photos/tree2.png", "/photos/tree1.png"],
 			videos: [""],
 			matter1: "During our grand Onam celebration in August 2023, the EBSB Team of 2023-24 infused the spirit of this festive season with a diverse range of enjoyable activities. Participants gathered near the Old Mess Lawns to partake in the merriment.",

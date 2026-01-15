@@ -26,11 +26,11 @@ export function OnamGallery25() {
     <div className={outerDivStyle}>
       <div className={headingStyle}>ONAM '25</div>
       <div className={innerDivStyle}>
-        {[...Array(12)].map((_, index) => (
+        {[...Array(9)].map((_, index) => (
           <div key={index} className=" relative"> {/* Adjust size as needed */}
             <Image
               alt={`Onam image ${index + 1}`}
-              src={`/onam/24/${index + 1}.jpg`}
+              src={`/onam/25/${index + 1}.jpeg`}
               layout="fill" 
               objectFit="cover"
             />
